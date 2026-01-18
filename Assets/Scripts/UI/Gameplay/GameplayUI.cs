@@ -10,6 +10,9 @@ using UnityEngine.UI;
 public class GamePlayUI : MonoBehaviour
 {
     [Header("--- UI PANELS ---")]
+    [Tooltip("Assign Panel_Tutorial here")]
+    public GameObject tutorialPanel;
+
     [Tooltip("Assign Panel_DayIntro here")]
     public GameObject dayIntroPanel;
 
@@ -71,37 +74,38 @@ public class GamePlayUI : MonoBehaviour
         // B. Turn on specific layers based on the screen
         switch (newScreen)
         {
+            case GameScreen.Tutorial:
+                if (tutorialPanel) tutorialPanel.SetActive(true);
+                break;
+
             case GameScreen.DayIntro:
-                // Show blurred cafe or just a banner over the cafe
-                dayIntroPanel.SetActive(true);
+                if (dayIntroPanel) dayIntroPanel.SetActive(true);
                 break;
 
             case GameScreen.DaySimulation:
-                // The main gameplay view
-                simulationPanel.SetActive(true); // Show sprites
-                simVisualizer.enabled = true;
-                // Triggers the visualizer to start (we will write this script later)
-                // GetComponent<SimulationVisualizer>().PlayDay(); 
+                if (simulationPanel) simulationPanel.SetActive(true);
+                // Enable the visualizer logic component
+                if (simVisualizer) simVisualizer.enabled = true;
                 break;
 
             case GameScreen.EveningSummary:
-                eveningSummaryPanel.SetActive(true);
+                if (eveningSummaryPanel) eveningSummaryPanel.SetActive(true);
                 break;
 
             case GameScreen.EveningCare:
-                carePanel.SetActive(true);
+                if (carePanel) carePanel.SetActive(true);
                 break;
 
             case GameScreen.EveningPlanning:
-                planningPanel.SetActive(true);
+                if (planningPanel) planningPanel.SetActive(true);
                 break;
 
             case GameScreen.WeeklySummary:
-                weeklyReportPanel.SetActive(true);
+                if (weeklyReportPanel) weeklyReportPanel.SetActive(true);
                 break;
 
             case GameScreen.GameOver:
-                gameOverPanel.SetActive(true);
+                if (gameOverPanel) gameOverPanel.SetActive(true);
                 break;
         }
     }
@@ -109,6 +113,7 @@ public class GamePlayUI : MonoBehaviour
     private void HideAll()
     {
         // UI
+        if (tutorialPanel) tutorialPanel.SetActive(false);
         if (dayIntroPanel) dayIntroPanel.SetActive(false);
         if (eveningSummaryPanel) eveningSummaryPanel.SetActive(false);
         if (carePanel) carePanel.SetActive(false);
@@ -123,46 +128,45 @@ public class GamePlayUI : MonoBehaviour
         if (simVisualizer) simVisualizer.enabled = false;
     }
 
+    /// <summary>
+    /// PUBLIC METHOD FOR UI BUTTONS:
+    /// Drag the GameManager object onto the Button OnClick event and select this method.
+    /// </summary>
+    public void OnSkipSimulationClicked()
+    {
+        if (simVisualizer != null && simVisualizer.enabled)
+        {
+            simVisualizer.SkipSimulation();
+        }
+        else
+        {
+            Debug.LogWarning("Cannot skip: Visualizer is missing or disabled.");
+        }
+    }
+
     private void ShowToast(string message)
     {
-        // Safety check
-        if (toastPrefab == null || toastContainer == null)
-        {
-            Debug.LogWarning($"[TOAST]: {message} (No prefab assigned)");
-            return;
-        }
+        if (toastPrefab == null || toastContainer == null) return;
 
-        // 1. Instantiate
         GameObject instance = Instantiate(toastPrefab, toastContainer);
 
-        // 2. Set Text Content (using the Toast component)
         var toastContent = instance.GetComponent<Toast>();
         if (toastContent != null)
         {
             toastContent.Initialize("Heya!", message);
         }
 
-        // 3. Trigger Animation (using the Popup component)
         var popup = instance.GetComponent<Popup>();
         if (popup != null)
         {
             popup.Open();
-
             StartCoroutine(AutoClosePopup(popup, 5.0f));
         }
     }
 
-    /// <summary>
-    /// Waits for the delay, then calls Close() on the popup if it still exists.
-    /// </summary>
     private System.Collections.IEnumerator AutoClosePopup(Popup popup, float delay)
     {
         yield return new WaitForSeconds(delay);
-
-        // Check if null in case the scene changed or it was destroyed elsewhere
-        if (popup != null)
-        {
-            popup.Close();
-        }
+        if (popup != null) popup.Close();
     }
 }
