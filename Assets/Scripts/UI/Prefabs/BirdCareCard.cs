@@ -57,7 +57,7 @@ namespace BirdCafe.UI.Components
             {
                 if (_viewModel.IsSick) statusLabel.text = "Status: <color=red>SICK</color>";
                 else if (_viewModel.WillRestTomorrow) statusLabel.text = "Status: <color=blue>Resting</color>";
-                else statusLabel.text = "Status: <color=green>OK</color>";
+                else statusLabel.text = "Status: <color=green>Happy</color>";
             }
 
             // 2. Animate Stats

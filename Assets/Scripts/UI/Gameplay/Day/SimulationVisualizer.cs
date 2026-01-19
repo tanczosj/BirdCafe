@@ -129,12 +129,15 @@ namespace BirdCafe.UI.Gameplay.Day
             // Retrieve the full list of events that happened during the simulation.
             _timeline = BirdCafeGame.Instance.GetDayTimeline();
 
-            // Rewind the money state to the beginning of the day.
-            // We subtract all money gained/lost in the timeline from the current total to find the starting point.
+            // Rewind the money and popularity state to the beginning of the day.
+            // We subtract all money and popularity gained/lost in the timeline from the current total to find the starting point.
             if (_timeline != null && _timeline.Count > 0)
             {
                 var deltaMoney = _timeline.Sum(x => x.MoneyDelta);
                 _currentMoney -= (float)deltaMoney;
+
+                var deltaPop = _timeline.Sum(x => x.PopularityDelta);
+                _currentPopularity -= deltaPop;
             }
 
             // Initialize the UI elements with starting values.
@@ -319,7 +322,7 @@ namespace BirdCafe.UI.Gameplay.Day
                 var rect = go.GetComponent<RectTransform>();
 
                 // Add a tiny random offset so bubbles don't stack perfectly if 2 happen at once
-                float rX = Random.Range(-20f, 20f);
+                float rX = Random.Range(-80f, 80f);
                 float rY = Random.Range(-10f, 10f);
                 rect.anchoredPosition = new Vector2(rX, rY);
 

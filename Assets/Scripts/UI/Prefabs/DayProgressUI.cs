@@ -1,6 +1,7 @@
+using BirdCafe.Shared;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 namespace BirdCafe.UI.Gameplay.Day
 {
@@ -15,7 +16,7 @@ namespace BirdCafe.UI.Gameplay.Day
 
         [Header("Configuration")]
         [Tooltip("How long is the simulation day in seconds? Must match Engine config.")]
-        [SerializeField] private float dayDurationSeconds = 120f; 
+        [SerializeField] private float dayDurationSeconds = BirdCafeGame.Instance.Controller.CurrentState.Config.DayDurationSeconds; 
 
         [Header("Shop Hours (for formatting)")]
         [SerializeField] private int startHour = 7; // 7 AM
@@ -31,6 +32,8 @@ namespace BirdCafe.UI.Gameplay.Day
             {
                 if (progressBar != null)
                 {
+                    dayDurationSeconds = BirdCafeGame.Instance.Controller.CurrentState.Config.DayDurationSeconds;
+
                     // Convert seconds (0-120) to normalized value (0.0-1.0)
                     float percentage = Mathf.Clamp01(value / dayDurationSeconds);
                     progressBar.value = percentage;
