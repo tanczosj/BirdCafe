@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 5446194613008155073}
   - component: {fileID: 3027134763742640928}
   - component: {fileID: 8145357088478449369}
+  - component: {fileID: 7883890720997517177}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -309,6 +310,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.UI.Components.StatCounterUI
   textComponent: {fileID: 8563661987100682425}
   formatString: $#,0.00
+--- !u!114 &7883890720997517177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161493223744294073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd592cc43ab73234e9e879aedb2f5276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PixeLadder.SimpleTooltip.TooltipTrigger
+  title: Money
+  content: Your ability to manage the cafe and care for your birds depends on maintaining
+    a healthy balance. Make sure you don't overspend!
+  icon: {fileID: 21300000, guid: 297cc57c213d4498bba8952fdce25c47, type: 3}
+  titleColor: {r: 1, g: 1, b: 1, a: 1}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverDelay: 0.5
 --- !u!1 &7338072517025963969
 GameObject:
   m_ObjectHideFlags: 0
