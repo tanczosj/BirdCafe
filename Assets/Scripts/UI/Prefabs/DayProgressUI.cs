@@ -16,7 +16,7 @@ namespace BirdCafe.UI.Gameplay.Day
 
         [Header("Configuration")]
         [Tooltip("How long is the simulation day in seconds? Must match Engine config.")]
-        [SerializeField] private float dayDurationSeconds = BirdCafeGame.Instance.Controller.CurrentState.Config.DayDurationSeconds; 
+        [SerializeField] private float dayDurationSeconds = BirdCafeGame.Instance?.Controller?.CurrentState?.Config?.DayDurationSeconds ?? 45; 
 
         [Header("Shop Hours (for formatting)")]
         [SerializeField] private int startHour = 7; // 7 AM

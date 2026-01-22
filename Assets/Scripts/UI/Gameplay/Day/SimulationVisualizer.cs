@@ -33,7 +33,7 @@ namespace BirdCafe.UI.Gameplay.Day
 
         [Header("Settings")]
         [Tooltip("Total duration of the simulation in seconds. Must match the Engine config.")]
-        public float dayDuration = BirdCafeGame.Instance.Controller.CurrentState.Config.DayDurationSeconds;
+        public float dayDuration = BirdCafeGame.Instance?.Controller?.CurrentState?.Config?.DayDurationSeconds ?? 45;
 
         [Tooltip("Speed multiplier for playback. 1.0 = realtime, 2.0 = 2x speed.")]
         public float timeScale = 1.5f;
