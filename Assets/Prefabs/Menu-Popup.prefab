@@ -5656,6 +5656,7 @@ GameObject:
   - component: {fileID: 6152844648332104985}
   - component: {fileID: 6665924943692686729}
   - component: {fileID: 5142080127069066006}
+  - component: {fileID: 5047354356908596224}
   m_Layer: 5
   m_Name: Menu-Popup
   m_TagString: Untagged
@@ -5751,6 +5752,18 @@ MonoBehaviour:
   _oracleMessageText: {fileID: 6838241846574269189}
   _responseContainer: {fileID: 8984409619588086954}
   _responsePrefab: {fileID: 5724720806783892179, guid: 815fb6cd9e3f2694cb984d39a1bbfd85, type: 3}
+--- !u!114 &5047354356908596224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454454496645949834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b238944c9141b43a5a9bdf86dc2d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuPopup
 --- !u!1 &7485996985611196999
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,18 +7149,18 @@ PrefabInstance:
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5047354356908596224}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenuUI, Assembly-CSharp
+      value: MenuPopup, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -7952,7 +7965,7 @@ PrefabInstance:
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5047354356908596224}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -7967,7 +7980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SubmitNewGame
+      value: ReturnToMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -7975,7 +7988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenuUI, Assembly-CSharp
+      value: MenuPopup, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 93fd82f5cd26b4c06b2e9550f0f5d952, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
