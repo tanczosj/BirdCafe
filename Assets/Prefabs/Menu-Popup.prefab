@@ -407,7 +407,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3621325586879427953}
   m_Direction: 2
   m_Value: 1.0000001
-  m_Size: 0.05915613
+  m_Size: 0.053057563
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3215,7 +3215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -90.2363, y: 11}
+  m_AnchoredPosition: {x: -95.494385, y: 23.268738}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &8124870116457872023
@@ -5744,6 +5744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af746519650f1de4aa7cf5dcb3b1723d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.Unity.UI.Chat.ChatUIController
+  _popup: {fileID: 3464726319590271178}
   _menuPopupRoot: {fileID: 7454454496645949834}
   _qaChatPanel: {fileID: 2844990179211763548}
   _oracleSubject: {fileID: 4950072057414187822}
@@ -6035,8 +6036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1934, y: 32.800995}
-  m_SizeDelta: {x: 1325.9722, y: 220.7}
+  m_AnchoredPosition: {x: -1.1934, y: 43.300995}
+  m_SizeDelta: {x: 1325.9722, y: 199.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8499516157377548746
 CanvasRenderer:
@@ -6891,7 +6892,7 @@ PrefabInstance:
     - target: {fileID: 6103840718862998620, guid: 75d538b5c24774358ab0da086807ce7e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 616401797ac944a3a99515b0ec5abc26, type: 3}
+      objectReference: {fileID: 21300000, guid: abb2c2484ebf044818339870cb80b9c9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

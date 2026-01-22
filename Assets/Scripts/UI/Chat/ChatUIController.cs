@@ -1,5 +1,6 @@
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
+using Ricimi;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace BirdCafe.Unity.UI.Chat
     public class ChatUIController : MonoBehaviour
     {
         [Header("Main Containers")]
+        [SerializeField] private Popup _popup;
         [SerializeField] private GameObject _menuPopupRoot;
         [SerializeField] private GameObject _qaChatPanel;
 
@@ -119,7 +121,7 @@ namespace BirdCafe.Unity.UI.Chat
 
         public void CloseChat()
         {
-            _menuPopupRoot.SetActive(false);
+            _popup?.Close();
         }
     }
 }
