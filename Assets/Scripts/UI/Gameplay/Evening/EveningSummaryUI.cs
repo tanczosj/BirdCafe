@@ -2,8 +2,9 @@ using UnityEngine;
 using TMPro;
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
-using BirdCafe.UI.Components; // Needed for StatCounterUI and ReportStat
-using System.Text; // For StringBuilder
+using BirdCafe.UI.Components;
+using System.Text;
+using System.Collections;
 
 namespace BirdCafe.UI.Gameplay.Evening
 {
@@ -12,14 +13,16 @@ namespace BirdCafe.UI.Gameplay.Evening
         [Header("Header Stats")]
         [Tooltip("Shows current money balance")]
         public StatCounterUI moneyCounter;
+
         [Tooltip("Shows current popularity")]
         public StatCounterUI popularityCounter;
-        public TMP_Text dayTextLabel; // e.g. "Day 1 - Monday"
+
+        public TMP_Text dayTextLabel;
 
         [Header("Narratives")]
         public TMP_Text popularityNarrativeText;
-        public TMP_Text financialSummaryText; // "Revenue: $X Net Profit: $Y"
-        public TMP_Text trafficNarrativeText; // "You served X..."
+        public TMP_Text financialSummaryText;
+        public TMP_Text trafficNarrativeText;
 
         [Header("Sales Breakdown")]
         public ReportStat coffeeStat;
@@ -30,35 +33,48 @@ namespace BirdCafe.UI.Gameplay.Evening
         public TMP_Text birdNameText;
         public TMP_Text birdServedText;
 
+        [Header("Effects")]
+        public ParticleSystem[] summaryParticles;
+        public float particleStopDelay = 2f;
+
+        private Coroutine particleRoutine;
+
         private void OnEnable()
         {
             Refresh();
+            PlaySummaryParticles();
+        }
+
+        private void OnDisable()
+        {
+            if (particleRoutine != null)
+            {
+                StopCoroutine(particleRoutine);
+                particleRoutine = null;
+            }
+
+            StopSummaryParticles();
         }
 
         private void Refresh()
         {
-            // 1. Fetch Data
             DailyReportViewModel vm = BirdCafeGame.Instance.GetDailyReport();
             if (vm == null) return;
 
-            // 2. Header
-            if (dayTextLabel) 
+            if (dayTextLabel)
                 dayTextLabel.text = $"Day {vm.DayNumber} - {vm.DayName}";
-            
-            if (moneyCounter) 
+
+            if (moneyCounter)
                 moneyCounter.AnimateValue((float)vm.CurrentMoney, 0.5f);
-            
-            if (popularityCounter) 
+
+            if (popularityCounter)
                 popularityCounter.AnimateValue(vm.CurrentPopularity, 0.5f);
 
-            // 3. Narratives
-            if (popularityNarrativeText) 
+            if (popularityNarrativeText)
                 popularityNarrativeText.text = vm.PopularityNarrative;
 
             if (financialSummaryText)
             {
-                // Format: Revenue: $10.00     Net Profit: $136.00
-                // Color Net Profit Green/Red based on value
                 string colorHex = (vm.NetProfit >= 0) ? "#00FF00" : "#FF0000";
                 financialSummaryText.text = $"Revenue: ${vm.TotalRevenue:F2}     Net Profit: <color={colorHex}>${vm.NetProfit:F2}</color>";
             }
@@ -66,24 +82,32 @@ namespace BirdCafe.UI.Gameplay.Evening
             if (trafficNarrativeText)
                 trafficNarrativeText.text = BuildTrafficString(vm);
 
-            // 4. Sales Stats
-            // Duration is 1.0s for smooth bar filling
-            if (coffeeStat) coffeeStat.UpdateValue(vm.CoffeeSold, vm.CoffeeTotal, 1.0f);
-            if (bakedStat)  bakedStat.UpdateValue(vm.BakedSold, vm.BakedTotal, 1.0f);
-            if (merchStat)  merchStat.UpdateValue(vm.MerchSold, vm.MerchTotal, 1.0f);
+            if (coffeeStat)
+                coffeeStat.UpdateValue(vm.CoffeeSold, vm.CoffeeTotal, 1.0f);
 
-            // 5. Bird Performance
-            // For now, just grab the first bird if available
+            if (bakedStat)
+                bakedStat.UpdateValue(vm.BakedSold, vm.BakedTotal, 1.0f);
+
+            if (merchStat)
+                merchStat.UpdateValue(vm.MerchSold, vm.MerchTotal, 1.0f);
+
             if (vm.Birds.Count > 0)
             {
                 var b = vm.Birds[0];
-                if (birdNameText) birdNameText.text = b.Name;
-                if (birdServedText) birdServedText.text = $"{b.CustomersServed} Served";
+
+                if (birdNameText)
+                    birdNameText.text = b.Name;
+
+                if (birdServedText)
+                    birdServedText.text = $"{b.CustomersServed} Served";
             }
             else
             {
-                if (birdNameText) birdNameText.text = "No Birds";
-                if (birdServedText) birdServedText.text = "-";
+                if (birdNameText)
+                    birdNameText.text = "No Birds";
+
+                if (birdServedText)
+                    birdServedText.text = "-";
             }
         }
 
@@ -95,7 +119,7 @@ namespace BirdCafe.UI.Gameplay.Evening
             if (vm.CustomersLost > 0)
             {
                 sb.Append($" but lost {vm.CustomersLost} customers.");
-                
+
                 bool hasWait = vm.LostWaitTooLong > 0;
                 bool hasStock = vm.LostNoStock > 0;
 
@@ -106,9 +130,11 @@ namespace BirdCafe.UI.Gameplay.Evening
 
                 if (hasStock)
                 {
-                    if (hasWait) sb.Append(" and ");
-                    else sb.Append(" There were ");
-                    
+                    if (hasWait)
+                        sb.Append(" and ");
+                    else
+                        sb.Append(" There were ");
+
                     sb.Append($"{vm.LostNoStock} who wanted to order but you didn't have enough in stock.");
                 }
             }
@@ -120,7 +146,49 @@ namespace BirdCafe.UI.Gameplay.Evening
             return sb.ToString();
         }
 
-        // Hook this to your "Continue" / "Next" button
+        private void PlaySummaryParticles()
+        {
+            if (particleRoutine != null)
+            {
+                StopCoroutine(particleRoutine);
+            }
+
+            particleRoutine = StartCoroutine(PlayParticlesRoutine());
+        }
+
+        private IEnumerator PlayParticlesRoutine()
+        {
+            if (summaryParticles != null)
+            {
+                foreach (ParticleSystem ps in summaryParticles)
+                {
+                    if (ps == null) continue;
+
+                    ps.gameObject.SetActive(true);
+                    ps.Clear();
+                    ps.Play();
+                }
+            }
+
+            yield return new WaitForSeconds(particleStopDelay);
+
+            StopSummaryParticles();
+            particleRoutine = null;
+        }
+
+        private void StopSummaryParticles()
+        {
+            if (summaryParticles != null)
+            {
+                foreach (ParticleSystem ps in summaryParticles)
+                {
+                    if (ps == null) continue;
+
+                    ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                }
+            }
+        }
+
         public void OnContinueClicked()
         {
             BirdCafeGame.Instance.AcknowledgeSummary();

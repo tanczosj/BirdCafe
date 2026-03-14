@@ -19,6 +19,9 @@ public class GamePlayUI : MonoBehaviour
     [Tooltip("Assign Panel_EveningSummary here")]
     public GameObject eveningSummaryPanel;
 
+    [Tooltip("Assign Panel_HubHUD here")]
+    public GameObject hubPanel;
+
     [Tooltip("Assign Panel_Care here")]
     public GameObject carePanel;
 
@@ -46,32 +49,22 @@ public class GamePlayUI : MonoBehaviour
 
     private void Start()
     {
-        // 1. Subscribe to the Library Events
         BirdCafeGame.Instance.OnScreenChanged += HandleScreenChanged;
         BirdCafeGame.Instance.OnToastMessage += ShowToast;
 
-        // 2. Initialize the first state (Usually DayIntro for a loaded game)
-        // We act as if the screen just changed to whatever the game thinks is current.
         HandleScreenChanged(BirdCafeGame.Instance.CurrentScreen);
     }
 
     private void OnDestroy()
     {
-        // 3. Always Unsubscribe when the object is destroyed to prevent memory leaks
         BirdCafeGame.Instance.OnScreenChanged -= HandleScreenChanged;
         BirdCafeGame.Instance.OnToastMessage -= ShowToast;
     }
 
-    /// <summary>
-    /// This is the "Traffic Cop" function. 
-    /// It turns everything off, then turns on only what is needed.
-    /// </summary>
     private void HandleScreenChanged(GameScreen newScreen)
     {
-        // A. Reset everything to OFF
         HideAll();
 
-        // B. Turn on specific layers based on the screen
         switch (newScreen)
         {
             case GameScreen.Tutorial:
@@ -84,12 +77,15 @@ public class GamePlayUI : MonoBehaviour
 
             case GameScreen.DaySimulation:
                 if (simulationPanel) simulationPanel.SetActive(true);
-                // Enable the visualizer logic component
                 if (simVisualizer) simVisualizer.enabled = true;
                 break;
 
             case GameScreen.EveningSummary:
                 if (eveningSummaryPanel) eveningSummaryPanel.SetActive(true);
+                break;
+
+            case GameScreen.EveningHub:
+                if (hubPanel) hubPanel.SetActive(true);
                 break;
 
             case GameScreen.EveningCare:
@@ -112,26 +108,20 @@ public class GamePlayUI : MonoBehaviour
 
     private void HideAll()
     {
-        // UI
         if (tutorialPanel) tutorialPanel.SetActive(false);
         if (dayIntroPanel) dayIntroPanel.SetActive(false);
         if (eveningSummaryPanel) eveningSummaryPanel.SetActive(false);
+        if (hubPanel) hubPanel.SetActive(false);
         if (carePanel) carePanel.SetActive(false);
         if (planningPanel) planningPanel.SetActive(false);
         if (weeklyReportPanel) weeklyReportPanel.SetActive(false);
         if (gameOverPanel) gameOverPanel.SetActive(false);
 
-        // World
         if (simulationPanel) simulationPanel.SetActive(false);
 
-        // Logic
         if (simVisualizer) simVisualizer.enabled = false;
     }
 
-    /// <summary>
-    /// PUBLIC METHOD FOR UI BUTTONS:
-    /// Drag the GameManager object onto the Button OnClick event and select this method.
-    /// </summary>
     public void OnSkipSimulationClicked()
     {
         if (simVisualizer != null && simVisualizer.enabled)
