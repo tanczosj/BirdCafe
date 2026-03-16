@@ -191,7 +191,7 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public void OnContinueClicked()
         {
-            BirdCafeGame.Instance.AcknowledgeSummary();
+            BirdCafeGame.Instance.GoToHub();
         }
     }
 }

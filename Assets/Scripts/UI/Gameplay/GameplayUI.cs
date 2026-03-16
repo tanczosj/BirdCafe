@@ -22,6 +22,15 @@ public class GamePlayUI : MonoBehaviour
     [Tooltip("Assign Panel_HubHUD here")]
     public GameObject hubPanel;
 
+    [Tooltip("Assign Panel_PetStore here")]
+    public GameObject petStorePanel;
+
+    [Tooltip("Assign Panel_PetStoreSupplies here")]
+    public GameObject petStoreSuppliesPanel;
+
+    [Tooltip("Assign Panel_PetStoreBirds here")]
+    public GameObject petStoreBirdsPanel;
+
     [Tooltip("Assign Panel_Care here")]
     public GameObject carePanel;
 
@@ -84,8 +93,20 @@ public class GamePlayUI : MonoBehaviour
                 if (eveningSummaryPanel) eveningSummaryPanel.SetActive(true);
                 break;
 
-            case GameScreen.EveningHub:
+            case GameScreen.Hub:
                 if (hubPanel) hubPanel.SetActive(true);
+                break;
+
+            case GameScreen.EveningPetStore:
+                if (petStorePanel) petStorePanel.SetActive(true);
+                break;
+
+            case GameScreen.EveningPetStoreSupplies:
+                if (petStoreSuppliesPanel) petStoreSuppliesPanel.SetActive(true);
+                break;
+
+            case GameScreen.EveningPetStoreBirds:
+                if (petStoreBirdsPanel) petStoreBirdsPanel.SetActive(true);
                 break;
 
             case GameScreen.EveningCare:
@@ -112,6 +133,9 @@ public class GamePlayUI : MonoBehaviour
         if (dayIntroPanel) dayIntroPanel.SetActive(false);
         if (eveningSummaryPanel) eveningSummaryPanel.SetActive(false);
         if (hubPanel) hubPanel.SetActive(false);
+        if (petStorePanel) petStorePanel.SetActive(false);
+        if (petStoreSuppliesPanel) petStoreSuppliesPanel.SetActive(false);
+        if (petStoreBirdsPanel) petStoreBirdsPanel.SetActive(false);
         if (carePanel) carePanel.SetActive(false);
         if (planningPanel) planningPanel.SetActive(false);
         if (weeklyReportPanel) weeklyReportPanel.SetActive(false);
