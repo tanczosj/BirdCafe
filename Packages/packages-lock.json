@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "7b46542452ead0545a12dd84a4539a1d41c62d79"
+      "hash": "e6e5e4b8b6cc3c56319ae9f19d756a135bb14897"
     },
     "com.unity.2d.animation": {
       "version": "13.0.2",
@@ -224,6 +224,16 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.postprocessing": {
+      "version": "3.5.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.serialization": {
