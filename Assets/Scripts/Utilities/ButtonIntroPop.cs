@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ButtonIntroPop : MonoBehaviour
@@ -5,67 +6,104 @@ public class ButtonIntroPop : MonoBehaviour
     public RectTransform targetButton;
     public Animator buttonAnimator;
 
-    public float startScale = 0.01f; // extremely small
-    public float popScale = 1.2f;   // overshoot scale
-    public float finalScale = 1f;   // normal scale
+    [Header("Scale Multipliers")]
+    public float startScale = 0.01f;
+    public float popScale = 1.2f;
+    public float finalScale = 1f;
 
+    [Header("Timing")]
     public float expandTime = 0.35f;
     public float settleTime = 0.15f;
+    public float startDelay = 0f;
 
-    public float startDelay = 0f; // new delay before animation starts
+    private CanvasGroup canvasGroup;
+    private Coroutine introRoutine;
+    private Vector3 baseScale;
+
+    private void Awake()
+    {
+        if (targetButton == null)
+            targetButton = GetComponent<RectTransform>();
+
+        canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+            canvasGroup = gameObject.AddComponent<CanvasGroup>();
+
+        baseScale = targetButton.localScale;
+    }
 
     private void OnEnable()
     {
         if (targetButton == null)
             targetButton = GetComponent<RectTransform>();
 
-        if (buttonAnimator == null)
-            buttonAnimator = GetComponent<Animator>();
+        if (introRoutine != null)
+            StopCoroutine(introRoutine);
 
-        // Disable Animator so it doesn't override scale
+        // Refresh the intended base scale in case you changed it in the editor
+        baseScale = targetButton.localScale;
+
+        // Hide during delay
+        canvasGroup.alpha = 0f;
+        canvasGroup.blocksRaycasts = false;
+
+        // Disable animator during intro so it does not fight the pop
         if (buttonAnimator != null)
             buttonAnimator.enabled = false;
 
-        // Start tiny
-        targetButton.localScale = Vector3.one * startScale;
+        targetButton.localScale = baseScale * startScale;
 
-        StartCoroutine(PlayIntro());
+        introRoutine = StartCoroutine(PlayIntro());
     }
 
-    private System.Collections.IEnumerator PlayIntro()
+    private IEnumerator PlayIntro()
     {
-        // Step 0 — Wait for start delay
         if (startDelay > 0f)
             yield return new WaitForSeconds(startDelay);
 
+        canvasGroup.alpha = 1f;
+        targetButton.localScale = baseScale * startScale;
+
         float t = 0f;
 
-        // Step 1 — Pop outward
+        // Step 1: expand past final size
         while (t < expandTime)
         {
             t += Time.deltaTime;
             float n = Mathf.Clamp01(t / expandTime);
-            float scale = Mathf.SmoothStep(startScale, popScale, n);
-            targetButton.localScale = Vector3.one * scale;
+            float scaleMul = Mathf.SmoothStep(startScale, popScale, n);
+            targetButton.localScale = baseScale * scaleMul;
             yield return null;
         }
 
-        // Step 2 — Settle back to 1.0
+        // Step 2: settle to final size
         t = 0f;
         while (t < settleTime)
         {
             t += Time.deltaTime;
             float n = Mathf.Clamp01(t / settleTime);
-            float scale = Mathf.SmoothStep(popScale, finalScale, n);
-            targetButton.localScale = Vector3.one * scale;
+            float scaleMul = Mathf.SmoothStep(popScale, finalScale, n);
+            targetButton.localScale = baseScale * scaleMul;
             yield return null;
         }
 
-        // Set final scale
-        targetButton.localScale = Vector3.one * finalScale;
+        // Permanent final size
+        targetButton.localScale = baseScale * finalScale;
 
-        // Step 3 — Re-enable your button animation
+        canvasGroup.blocksRaycasts = true;
+
         if (buttonAnimator != null)
             buttonAnimator.enabled = true;
+
+        introRoutine = null;
+    }
+
+    private void OnDisable()
+    {
+        if (introRoutine != null)
+        {
+            StopCoroutine(introRoutine);
+            introRoutine = null;
+        }
     }
 }
