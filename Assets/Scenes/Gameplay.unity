@@ -6925,9 +6925,6 @@ PrefabInstance:
       addedObject: {fileID: 587864154}
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 587864153}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 587864152}
     - targetCorrespondingSourceObject: {fileID: 8788289330399158378, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
@@ -6946,11 +6943,6 @@ GameObject:
 --- !u!1 &587864149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 587864146}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &587864150 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 587864146}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &587864151
@@ -6985,26 +6977,6 @@ MonoBehaviour:
   fadeInDuration: 0.5
   holdDuration: 0.2
   fadeOutDuration: 0.5
---- !u!114 &587864153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587864149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 587864147}
-  buttonAnimator: {fileID: 587864150}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0.2
 --- !u!114 &587864154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9261,9 +9233,6 @@ PrefabInstance:
       addedObject: {fileID: 771868298}
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 771868297}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 771868296}
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
@@ -9285,11 +9254,6 @@ GameObject:
 --- !u!1 &771868293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 771868290}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &771868294 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 771868290}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &771868295
@@ -9324,26 +9288,6 @@ MonoBehaviour:
   fadeInDuration: 0.5
   holdDuration: 0.2
   fadeOutDuration: 0.5
---- !u!114 &771868297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771868293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 771868291}
-  buttonAnimator: {fileID: 771868294}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0.1
 --- !u!114 &771868298
 MonoBehaviour:
   m_ObjectHideFlags: 0
