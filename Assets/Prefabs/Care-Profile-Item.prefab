@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 8335862529194133570}
   - component: {fileID: 5934100012213437594}
   - component: {fileID: 6756465937544090395}
-  - component: {fileID: 1426110098754007587}
+  - component: {fileID: 6627480522400267037}
   m_Layer: 0
   m_Name: Care-Profile-Item
   m_TagString: Untagged
@@ -722,7 +722,7 @@ MonoBehaviour:
   hiddenPosition: {x: 895, y: -830}
   shownPosition: {x: 90, y: -233}
   moveSpeed: 10
---- !u!114 &1426110098754007587
+--- !u!114 &6627480522400267037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -731,13 +731,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7360047550332635196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8c07e1f3d03d47929611455051216, type: 3}
+  m_Script: {fileID: 11500000, guid: e5c3f3560053441418071f154887d228, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverTypewriter
-  targetTextBox: {fileID: 3124329306575963608}
-  messageToType: PEEP
-  characterDelay: 0.03
-  clearOnExit: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BirdProfileCardUI
+  birdImage: {fileID: 1938390662803588305}
+  nameText: {fileID: 3124329306575963608}
+  speciesSprites:
+  - SpeciesId: budgie
+    Sprite: {fileID: -3426913756509349206, guid: 594167f04701d8846b27d382033f3549, type: 3}
+  - SpeciesId: cockatiel
+    Sprite: {fileID: -7167190013095767753, guid: ce8cce721231d9c45b9e2a843bd974f5, type: 3}
+  - SpeciesId: lorikeet
+    Sprite: {fileID: -8098007663549259092, guid: ea772e8c233c52640bd61a5c953ea6e3, type: 3}
+  - SpeciesId: kingfisher
+    Sprite: {fileID: 3312334890903944949, guid: 7b82a7f22eb479547a1a2aaaf1b532f4, type: 3}
+  - SpeciesId: canary
+    Sprite: {fileID: 7628035545873492859, guid: 9279f108e44acf14299317073279b496, type: 3}
+  fallbackSprite: {fileID: 21300000, guid: 1d9f7dc034d764d18af52ef7e6f5e9cf, type: 3}
 --- !u!1 &7678120717404941454
 GameObject:
   m_ObjectHideFlags: 0

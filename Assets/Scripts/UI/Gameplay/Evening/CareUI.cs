@@ -1,8 +1,9 @@
-using UnityEngine;
-using UnityEngine.UI;
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
 using BirdCafe.UI.Components;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace BirdCafe.UI.Gameplay.Evening
 {
@@ -15,6 +16,8 @@ namespace BirdCafe.UI.Gameplay.Evening
         [Header("Bird Display")]
         [Tooltip("The container for the bird's stats and info.")]
         [SerializeField] private BirdCareCard birdCard;
+        [SerializeField] private BirdProfileCardUI birdProfileCardPrefab;
+        [SerializeField] private Transform cardContainer;
 
         [Header("Actions")]
         [SerializeField] private Button feedButton; // Cost $5
@@ -62,6 +65,21 @@ namespace BirdCafe.UI.Gameplay.Evening
 
                 // Update Button Interactivity based on funds
                 UpdateButtons(dashboard.CurrentMoney, bird);
+                ShowBirds(dashboard.Birds);
+            }
+        }
+
+        public void ShowBirds(List<BirdCareViewModel> birds)
+        {
+            foreach (Transform child in cardContainer)
+            {
+                Destroy(child.gameObject);
+            }
+
+            foreach (var bird in birds)
+            {
+                var card = Instantiate(birdProfileCardPrefab, cardContainer);
+                card.Initialize(bird);
             }
         }
 
