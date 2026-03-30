@@ -120,5 +120,10 @@ namespace BirdCafe.UI.Gameplay.Evening
             // If it fails (e.g. money), Facade handles the Toast message.
             BirdCafeGame.Instance.FinalizeDay();
         }
+
+        public void OnGoBackClicked()
+        {
+            BirdCafeGame.Instance.GoToHub();
+        }
     }
 }

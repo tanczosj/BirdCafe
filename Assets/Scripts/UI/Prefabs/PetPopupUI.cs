@@ -80,8 +80,7 @@ public class PetPopupUI : MonoBehaviour
 
         Debug.Log("Clicked buy for bird: " + offer.Name);
 
-        // Example:
-        // BirdCafeGame.Instance.TryBuyPetStoreBird(offer.SpeciesId);
+        BirdCafeGame.Instance.BuyPetStoreBird(offer.SpeciesId);
 
         // Refresh after purchase so affordability / availability updates.
         RefreshBirdOffers();
