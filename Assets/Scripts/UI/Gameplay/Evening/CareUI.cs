@@ -18,55 +18,81 @@ namespace BirdCafe.UI.Gameplay.Evening
         [SerializeField] private BirdCareCard birdCard;
         [SerializeField] private BirdProfileCardUI birdProfileCardPrefab;
         [SerializeField] private Transform cardContainer;
+        [SerializeField] private GameObject birdSelectGrid;
 
         [Header("Actions")]
-        [SerializeField] private Button feedButton; // Cost $5
-        [SerializeField] private Button playButton; // Free
-        [SerializeField] private Button vetButton;  // Cost $50
+        [SerializeField] private Button feedButton;
+        [SerializeField] private Button playButton;
+        [SerializeField] private Button vetButton;
         [SerializeField] private Toggle restToggle;
 
         [Header("Navigation")]
         [SerializeField] private Button continueButton;
 
-        // State
         private string _currentBirdId;
 
         private void OnEnable()
         {
-            // 1. Hook up listeners (if not set in Inspector)
-            // Ideally, set OnClick in Inspector, but we set Toggle dynamically here
-            restToggle.onValueChanged.RemoveAllListeners();
-            restToggle.onValueChanged.AddListener(OnRestToggled);
+            if (restToggle != null)
+            {
+                restToggle.onValueChanged.RemoveAllListeners();
+                restToggle.onValueChanged.AddListener(OnRestToggled);
+            }
 
             Refresh();
         }
 
         private void Refresh()
         {
-            // 2. Fetch Data
             var dashboard = BirdCafeGame.Instance.GetCareDashboard();
             if (dashboard == null) return;
-            
-            // 3. Update Globals
+
             if (moneyCounter) moneyCounter.AnimateValue((float)dashboard.CurrentMoney, 0.5f);
             if (popularityCounter) popularityCounter.AnimateValue((float)dashboard.CurrentPopularity, 0.5f);
 
-            // 4. Update Bird (First one only for now)
-            if (dashboard.Birds.Count > 0)
+            if (dashboard.Birds == null || dashboard.Birds.Count == 0)
+                return;
+
+            ShowBirds(dashboard.Birds);
+
+            var selectedBird = FindBirdById(dashboard.Birds, _currentBirdId);
+
+            if (selectedBird == null)
             {
-                var bird = dashboard.Birds[0];
-                _currentBirdId = bird.Id;
-
-                // Push data to the card (Triggers animations inside the card script)
-                if (birdCard) birdCard.ViewModel = bird;
-
-                // Update Rest Toggle without triggering the event loop
-                if (restToggle) restToggle.SetIsOnWithoutNotify(bird.WillRestTomorrow);
-
-                // Update Button Interactivity based on funds
-                UpdateButtons(dashboard.CurrentMoney, bird);
-                ShowBirds(dashboard.Birds);
+                selectedBird = dashboard.Birds[0];
+                _currentBirdId = selectedBird.Id;
             }
+
+            LoadBirdIntoCard(selectedBird, dashboard.CurrentMoney);
+        }
+
+        private BirdCareViewModel FindBirdById(List<BirdCareViewModel> birds, string birdId)
+        {
+            if (birds == null || string.IsNullOrEmpty(birdId))
+                return null;
+
+            foreach (var bird in birds)
+            {
+                if (bird.Id == birdId)
+                    return bird;
+            }
+
+            return null;
+        }
+
+        private void LoadBirdIntoCard(BirdCareViewModel bird, decimal currentMoney)
+        {
+            if (bird == null) return;
+
+            _currentBirdId = bird.Id;
+
+            if (birdCard)
+                birdCard.ViewModel = bird;
+
+            if (restToggle)
+                restToggle.SetIsOnWithoutNotify(bird.WillRestTomorrow);
+
+            UpdateButtons(currentMoney, bird);
         }
 
         public void ShowBirds(List<BirdCareViewModel> birds)
@@ -80,28 +106,55 @@ namespace BirdCafe.UI.Gameplay.Evening
             {
                 var card = Instantiate(birdProfileCardPrefab, cardContainer);
                 card.Initialize(bird);
+
+                // Assumes the Care-Profile-Item prefab has a Button on the root
+                // or somewhere in its children.
+                var button = card.GetComponent<Button>();
+                if (button == null)
+                    button = card.GetComponentInChildren<Button>(true);
+
+                if (button != null)
+                {
+                    string clickedBirdId = bird.Id;
+                    button.onClick.RemoveAllListeners();
+                    button.onClick.AddListener(() => OnBirdSelected(clickedBirdId));
+                }
             }
+        }
+
+        public void OnBirdSelected(string birdId)
+        {
+            var dashboard = BirdCafeGame.Instance.GetCareDashboard();
+            if (dashboard == null || dashboard.Birds == null || dashboard.Birds.Count == 0)
+                return;
+
+            var selectedBird = FindBirdById(dashboard.Birds, birdId);
+            if (selectedBird == null)
+                return;
+
+            _currentBirdId = selectedBird.Id;
+
+            if (birdSelectGrid != null)
+                birdSelectGrid.SetActive(false);
+
+            LoadBirdIntoCard(selectedBird, dashboard.CurrentMoney);
+        }
+
+        public void ShowBirdSelectGrid()
+        {
+            if (birdSelectGrid != null)
+                birdSelectGrid.SetActive(true);
         }
 
         private void UpdateButtons(decimal currentMoney, BirdCareViewModel bird)
         {
-            // Hardcoded costs based on your prompt requirements
-            // In a full implementation, these costs would come from GetAvailableActions()
-
             if (feedButton) feedButton.interactable = currentMoney >= 5.0m;
-
-            // Play is free, but maybe disable if bird is sleeping/sick?
             if (playButton) playButton.interactable = true;
-
-            // Vet is expensive
             if (vetButton) vetButton.interactable = currentMoney >= 50.0m;
         }
 
-        // --- BUTTON HANDLERS ---
-
         public void OnFeedClicked()
         {
-            // "Feed" must match the ActionId expected by CareManager in the Engine
             AttemptAction("Feed");
         }
 
@@ -123,8 +176,6 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             if (success)
             {
-                // Refresh UI to show new stats and deducted money
-                // Note: The Card script handles animating from current -> new value
                 Refresh();
             }
         }
@@ -133,13 +184,12 @@ namespace BirdCafe.UI.Gameplay.Evening
         {
             if (string.IsNullOrEmpty(_currentBirdId)) return;
 
-            // Call Facade
             bool success = BirdCafeGame.Instance.ToggleRest(_currentBirdId);
 
             if (!success)
             {
-                // If it failed (e.g. engine rule), revert the toggle visual
-                restToggle.SetIsOnWithoutNotify(!isOn);
+                if (restToggle)
+                    restToggle.SetIsOnWithoutNotify(!isOn);
             }
             else
             {

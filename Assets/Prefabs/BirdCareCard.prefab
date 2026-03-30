@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5041774516378090096, guid: 5c0bd49d98493ae4aba33c12bcacdfbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0cd0ebe71df6d4999b8153dbd5041db6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -807,6 +809,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.UI.Components.BirdCareCard
   nameLabel: {fileID: 2566279008369903081}
   statusLabel: {fileID: 4374532199361210788}
+  birdImage: {fileID: 8743734426645544937}
+  fallbackSprite: {fileID: 21300000, guid: a41b0964b2eea498f9a017a304abf450, type: 3}
+  speciesSprites:
+  - speciesId: canary
+    sprite: {fileID: 7628035545873492859, guid: 9279f108e44acf14299317073279b496, type: 3}
+  - speciesId: budgie
+    sprite: {fileID: -3426913756509349206, guid: 594167f04701d8846b27d382033f3549, type: 3}
+  - speciesId: lorikeet
+    sprite: {fileID: -8098007663549259092, guid: ea772e8c233c52640bd61a5c953ea6e3, type: 3}
+  - speciesId: cockatiel
+    sprite: {fileID: -7167190013095767753, guid: ce8cce721231d9c45b9e2a843bd974f5, type: 3}
+  - speciesId: kingfisher
+    sprite: {fileID: 3312334890903944949, guid: 7b82a7f22eb479547a1a2aaaf1b532f4, type: 3}
   hungerStat: {fileID: 8083385031298989507}
   moodStat: {fileID: 7219252265159978342}
   energyStat: {fileID: 7036377142218017498}

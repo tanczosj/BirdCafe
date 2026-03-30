@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using BirdCafe.Shared.ViewModels;
 
@@ -6,9 +9,23 @@ namespace BirdCafe.UI.Components
 {
     public class BirdCareCard : MonoBehaviour
     {
+        [Serializable]
+        private class SpeciesSpriteEntry
+        {
+            public string speciesId;
+            public Sprite sprite;
+        }
+
         [Header("Text References")]
         [SerializeField] private TMP_Text nameLabel;
         [SerializeField] private TMP_Text statusLabel;
+
+        [Header("Image References")]
+        [SerializeField] private Image birdImage;
+        [SerializeField] private Sprite fallbackSprite;
+
+        [Header("Species Sprite Mapping")]
+        [SerializeField] private List<SpeciesSpriteEntry> speciesSprites = new List<SpeciesSpriteEntry>();
 
         [Header("Stat Containers")]
         [SerializeField] private BirdStatContainer hungerStat;
@@ -28,14 +45,13 @@ namespace BirdCafe.UI.Components
 
         private BirdCareViewModel _viewModel;
         private string _lastBirdId = string.Empty;
+        private Dictionary<string, Sprite> _speciesSpriteLookup;
 
         public BirdCareViewModel ViewModel
         {
             get => _viewModel;
             set
             {
-                // Check if this is the same bird updating, or a new bird appearing
-                // (Using IDs handles object pooling correctly)
                 bool isSameBird = (value != null && value.Id == _lastBirdId);
 
                 _viewModel = value;
@@ -48,25 +64,52 @@ namespace BirdCafe.UI.Components
             }
         }
 
+        private void Awake()
+        {
+            BuildSpeciesLookup();
+        }
+
+        private void BuildSpeciesLookup()
+        {
+            _speciesSpriteLookup = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
+
+            foreach (var entry in speciesSprites)
+            {
+                if (entry == null || string.IsNullOrWhiteSpace(entry.speciesId))
+                    continue;
+
+                if (_speciesSpriteLookup.ContainsKey(entry.speciesId))
+                {
+                    Debug.LogWarning($"Duplicate speciesId mapping found on {name}: {entry.speciesId}", this);
+                    continue;
+                }
+
+                _speciesSpriteLookup.Add(entry.speciesId, entry.sprite);
+            }
+        }
+
         private void RefreshVisuals(bool isUpdate)
         {
-            // 1. Basic Info
-            if (nameLabel != null) nameLabel.text = _viewModel.Name;
+            if (_viewModel == null)
+                return;
+
+            if (nameLabel != null)
+                nameLabel.text = _viewModel.Name;
 
             if (statusLabel != null)
             {
-                if (_viewModel.IsSick) statusLabel.text = "Status: <color=red>SICK</color>";
-                else if (_viewModel.WillRestTomorrow) statusLabel.text = "Status: <color=blue>Resting</color>";
-                else statusLabel.text = "Status: <color=green>Happy</color>";
+                if (_viewModel.IsSick)
+                    statusLabel.text = "Status: <color=red>SICK</color>";
+                else if (_viewModel.WillRestTomorrow)
+                    statusLabel.text = "Status: <color=blue>Resting</color>";
+                else
+                    statusLabel.text = "Status: <color=green>Happy</color>";
             }
 
-            // 2. Animate Stats
-            // If it's an update (same bird), we animate efficiently without delays.
-            // If it's a new bird (or first load), we do the fancy staggered entry.
+            RefreshBirdImage();
 
             if (isUpdate)
             {
-                // Smooth update from current values
                 if (hungerStat) hungerStat.AnimateUpdate(_viewModel.Hunger, updateDuration);
                 if (moodStat) moodStat.AnimateUpdate(_viewModel.Mood, updateDuration);
                 if (energyStat) energyStat.AnimateUpdate(_viewModel.Energy, updateDuration);
@@ -74,7 +117,6 @@ namespace BirdCafe.UI.Components
             }
             else
             {
-                // Fancy entry from zero
                 float currentDelay = 0f;
 
                 if (hungerStat)
@@ -83,24 +125,45 @@ namespace BirdCafe.UI.Components
                     hungerStat.AnimateFromZero(_viewModel.Hunger, currentDelay, entryDuration);
                     currentDelay += staggerDelay;
                 }
+
                 if (moodStat)
                 {
                     moodStat.StatName = "Mood";
                     moodStat.AnimateFromZero(_viewModel.Mood, currentDelay, entryDuration);
                     currentDelay += staggerDelay;
                 }
+
                 if (energyStat)
                 {
                     energyStat.StatName = "Energy";
                     energyStat.AnimateFromZero(_viewModel.Energy, currentDelay, entryDuration);
                     currentDelay += staggerDelay;
                 }
+
                 if (healthStat)
                 {
                     healthStat.StatName = "Health";
                     healthStat.AnimateFromZero(_viewModel.Health, currentDelay, entryDuration);
                 }
             }
+        }
+
+        private void RefreshBirdImage()
+        {
+            if (birdImage == null)
+                return;
+
+            Sprite spriteToUse = fallbackSprite;
+
+            if (!string.IsNullOrWhiteSpace(_viewModel.SpeciesId) &&
+                _speciesSpriteLookup != null &&
+                _speciesSpriteLookup.TryGetValue(_viewModel.SpeciesId, out var mappedSprite) &&
+                mappedSprite != null)
+            {
+                spriteToUse = mappedSprite;
+            }
+
+            birdImage.sprite = spriteToUse;
         }
     }
 }

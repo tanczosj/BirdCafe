@@ -211,6 +211,10 @@ PrefabInstance:
       value: Coffee
       objectReference: {fileID: 0}
     - target: {fileID: 1965771595364356813, guid: 71932ae9a4ad449bd835b73721606d70, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965771595364356813, guid: 71932ae9a4ad449bd835b73721606d70, type: 3}
       propertyPath: m_fontSize
       value: 48
       objectReference: {fileID: 0}
@@ -481,6 +485,18 @@ PrefabInstance:
     - target: {fileID: 9203527126088904059, guid: 52298f2f14c348c4686fec137630b814, type: 3}
       propertyPath: m_text
       value: 7 / 14 Sold
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203527126088904059, guid: 52298f2f14c348c4686fec137630b814, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203527126088904059, guid: 52298f2f14c348c4686fec137630b814, type: 3}
+      propertyPath: m_fontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203527126088904059, guid: 52298f2f14c348c4686fec137630b814, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
