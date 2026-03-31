@@ -1,3 +1,4 @@
+using System;
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
 using BirdCafe.UI.Components;
@@ -10,51 +11,28 @@ using UnityEngine.UI;
 public class GamePlayUI : MonoBehaviour
 {
     [Header("--- UI PANELS ---")]
-    [Tooltip("Assign Panel_Tutorial here")]
     public GameObject tutorialPanel;
-
-    [Tooltip("Assign Panel_DayIntro here")]
     public GameObject dayIntroPanel;
-
-    [Tooltip("Assign Panel_EveningSummary here")]
     public GameObject eveningSummaryPanel;
-
-    [Tooltip("Assign Panel_HubHUD here")]
     public GameObject hubPanel;
-
-    [Tooltip("Assign Panel_PetStore here")]
     public GameObject petStorePanel;
-
-    [Tooltip("Assign Panel_PetStoreSupplies here")]
     public GameObject petStoreSuppliesPanel;
-
-    [Tooltip("Assign Panel_PetStoreBirds here")]
     public GameObject petStoreBirdsPanel;
-
-    [Tooltip("Assign Panel_Care here")]
     public GameObject carePanel;
-
-    [Tooltip("Assign Panel_Planning here")]
     public GameObject planningPanel;
-
-    [Tooltip("Assign Panel_WeeklyReport here")]
     public GameObject weeklyReportPanel;
-
-    [Tooltip("Assign Panel_GameOver here")]
     public GameObject gameOverPanel;
-
-    [Tooltip("Assign Panel_Simulation here ")]
     public GameObject simulationPanel;
 
     [Header("--- TOASTS ---")]
-    [Tooltip("The prefab to instantiate. Must have 'Toast' and 'Popup' components.")]
     public GameObject toastPrefab;
-
-    [Tooltip("The parent container for toasts (e.g. the Canvas or a SafeArea panel).")]
     public Transform toastContainer;
 
     [Header("Logic Scripts")]
     public SimulationVisualizer simVisualizer;
+
+    [Header("Transition")]
+    [SerializeField] private CircleScreenTransition circleTransition;
 
     private void Start()
     {
@@ -68,6 +46,58 @@ public class GamePlayUI : MonoBehaviour
     {
         BirdCafeGame.Instance.OnScreenChanged -= HandleScreenChanged;
         BirdCafeGame.Instance.OnToastMessage -= ShowToast;
+    }
+
+    private void TransitionThen(Action action)
+    {
+        if (circleTransition == null)
+        {
+            action?.Invoke();
+            return;
+        }
+
+        if (circleTransition.IsPlaying)
+            return;
+
+        circleTransition.Play(() =>
+        {
+            action?.Invoke();
+        });
+    }
+
+    public void GoToSummaryWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToSummary());
+    }
+
+    public void GoToPlanningWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToPlanning());
+    }
+
+    public void GoToPetStoreWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToPetStore());
+    }
+
+    public void GoToCareWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToCare());
+    }
+
+    public void GoToHubWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToHub());
+    }
+
+    public void GoToSuppliesWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToPetStoreSupplies());
+    }
+
+    public void GoToBirdStoreWithTransition()
+    {
+        TransitionThen(() => BirdCafeGame.Instance.GoToPetStoreBirds());
     }
 
     private void HandleScreenChanged(GameScreen newScreen)
