@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace BirdCafe.UI.Gameplay.Evening
@@ -487,6 +488,8 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public void OnPlayClicked()
         {
+            SceneManager.LoadScene("Flappy", LoadSceneMode.Additive);
+
             AttemptAction("Play");
         }
 
