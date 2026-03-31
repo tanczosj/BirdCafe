@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 353
     height: 679
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -275,8 +275,8 @@ MonoBehaviour:
     y: 0
     width: 453
     height: 933
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 0
     width: 1920
     height: 36
   m_SerializedDataModeController:
@@ -569,8 +569,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 353
-    y: 79
+    x: 354
+    y: 24
     width: 1112
     height: 653
   m_SerializedDataModeController:
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 352
     height: 653
   m_SerializedDataModeController:
@@ -692,8 +692,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 43300
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -1255,7 +1254,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.3230445, y: 0.06993348, z: 21.42342}
+    m_Target: {x: 505.57907, y: 289.78876, z: 0}
     speed: 2
     m_Value: {x: -2.3230445, y: 0.06993348, z: 21.42342}
   m_RenderMode: 0
@@ -1308,7 +1307,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.3570027
+    m_Target: 298.45798
     speed: 2
     m_Value: 6.3570027
   m_Ortho:
@@ -1474,7 +1473,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 758
+    y: 703
     width: 1466
     height: 228
   m_SerializedDataModeController:
@@ -1525,18 +1524,25 @@ MonoBehaviour:
       m_Data: 66376
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56328
-    - m_Data: 56330
-    - m_Data: 56332
-    - m_Data: 56334
-    - m_Data: 56336
-    - m_Data: 66354
-    - m_Data: 1000000000
-    - m_Data: 2147483647
+    - m_Data: 56018
+    - m_Data: 56020
+    - m_Data: 56022
+    - m_Data: 56024
+    - m_Data: 56026
+    - m_Data: 56028
+    - m_Data: 56030
+    - m_Data: 56032
+    - m_Data: 56034
+    - m_Data: 56036
+    - m_Data: 56038
+    - m_Data: 56040
+    - m_Data: 56042
+    - m_Data: 56044
+    - m_Data: 56046
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MinigameScripts
-      m_OriginalName: MinigameScripts
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1544,10 +1550,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 66354
+        m_Data: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
@@ -1566,11 +1572,21 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56328
-    - m_Data: 56330
-    - m_Data: 56332
-    - m_Data: 56334
-    - m_Data: 56336
+    - m_Data: 56018
+    - m_Data: 56020
+    - m_Data: 56022
+    - m_Data: 56024
+    - m_Data: 56026
+    - m_Data: 56028
+    - m_Data: 56030
+    - m_Data: 56032
+    - m_Data: 56034
+    - m_Data: 56036
+    - m_Data: 56038
+    - m_Data: 56040
+    - m_Data: 56042
+    - m_Data: 56044
+    - m_Data: 56046
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1786,11 +1802,21 @@ MonoBehaviour:
       m_Data: 56014
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56328
-    - m_Data: 56330
-    - m_Data: 56332
-    - m_Data: 56334
-    - m_Data: 56336
+    - m_Data: 56018
+    - m_Data: 56020
+    - m_Data: 56022
+    - m_Data: 56024
+    - m_Data: 56026
+    - m_Data: 56028
+    - m_Data: 56030
+    - m_Data: 56032
+    - m_Data: 56034
+    - m_Data: 56036
+    - m_Data: 56038
+    - m_Data: 56040
+    - m_Data: 56042
+    - m_Data: 56044
+    - m_Data: 56046
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1824,11 +1850,21 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56328
-    - m_Data: 56330
-    - m_Data: 56332
-    - m_Data: 56334
-    - m_Data: 56336
+    - m_Data: 56018
+    - m_Data: 56020
+    - m_Data: 56022
+    - m_Data: 56024
+    - m_Data: 56026
+    - m_Data: 56028
+    - m_Data: 56030
+    - m_Data: 56032
+    - m_Data: 56034
+    - m_Data: 56036
+    - m_Data: 56038
+    - m_Data: 56040
+    - m_Data: 56042
+    - m_Data: 56044
+    - m_Data: 56046
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1913,8 +1949,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
-    y: 79
+    x: 1468
+    y: 24
     width: 452
     height: 907
   m_SerializedDataModeController:
