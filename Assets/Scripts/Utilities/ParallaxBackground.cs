@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ParallaxBackground : MonoBehaviour
 {
@@ -20,14 +21,18 @@ public class ParallaxBackground : MonoBehaviour
 
     private void Update()
     {
+        // No mouse available
+        if (Mouse.current == null)
+            return;
+
         // Mouse position in screen space
-        Vector3 mousePos = Input.mousePosition;
+        Vector2 mousePos = Mouse.current.position.ReadValue();
 
         // Normalize to range -0.5 .. +0.5 (center of screen is 0,0)
         float nx = (mousePos.x / Screen.width) - 0.5f;
         float ny = (mousePos.y / Screen.height) - 0.5f;
 
-        // Move in the OPPOSITE direction of the mouse
+        // Move in the opposite direction of the mouse
         Vector2 offset = new Vector2(-nx, -ny) * maxOffset * 2f;
         Vector2 targetPos = originalPosition + offset;
 

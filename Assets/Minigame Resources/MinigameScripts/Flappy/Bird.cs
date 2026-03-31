@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour
 
     void Start()
     {
+        // Rigid body
         rb = GetComponent<Rigidbody2D>();
     }
 

@@ -1,4 +1,6 @@
+using BirdCafe.Shared;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,5 +30,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("You Win!");
         Time.timeScale = 0f;
+        SceneManager.UnloadSceneAsync("Flappy");
     }
 }

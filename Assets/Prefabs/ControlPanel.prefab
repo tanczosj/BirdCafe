@@ -177,7 +177,6 @@ GameObject:
   m_Component:
   - component: {fileID: 44663213214865411}
   - component: {fileID: 4438017660941428029}
-  - component: {fileID: 6280838314428605389}
   m_Layer: 5
   m_Name: ControlPanel
   m_TagString: Untagged
@@ -225,21 +224,3 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &6280838314428605389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2349458137833877141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd592cc43ab73234e9e879aedb2f5276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PixeLadder.SimpleTooltip.TooltipTrigger
-  title: Control Panel
-  content: Visit the Guru for some questions or customize your pets!
-  icon: {fileID: 0}
-  titleColor: {r: 1, g: 1, b: 1, a: 1}
-  iconColor: {r: 1, g: 1, b: 1, a: 1}
-  hoverDelay: 0.5
