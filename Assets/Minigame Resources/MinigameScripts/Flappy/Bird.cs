@@ -1,5 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Bird : MonoBehaviour
 {
@@ -30,6 +33,18 @@ public class Bird : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         isAlive = false;
+        StartCoroutine(CloseFlappy("Gameplay"));
         Time.timeScale = 0f;
+    }
+
+    private IEnumerator CloseFlappy(string scene)
+    {
+        Scene originalScene = SceneManager.GetSceneByName(scene);
+        if (originalScene.IsValid() && originalScene.isLoaded)
+        {
+            SceneManager.SetActiveScene(originalScene);
+        }
+
+        yield return SceneManager.UnloadSceneAsync("Flappy");
     }
 }

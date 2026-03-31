@@ -17,6 +17,8 @@ public class ParallaxBackground : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         originalPosition = rectTransform.anchoredPosition;
+
+        maxOffset /= 2f;
     }
 
     private void Update()

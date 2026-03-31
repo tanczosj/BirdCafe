@@ -488,9 +488,22 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public void OnPlayClicked()
         {
-            SceneManager.LoadScene("Flappy", LoadSceneMode.Additive);
+            StartCoroutine(OpenFlappy());
 
             AttemptAction("Play");
+        }
+
+        public IEnumerator OpenFlappy()
+        {
+            // Load Flappy additively
+            yield return SceneManager.LoadSceneAsync("Flappy", LoadSceneMode.Additive);
+
+            // Make Flappy the active scene so spawned objects go into it
+            Scene flappyScene = SceneManager.GetSceneByName("Flappy");
+            if (flappyScene.IsValid() && flappyScene.isLoaded)
+            {
+                SceneManager.SetActiveScene(flappyScene);
+            }
         }
 
         public void OnVetClicked()
