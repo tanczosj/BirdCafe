@@ -165,10 +165,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 768
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -189,10 +189,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -221,9 +221,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1707
-        width: 341
-        height: 341
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac5901a73837ed845b267589568b3635
+      spriteID: 7dfc7168372e5e14d9094f5a5f8c348e
       internalID: -1401102078234485635
       vertices: []
       indices: 
@@ -242,10 +242,10 @@ TextureImporter:
       name: petshop-salesman-2_1
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1707
-        width: 341
-        height: 341
+        x: 768
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f27d6eb36d9dc3408862e7e75e17440
+      spriteID: ddf4c9964f0577b4d82fdf374d20559c
       internalID: 6664196988311827329
       vertices: []
       indices: 
@@ -264,10 +264,10 @@ TextureImporter:
       name: petshop-salesman-2_2
       rect:
         serializedVersion: 2
-        x: 682
-        y: 1707
-        width: 341
-        height: 341
+        x: 1536
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +276,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec1ca3b768519e649bab6c7ea456924e
+      spriteID: 4534c4d55145a154394e0c88b4607f86
       internalID: 8557350657961357335
       vertices: []
       indices: 
@@ -286,10 +286,10 @@ TextureImporter:
       name: petshop-salesman-2_3
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1707
-        width: 341
-        height: 341
+        x: 2304
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,7 +298,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 889dea80bb123794d8c59990745f9733
+      spriteID: 434c10a715647184fb2aa65cffe14214
       internalID: 5432373150070195973
       vertices: []
       indices: 
@@ -308,10 +308,10 @@ TextureImporter:
       name: petshop-salesman-2_4
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 1707
-        width: 341
-        height: 341
+        x: 3072
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,7 +320,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d4c33974d7dea4ca5345f22d9abaf9
+      spriteID: b5dcc56b0b5fbb14cae3c93a01422c63
       internalID: 2182404274562418098
       vertices: []
       indices: 
@@ -330,10 +330,10 @@ TextureImporter:
       name: petshop-salesman-2_5
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 1707
-        width: 341
-        height: 341
+        x: 3840
+        y: 3840
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,7 +342,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43df1d018743f30489d207c717b75f92
+      spriteID: 6433c6a6e5ff2354bb985f196227c835
       internalID: 8092895636520202209
       vertices: []
       indices: 
@@ -353,9 +353,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1366
-        width: 341
-        height: 341
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,7 +364,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3688befe453b9bd4a9b15b03092d7a23
+      spriteID: b3534d047df25b44188bcca7af0b9656
       internalID: 5639052867993856513
       vertices: []
       indices: 
@@ -374,10 +374,10 @@ TextureImporter:
       name: petshop-salesman-2_7
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1366
-        width: 341
-        height: 341
+        x: 768
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,7 +386,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4f19f7fab72f84281361fc3843d527
+      spriteID: 82af0b5a24f9c9f4da5c4307cfe11981
       internalID: 2792743032471190529
       vertices: []
       indices: 
@@ -396,10 +396,10 @@ TextureImporter:
       name: petshop-salesman-2_8
       rect:
         serializedVersion: 2
-        x: 682
-        y: 1366
-        width: 341
-        height: 341
+        x: 1536
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,7 +408,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa26869be70b66e41a5c47d991963d23
+      spriteID: 79ad6defeaaa96348bde35745bb72c77
       internalID: 5120703889880535085
       vertices: []
       indices: 
@@ -418,10 +418,10 @@ TextureImporter:
       name: petshop-salesman-2_9
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1366
-        width: 341
-        height: 341
+        x: 2304
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,7 +430,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4a0f15181ff1b74a8a818e9fcb599d5
+      spriteID: 264ea3df481077845b62250400a82e81
       internalID: 937968473788032495
       vertices: []
       indices: 
@@ -440,10 +440,10 @@ TextureImporter:
       name: petshop-salesman-2_10
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 1366
-        width: 341
-        height: 341
+        x: 3072
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,7 +452,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52908237a74c9ee44aa08f183687cdb6
+      spriteID: ccc2825cda2535547a72eedfa43c2c47
       internalID: -6130963001427971251
       vertices: []
       indices: 
@@ -462,10 +462,10 @@ TextureImporter:
       name: petshop-salesman-2_11
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 1366
-        width: 341
-        height: 341
+        x: 3840
+        y: 3072
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,7 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c09fae2f4e3bc4d960ae26fea08426
+      spriteID: 75be5301b50258a4b92f10a6be5b430d
       internalID: -8443383612610392999
       vertices: []
       indices: 
@@ -485,9 +485,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1025
-        width: 341
-        height: 341
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,7 +496,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 372bc9803d063b7459ec89fbb4579b31
+      spriteID: 390dbe46aaf916443a93953d284f77b7
       internalID: -3068895781569100999
       vertices: []
       indices: 
@@ -506,10 +506,10 @@ TextureImporter:
       name: petshop-salesman-2_13
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1025
-        width: 341
-        height: 341
+        x: 768
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,7 +518,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3d4f7095ce66464598ab3bb8077bd21
+      spriteID: 2004ce6d32d7f3246adb92e08d2f7d72
       internalID: 8842118028713397923
       vertices: []
       indices: 
@@ -528,10 +528,10 @@ TextureImporter:
       name: petshop-salesman-2_14
       rect:
         serializedVersion: 2
-        x: 682
-        y: 1025
-        width: 341
-        height: 341
+        x: 1536
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,7 +540,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010ef88a5c116f646a87ceeb148f03c5
+      spriteID: d16d9e16dbf55a64a96f8f4587a047d2
       internalID: -7123199269173668359
       vertices: []
       indices: 
@@ -550,10 +550,10 @@ TextureImporter:
       name: petshop-salesman-2_15
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1025
-        width: 341
-        height: 341
+        x: 2304
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,7 +562,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c87f85f0f856f546a376156da08d73c
+      spriteID: 392c94892da746645ba143dd584f0713
       internalID: 577900518093318685
       vertices: []
       indices: 
@@ -572,10 +572,10 @@ TextureImporter:
       name: petshop-salesman-2_16
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 1025
-        width: 341
-        height: 341
+        x: 3072
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,7 +584,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e59e04c1f3bba4b9551ea837b424dd
+      spriteID: ce40e8ff1736d0c429d2fbd4026332e3
       internalID: 4305744516020162340
       vertices: []
       indices: 
@@ -594,10 +594,10 @@ TextureImporter:
       name: petshop-salesman-2_17
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 1025
-        width: 341
-        height: 341
+        x: 3840
+        y: 2304
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,7 +606,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a7323b64f266654bafc41f6597d354d
+      spriteID: 5b3140b15babe234d9415ade9ca6d6a7
       internalID: -8739527322779207198
       vertices: []
       indices: 
@@ -617,9 +617,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 684
-        width: 341
-        height: 341
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,7 +628,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 948349e78df914a4d9350941082a2004
+      spriteID: 32599c5ca1c9ad04b931b74a37c38524
       internalID: 6466920359020626929
       vertices: []
       indices: 
@@ -638,10 +638,10 @@ TextureImporter:
       name: petshop-salesman-2_19
       rect:
         serializedVersion: 2
-        x: 341
-        y: 684
-        width: 341
-        height: 341
+        x: 768
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,7 +650,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 082844ce1fcc5284297aae5fae465595
+      spriteID: a5c894a40baca2541b8b6bc778d0bdda
       internalID: -6478066389833291653
       vertices: []
       indices: 
@@ -660,10 +660,10 @@ TextureImporter:
       name: petshop-salesman-2_20
       rect:
         serializedVersion: 2
-        x: 682
-        y: 684
-        width: 341
-        height: 341
+        x: 1536
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,7 +672,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a239def369a404c9026c55f49b7658
+      spriteID: 063d4c00d050a0f40b8235a0d8f369de
       internalID: 4074250743531874919
       vertices: []
       indices: 
@@ -682,10 +682,10 @@ TextureImporter:
       name: petshop-salesman-2_21
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 684
-        width: 341
-        height: 341
+        x: 2304
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,7 +694,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60cd61980262229469288857f13fc83b
+      spriteID: 3b1eb4b77e5619449a130d547331538d
       internalID: -379362838977534972
       vertices: []
       indices: 
@@ -704,10 +704,10 @@ TextureImporter:
       name: petshop-salesman-2_22
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 684
-        width: 341
-        height: 341
+        x: 3072
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,7 +716,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c9135f92c020e440878574b2dd967f5
+      spriteID: 86f938bd6b21ec042805b69ecaa332ce
       internalID: 3570479659551694023
       vertices: []
       indices: 
@@ -726,10 +726,10 @@ TextureImporter:
       name: petshop-salesman-2_23
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 684
-        width: 341
-        height: 341
+        x: 3840
+        y: 1536
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,7 +738,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc85f304a7256c349ae60680a1025c9b
+      spriteID: 66f1b05315070cd45a6289f929b9b18e
       internalID: -2915533143595007989
       vertices: []
       indices: 
@@ -749,9 +749,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 343
-        width: 341
-        height: 341
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,7 +760,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29093f2a88bac1f4c97c9589a597b8f5
+      spriteID: 585960f3a1358b84f957dba0806bafc9
       internalID: 7422198486161396479
       vertices: []
       indices: 
@@ -770,10 +770,10 @@ TextureImporter:
       name: petshop-salesman-2_25
       rect:
         serializedVersion: 2
-        x: 341
-        y: 343
-        width: 341
-        height: 341
+        x: 768
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,7 +782,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d01ac6b4e846b34cb94b1f164cd8202
+      spriteID: a4b1e353fab1ab7449ab7969a79e196a
       internalID: 364496590686005952
       vertices: []
       indices: 
@@ -792,10 +792,10 @@ TextureImporter:
       name: petshop-salesman-2_26
       rect:
         serializedVersion: 2
-        x: 682
-        y: 343
-        width: 341
-        height: 341
+        x: 1536
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,7 +804,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282f8d28d4af0a445a53367b7f30a34e
+      spriteID: da4373d534398ce4d9dc2b476d873b9d
       internalID: -1303528961660158826
       vertices: []
       indices: 
@@ -814,10 +814,10 @@ TextureImporter:
       name: petshop-salesman-2_27
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 343
-        width: 341
-        height: 341
+        x: 2304
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,7 +826,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3be9f6062bb4fc14b84fe9e39558bf9c
+      spriteID: b748afe928120ce49bc08b8b5796ee94
       internalID: -6325114777551539524
       vertices: []
       indices: 
@@ -836,10 +836,10 @@ TextureImporter:
       name: petshop-salesman-2_28
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 343
-        width: 341
-        height: 341
+        x: 3072
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,7 +848,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cfac68b9febb3b4c837c650fd72e063
+      spriteID: 90ef9128eb035424fa57e4da45978a85
       internalID: -6622774231046439077
       vertices: []
       indices: 
@@ -858,10 +858,10 @@ TextureImporter:
       name: petshop-salesman-2_29
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 343
-        width: 341
-        height: 341
+        x: 3840
+        y: 768
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -870,7 +870,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988a444b4898e1447a1c95f8025f975d
+      spriteID: d21a37bf2c1dc7b4098ee0dfb0a141e1
       internalID: -8329152835200721812
       vertices: []
       indices: 
@@ -881,9 +881,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 341
-        height: 341
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,7 +892,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9302d9ea8b04dad4daa20ef58fcb16af
+      spriteID: 18b47e3b451eea944876959564bf0aee
       internalID: 8974259239336894663
       vertices: []
       indices: 
@@ -902,10 +902,10 @@ TextureImporter:
       name: petshop-salesman-2_31
       rect:
         serializedVersion: 2
-        x: 341
-        y: 2
-        width: 341
-        height: 341
+        x: 768
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,7 +914,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be8290f19e89ca040b367eca2d5a955d
+      spriteID: ef04a3daab9f53a4bae7b2a83be8cc0f
       internalID: -6414431111513725355
       vertices: []
       indices: 
@@ -924,10 +924,10 @@ TextureImporter:
       name: petshop-salesman-2_32
       rect:
         serializedVersion: 2
-        x: 682
-        y: 2
-        width: 341
-        height: 341
+        x: 1536
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -936,7 +936,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28434177286a74b42bc11705287eecca
+      spriteID: c207ab11977809147902b08d2f4001df
       internalID: 2791037034392343218
       vertices: []
       indices: 
@@ -946,10 +946,10 @@ TextureImporter:
       name: petshop-salesman-2_33
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 2
-        width: 341
-        height: 341
+        x: 2304
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,7 +958,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 426b096a703fd1049ab0bf282a2c9f2e
+      spriteID: e45cab358b0f670409e49246986d7d2a
       internalID: 4159673406449449901
       vertices: []
       indices: 
@@ -968,10 +968,10 @@ TextureImporter:
       name: petshop-salesman-2_34
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 2
-        width: 341
-        height: 341
+        x: 3072
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -980,7 +980,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 346723c2ce05ad5479ba7df2035305d6
+      spriteID: 4f93056d088f50644a43102b53950b92
       internalID: -2485857922333156350
       vertices: []
       indices: 
@@ -990,10 +990,10 @@ TextureImporter:
       name: petshop-salesman-2_35
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 2
-        width: 341
-        height: 341
+        x: 3840
+        y: 0
+        width: 768
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1002,7 +1002,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fde4253725aaec64eae24663fabf209f
+      spriteID: 70359e2bdb038c947986b7907f6edd78
       internalID: -2597428465077391624
       vertices: []
       indices: 
