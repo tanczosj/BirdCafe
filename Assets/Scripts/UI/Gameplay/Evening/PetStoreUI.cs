@@ -1,16 +1,23 @@
+using BirdCafe.Shared;
+using BirdCafe.UI.Components;
 using UnityEngine;
 
 public class PetStoreUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public StatCounterUI moneyCounter;
+    public StatCounterUI popularityCounter;
+
+    private void OnEnable()
     {
-        
+        RefreshFull();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void RefreshFull()
     {
-        
+        var data = BirdCafeGame.Instance.GetPetStoreDashboard();
+        if (data == null) return;
+
+        if (moneyCounter) moneyCounter.Value = (float)data.CurrentMoney;
+        if (popularityCounter) popularityCounter.Value = data.CurrentPopularity;
     }
 }
