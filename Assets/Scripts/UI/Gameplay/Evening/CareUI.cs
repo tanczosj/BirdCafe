@@ -34,6 +34,9 @@ namespace BirdCafe.UI.Gameplay.Evening
         [SerializeField] private Button continueButton;
         [SerializeField] private Button switchBirdButton;
 
+        [Header("Customization")]
+        [SerializeField] private CustomizeBirdPopupUI customizeBirdPopup;
+
         [Header("Animation")]
         [SerializeField] private float cardMoveDuration = 0.22f;
         [SerializeField] private float drawerDuration = 0.24f;
@@ -64,6 +67,9 @@ namespace BirdCafe.UI.Gameplay.Evening
         {
             _birdCardRect = birdCard != null ? birdCard.GetComponent<RectTransform>() : null;
             _birdSelectGridRect = birdSelectGrid != null ? birdSelectGrid.GetComponent<RectTransform>() : null;
+
+            if (customizeBirdPopup != null)
+                customizeBirdPopup.SetCareUI(this);
         }
 
         private void OnEnable()
@@ -78,6 +84,32 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             Refresh();
             ApplyVisualStateImmediate(true);
+
+            if (customizeBirdPopup != null)
+                customizeBirdPopup.SetCareUI(this);
+        }
+
+        public BirdCareViewModel GetSelectedBird()
+        {
+            var dashboard = BirdCafeGame.Instance.GetCareDashboard();
+            if (dashboard == null || dashboard.Birds == null || dashboard.Birds.Count == 0)
+                return null;
+
+            var selectedBird = FindBirdById(dashboard.Birds, _currentBirdId);
+            return selectedBird ?? dashboard.Birds[0];
+        }
+
+        public void RefreshAfterBirdCustomization()
+        {
+            Refresh();
+        }
+
+        public void OnCustomizeBirdClicked()
+        {
+            if (customizeBirdPopup == null)
+                return;
+
+            customizeBirdPopup.OpenForSelectedBird(this);
         }
 
         private void Refresh()

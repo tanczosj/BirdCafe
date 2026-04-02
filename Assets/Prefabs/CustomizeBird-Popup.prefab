@@ -2563,7 +2563,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5095385514661736065}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Ricimi.Popup, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
@@ -2575,9 +2575,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6866730672577739576}
         m_TargetAssemblyTypeName: BirdCafe.UI.Meta.TutorialPopup, Assembly-CSharp
-        m_MethodName: OnContinueClicked
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2674,6 +2674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c201fa0a65548949806c33f0438e7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.UI.Components.CustomizeBirdPopupUI
+  careUI: {fileID: 0}
   birdCostumeSelector: {fileID: 575279740112773738}
   costumesRoot: {fileID: 1656591319174464012}
   costumesGrid: {fileID: 3310332128696997449}
@@ -3108,7 +3109,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8098189640578663901}
-  - component: {fileID: 5095385514661736065}
   - component: {fileID: 8068046368895097635}
   - component: {fileID: 7785885188269805365}
   m_Layer: 5
@@ -3139,23 +3139,6 @@ RectTransform:
   m_AnchoredPosition: {x: 62.00952, y: 34.728577}
   m_SizeDelta: {x: 1038.6667, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5095385514661736065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7956527079732709916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c79359d96b884fc3a08ffce0bef2280, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useBackground: 1
-  backgroundColor: {r: 0.125, g: 0.15, b: 0.25, a: 1}
-  destroyTime: 0.5
-  popupSortingOrder: 9
-  backgroundSortingOrder: 8
 --- !u!95 &8068046368895097635
 Animator:
   serializedVersion: 7
