@@ -74,13 +74,10 @@ public class SuppliesPopupUI : MonoBehaviour
         foreach (var offer in offers)
         {
             Transform parent = GetTabContent(offer.SupplyType);
-            if (parent == null)
+            if (parent == null || !offer.Buyable)
                 continue;
 
-            if (!offer.Buyable)
-                continue;
-
-            var item = Instantiate(supplyItemPrefab, parent);
+            var item = Instantiate(supplyItemPrefab, parent, false);
             spawnedItems.Add(item);
 
             item.Bind(
@@ -88,9 +85,38 @@ public class SuppliesPopupUI : MonoBehaviour
                 OnBuyClicked,
                 ResolveSupplySprite(offer.ItemId)
             );
+
+            ForceImmediateLayout(item.transform as RectTransform);
         }
 
         SetupSpecialEggButton(offers);
+
+        ForceAllContentLayouts();
+    }
+
+    private void ForceAllContentLayouts()
+    {
+        Canvas.ForceUpdateCanvases();
+
+        ForceImmediateLayout(foodContent as RectTransform);
+        ForceImmediateLayout(toysContent as RectTransform);
+        ForceImmediateLayout(costumesContent as RectTransform);
+        ForceImmediateLayout(surpriseContent as RectTransform);
+
+        if (foodContent != null) ForceImmediateLayout(foodContent.parent as RectTransform);
+        if (toysContent != null) ForceImmediateLayout(toysContent.parent as RectTransform);
+        if (costumesContent != null) ForceImmediateLayout(costumesContent.parent as RectTransform);
+        if (surpriseContent != null) ForceImmediateLayout(surpriseContent.parent as RectTransform);
+
+        Canvas.ForceUpdateCanvases();
+    }
+
+    private void ForceImmediateLayout(RectTransform rect)
+    {
+        if (rect == null)
+            return;
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rect);
     }
 
     private void RebuildSupplySpriteLookup()
@@ -115,16 +141,12 @@ public class SuppliesPopupUI : MonoBehaviour
         {
             case PetStoreSupplyType.BirdFood:
                 return foodContent;
-
             case PetStoreSupplyType.Toy:
                 return toysContent;
-
             case PetStoreSupplyType.Costume:
                 return costumesContent;
-
             case PetStoreSupplyType.SpecialEggToy:
                 return surpriseContent;
-
             default:
                 return null;
         }
