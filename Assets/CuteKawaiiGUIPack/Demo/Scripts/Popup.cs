@@ -12,68 +12,145 @@ namespace Ricimi
     // automatically blocking the input on elements behind it and adding a background texture.
     public class Popup : MonoBehaviour
     {
+        [Header("Background")]
+        public bool useBackground = true;
         public Color backgroundColor = new Color(10.0f / 255.0f, 10.0f / 255.0f, 10.0f / 255.0f, 0.6f);
 
+        [Header("Timing")]
         public float destroyTime = 0.5f;
+
+        [Header("Sorting")]
+        public int popupSortingOrder = 9;
+        public int backgroundSortingOrder = 8;
 
         private GameObject m_background;
 
         public void Open()
         {
-            AddBackground();
+            EnsurePopupCanvasSorting();
+
+            if (useBackground)
+            {
+                AddBackground();
+            }
         }
 
         public void Close()
         {
             var animator = GetComponent<Animator>();
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Open"))
+            if (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("Open"))
             {
                 animator.Play("Close");
             }
 
-            RemoveBackground();
+            if (useBackground)
+            {
+                RemoveBackground();
+            }
+
             StartCoroutine(RunPopupDestroy());
         }
 
-        // We destroy the popup automatically 0.5 seconds after closing it.
-        // The destruction is performed asynchronously via a coroutine. If you
-        // want to destroy the popup at the exact time its closing animation is
-        // finished, you can use an animation event instead.
+        private void EnsurePopupCanvasSorting()
+        {
+            var parentCanvas = GetComponentInParent<Canvas>();
+            if (parentCanvas == null)
+            {
+                Debug.LogError($"Popup '{name}' could not find a parent Canvas.");
+                return;
+            }
+
+            var rootCanvas = parentCanvas.rootCanvas;
+
+            var popupCanvas = GetComponent<Canvas>();
+            if (popupCanvas == null)
+            {
+                popupCanvas = gameObject.AddComponent<Canvas>();
+            }
+
+            popupCanvas.overrideSorting = true;
+            popupCanvas.sortingLayerID = rootCanvas.sortingLayerID;
+            popupCanvas.sortingOrder = popupSortingOrder;
+
+            if (GetComponent<GraphicRaycaster>() == null)
+            {
+                gameObject.AddComponent<GraphicRaycaster>();
+            }
+        }
+
         private IEnumerator RunPopupDestroy()
         {
             yield return new WaitForSeconds(destroyTime);
-            Destroy(m_background);
+
+            if (m_background != null)
+            {
+                Destroy(m_background);
+            }
+
             Destroy(gameObject);
         }
 
         private void AddBackground()
         {
+            var parentCanvas = GetComponentInParent<Canvas>();
+            if (parentCanvas == null)
+            {
+                Debug.LogError($"Popup '{name}' could not find a parent Canvas.");
+                return;
+            }
+
+            var rootCanvas = parentCanvas.rootCanvas;
+
             var bgTex = new Texture2D(1, 1);
             bgTex.SetPixel(0, 0, backgroundColor);
             bgTex.Apply();
 
             m_background = new GameObject("PopupBackground");
+
+            var rectTransform = m_background.AddComponent<RectTransform>();
             var image = m_background.AddComponent<Image>();
+
             var rect = new Rect(0, 0, bgTex.width, bgTex.height);
             var sprite = Sprite.Create(bgTex, rect, new Vector2(0.5f, 0.5f), 1);
-            // Clone the material, which is the default UI material, to avoid changing it permanently.
+
             image.material = new Material(image.material);
             image.material.mainTexture = bgTex;
             image.sprite = sprite;
-            var newColor = image.color;
-            image.color = newColor;
+            image.raycastTarget = true;
+
+            m_background.transform.SetParent(rootCanvas.transform, false);
+            m_background.transform.localScale = Vector3.one;
+
+            // Stretch to fill the entire root canvas / screen.
+            rectTransform.anchorMin = Vector2.zero;
+            rectTransform.anchorMax = Vector2.one;
+            rectTransform.pivot = new Vector2(0.5f, 0.5f);
+            rectTransform.offsetMin = Vector2.zero;
+            rectTransform.offsetMax = Vector2.zero;
+            rectTransform.anchoredPosition = Vector2.zero;
+            rectTransform.sizeDelta = Vector2.zero;
+
+            var bgCanvas = m_background.AddComponent<Canvas>();
+            bgCanvas.overrideSorting = true;
+            bgCanvas.sortingLayerID = rootCanvas.sortingLayerID;
+            bgCanvas.sortingOrder = backgroundSortingOrder;
+
+            if (m_background.GetComponent<GraphicRaycaster>() == null)
+            {
+                m_background.AddComponent<GraphicRaycaster>();
+            }
+
             image.canvasRenderer.SetAlpha(0.0f);
             image.CrossFadeAlpha(1.0f, 0.4f, false);
-
-            var canvas = GetComponentInParent<Canvas>();
-            m_background.transform.localScale = new Vector3(1, 1, 1);
-            m_background.GetComponent<RectTransform>().sizeDelta = canvas.GetComponent<RectTransform>().sizeDelta;
-            m_background.transform.SetParent(canvas.transform, false);
-            m_background.transform.SetSiblingIndex(transform.GetSiblingIndex());
         }
 
         private void RemoveBackground()
         {
+            if (m_background == null)
+            {
+                return;
+            }
+
             var image = m_background.GetComponent<Image>();
             if (image != null)
             {

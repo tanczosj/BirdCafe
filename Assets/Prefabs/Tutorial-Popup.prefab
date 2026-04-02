@@ -278,8 +278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79359d96b884fc3a08ffce0bef2280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useBackground: 0
   backgroundColor: {r: 0.125, g: 0.15, b: 0.25, a: 0.9019608}
   destroyTime: 0.5
+  popupSortingOrder: 9
+  backgroundSortingOrder: 8
 --- !u!95 &3854437552620423
 Animator:
   serializedVersion: 7
