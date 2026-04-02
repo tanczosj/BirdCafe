@@ -21,7 +21,7 @@ namespace Ricimi
 
         [Header("Sorting")]
         public int popupSortingOrder = 9;
-        public int backgroundSortingOrder = 8;
+        public int backgroundSortingOrder = 4;
 
         private GameObject m_background;
 

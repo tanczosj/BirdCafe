@@ -41,6 +41,8 @@ namespace BirdCafe.UI.Gameplay.Evening
         [SerializeField] private AnimationCurve moveEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         [SerializeField] private AnimationCurve flipEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
+        public string SelectedBirdId => _currentBirdId;
+
         private static readonly Vector2 BirdCardDrawerClosedPosition = new Vector2(-592f, -587f);
         private static readonly Vector2 BirdCardDrawerOpenPosition = new Vector2(0f, -768f);
         private static readonly Vector3 BirdCardDrawerClosedScale = new Vector3(1f, 1f, 1f);

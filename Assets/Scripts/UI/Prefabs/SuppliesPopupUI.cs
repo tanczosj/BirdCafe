@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using BirdCafe.Shared;
@@ -9,6 +10,16 @@ using UnityEngine.UI;
 
 public class SuppliesPopupUI : MonoBehaviour
 {
+    [Serializable]
+    private class CatalogSupplySpriteEntry
+    {
+        [SerializeField] private string itemId;
+        [SerializeField] private Sprite sprite;
+
+        public string ItemId => itemId;
+        public Sprite Sprite => sprite;
+    }
+
     [Header("Content Roots")]
     [SerializeField] private Transform foodContent;
     [SerializeField] private Transform toysContent;
@@ -17,6 +28,9 @@ public class SuppliesPopupUI : MonoBehaviour
 
     [Header("Item Prefab")]
     [SerializeField] private SupplySaleItemUI supplyItemPrefab;
+
+    [Header("Catalog Supplies")]
+    [SerializeField] private List<CatalogSupplySpriteEntry> catalogSupplies = new();
 
     [Header("Optional Special Egg UI")]
     [SerializeField] private Button openEggButton;
@@ -27,6 +41,17 @@ public class SuppliesPopupUI : MonoBehaviour
     [SerializeField] private TMP_Text moneyText;
 
     private readonly List<SupplySaleItemUI> spawnedItems = new();
+    private Dictionary<string, Sprite> supplySpriteLookup;
+
+    private void Awake()
+    {
+        RebuildSupplySpriteLookup();
+    }
+
+    private void OnValidate()
+    {
+        RebuildSupplySpriteLookup();
+    }
 
     private void OnEnable()
     {
@@ -52,6 +77,9 @@ public class SuppliesPopupUI : MonoBehaviour
             if (parent == null)
                 continue;
 
+            if (!offer.Buyable)
+                continue;
+
             var item = Instantiate(supplyItemPrefab, parent);
             spawnedItems.Add(item);
 
@@ -63,6 +91,22 @@ public class SuppliesPopupUI : MonoBehaviour
         }
 
         SetupSpecialEggButton(offers);
+    }
+
+    private void RebuildSupplySpriteLookup()
+    {
+        supplySpriteLookup = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
+
+        if (catalogSupplies == null)
+            return;
+
+        foreach (var entry in catalogSupplies)
+        {
+            if (entry == null || string.IsNullOrWhiteSpace(entry.ItemId))
+                continue;
+
+            supplySpriteLookup[entry.ItemId] = entry.Sprite;
+        }
     }
 
     private Transform GetTabContent(PetStoreSupplyType supplyType)
@@ -152,8 +196,14 @@ public class SuppliesPopupUI : MonoBehaviour
 
     private Sprite ResolveSupplySprite(string itemId)
     {
-        // Replace this with your real sprite lookup.
-        // Example: use a dictionary, Resources, Addressables, or serialized list.
-        return null;
+        if (string.IsNullOrWhiteSpace(itemId))
+            return null;
+
+        if (supplySpriteLookup == null)
+            RebuildSupplySpriteLookup();
+
+        return supplySpriteLookup.TryGetValue(itemId, out var sprite)
+            ? sprite
+            : null;
     }
 }

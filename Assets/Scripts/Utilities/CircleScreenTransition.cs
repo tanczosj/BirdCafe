@@ -11,8 +11,15 @@ public class CircleScreenTransition : MonoBehaviour
 
     [SerializeField] private float growDuration = 0.35f;
     [SerializeField] private float shrinkDuration = 0.35f;
-    [SerializeField] private float coveredPause = 0.03f;
+    [SerializeField] private float coveredPause = 0.1f;
     [SerializeField] private bool useUnscaledTime = true;
+
+    [Header("Size")]
+    [SerializeField] private float extraScaleMultiplier = 1.75f;
+
+    [Header("Alpha")]
+    [SerializeField][Range(0f, 1f)] private float minAlpha = 0.35f;
+    [SerializeField][Range(0f, 1f)] private float maxAlpha = 1f;
 
     private Vector2 originalSize;
     private bool isPlaying;
@@ -53,11 +60,13 @@ public class CircleScreenTransition : MonoBehaviour
         if (circleImage != null)
             circleImage.raycastTarget = true;
 
-        SetAlpha(1f);
-
         float maxScale = GetRequiredScaleToCoverScreen();
 
-        yield return AnimateScale(0f, maxScale, growDuration);
+        // Start slightly transparent.
+        SetAlpha(minAlpha);
+
+        // Grow while fading from slightly transparent to fully opaque.
+        yield return AnimateScaleAndAlpha(0f, maxScale, minAlpha, maxAlpha, growDuration);
 
         onCovered?.Invoke();
 
@@ -69,9 +78,12 @@ public class CircleScreenTransition : MonoBehaviour
                 yield return new WaitForSeconds(coveredPause);
         }
 
-        yield return AnimateScale(maxScale, 0f, shrinkDuration);
+        // Shrink while fading back to slightly transparent.
+        yield return AnimateScaleAndAlpha(maxScale, 0f, maxAlpha, minAlpha, shrinkDuration);
 
         circleRect.localScale = Vector3.zero;
+
+        // Fully hide it after the animation is done.
         SetAlpha(0f);
 
         if (circleImage != null)
@@ -81,11 +93,12 @@ public class CircleScreenTransition : MonoBehaviour
         onFinished?.Invoke();
     }
 
-    private IEnumerator AnimateScale(float from, float to, float duration)
+    private IEnumerator AnimateScaleAndAlpha(float fromScale, float toScale, float fromAlpha, float toAlpha, float duration)
     {
         if (duration <= 0f)
         {
-            circleRect.localScale = new Vector3(to, to, 1f);
+            circleRect.localScale = new Vector3(toScale, toScale, 1f);
+            SetAlpha(toAlpha);
             yield break;
         }
 
@@ -96,21 +109,25 @@ public class CircleScreenTransition : MonoBehaviour
             time += useUnscaledTime ? Time.unscaledDeltaTime : Time.deltaTime;
 
             float t = Mathf.Clamp01(time / duration);
-            t = t * t * (3f - 2f * t);
+            t = t * t * (3f - 2f * t); // smoothstep easing
 
-            float scale = Mathf.Lerp(from, to, t);
+            float scale = Mathf.Lerp(fromScale, toScale, t);
+            float alpha = Mathf.Lerp(fromAlpha, toAlpha, t);
+
             circleRect.localScale = new Vector3(scale, scale, 1f);
+            SetAlpha(alpha);
 
             yield return null;
         }
 
-        circleRect.localScale = new Vector3(to, to, 1f);
+        circleRect.localScale = new Vector3(toScale, toScale, 1f);
+        SetAlpha(toAlpha);
     }
 
     private float GetRequiredScaleToCoverScreen()
     {
         if (rootCanvas == null)
-            return 20f;
+            return 20f * extraScaleMultiplier;
 
         RectTransform canvasRectTransform = rootCanvas.GetComponent<RectTransform>();
         Rect canvasRect = canvasRectTransform.rect;
@@ -124,7 +141,7 @@ public class CircleScreenTransition : MonoBehaviour
         if (baseDiameter <= 0f)
             baseDiameter = 100f;
 
-        return requiredDiameter / baseDiameter;
+        return (requiredDiameter / baseDiameter) * extraScaleMultiplier;
     }
 
     private void SetAlpha(float alpha)
