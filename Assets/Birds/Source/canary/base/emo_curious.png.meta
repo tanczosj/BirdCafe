@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1d441f4fbede9144889cb52809a8e905
+guid: c3eafef169885d24bb2250cd92bd040f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,7 +153,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,221 +205,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: emo_curious_00
+      name: emo_curious_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 127
+        y: 2685
+        width: 258
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5dfee3eb8c0b9124aaa6a86c97ea1d49
-      internalID: 8360952
+      spriteID: 105a3e356eb9c4c20800000000000000
+      internalID: 3192097649451050241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_01
+      name: emo_curious_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 637
+        y: 2685
+        width: 261
+        height: 254
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d3cd8b0f80ad56a4e8eddb92432f9c29
-      internalID: 63264926
+      spriteID: 18459b9d4cca62130800000000000000
+      internalID: 3541708118439842945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_02
+      name: emo_curious_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1149
+        y: 2685
+        width: 261
+        height: 244
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4f31c90405e646248b3aa1f8de7a5b06
-      internalID: -1503347056
+      spriteID: 0db8a3b3a7d9cc850800000000000000
+      internalID: 6398662318891895760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_03
+      name: emo_curious_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1665
+        y: 2685
+        width: 253
+        height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e97ee0979a462d341adb786a0e281317
-      internalID: -1773884687
+      spriteID: 63de57857fa887320800000000000000
+      internalID: 2555945583478435126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_04
+      name: emo_curious_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2177
+        y: 2685
+        width: 253
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae546484e26edf14a9c98273db380bb5
-      internalID: -1040631176
+      spriteID: e4ce3e8d56efae4e0800000000000000
+      internalID: -1951467775127720882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_05
+      name: emo_curious_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2689
+        y: 2685
+        width: 252
+        height: 276
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ee5f14766c64bd94a845cb5b7175ff25
-      internalID: 649123564
+      spriteID: af12418631f930f60800000000000000
+      internalID: 7999412268839477754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_06
+      name: emo_curious_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 130
+        y: 2173
+        width: 251
+        height: 276
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4faeb5568ef5e14409a636e25056d747
-      internalID: 579942355
+      spriteID: 55d3499a5277c4680800000000000000
+      internalID: -8769503370754638507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_07
+      name: emo_curious_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 641
+        y: 2173
+        width: 252
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fe7750eb0f2f83242b085213409543ea
-      internalID: 1970506048
+      spriteID: 3addf38626ae68eb0800000000000000
+      internalID: -4717825851247305309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_08
+      name: emo_curious_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1152
+        y: 2173
+        width: 254
+        height: 274
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a4c03e19139f95342a46fa15f0ca8dad
-      internalID: 2089952813
+      spriteID: 9c778b2be4cbf8320800000000000000
+      internalID: 2562473759189006281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_curious_09
+      name: emo_curious_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1651
+        y: 2176
+        width: 264
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 47e0a08688cca0e44a7ea6b1aa01859d
-      internalID: -1679895040
+      spriteID: 00b596a92ac001650800000000000000
+      internalID: 6201470579404004096
       vertices: []
       indices: 
       edges: []
@@ -428,19 +428,19 @@ TextureImporter:
       name: emo_curious_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2155
+        y: 2176
+        width: 258
+        height: 241
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae63abd8a2095734d83694200f3dba91
+      spriteID: 90737852fb31ecf40800000000000000
       internalID: 5750555485888001801
       vertices: []
       indices: 
@@ -450,19 +450,19 @@ TextureImporter:
       name: emo_curious_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2680
+        y: 2175
+        width: 223
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4739f59fda39aa24ca952531066aa6e1
+      spriteID: a065b5472e390bcc0800000000000000
       internalID: -3697292693247142390
       vertices: []
       indices: 
@@ -472,19 +472,19 @@ TextureImporter:
       name: emo_curious_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 122
+        y: 1663
+        width: 224
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ec9fd33839537b34984d24de054a724d
+      spriteID: 7e3dacdfe04af2910800000000000000
       internalID: 1814849559148024807
       vertices: []
       indices: 
@@ -494,19 +494,19 @@ TextureImporter:
       name: emo_curious_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 613
+        y: 1663
+        width: 248
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ab86f3815e6e7b346a7c03c7db9aee87
+      spriteID: 099f2ca8d5bbf0290800000000000000
       internalID: -7921907209087026800
       vertices: []
       indices: 
@@ -516,19 +516,19 @@ TextureImporter:
       name: emo_curious_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1125
+        y: 1663
+        width: 251
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d7c7ae59eb50adc4d9d2eef08163acf1
+      spriteID: e2f3470124c0a77c0800000000000000
       internalID: -4072929435119763666
       vertices: []
       indices: 
@@ -538,19 +538,19 @@ TextureImporter:
       name: emo_curious_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1638
+        y: 1663
+        width: 249
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c0f4d3835611ae3419d0f0e97e9d813f
+      spriteID: da80ab80f38fe9a70800000000000000
       internalID: 8835772468560529581
       vertices: []
       indices: 
@@ -560,19 +560,19 @@ TextureImporter:
       name: emo_curious_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2149
+        y: 1663
+        width: 250
+        height: 267
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81123f081dee59747a109a956fcef51a
+      spriteID: 4e096957f9e74df80800000000000000
       internalID: -8082696207885496092
       vertices: []
       indices: 
@@ -582,19 +582,19 @@ TextureImporter:
       name: emo_curious_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2662
+        y: 1663
+        width: 250
+        height: 264
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f6481b6c92e4210478b1b0183fec0c2f
+      spriteID: 6e5483c8154705380800000000000000
       internalID: -8984553363010468378
       vertices: []
       indices: 
@@ -604,19 +604,19 @@ TextureImporter:
       name: emo_curious_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 101
+        y: 1151
+        width: 250
+        height: 265
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7c36bda8c8a094a45b73ebd0b1b1ee1c
+      spriteID: 23ec3464dc20ffdd0800000000000000
       internalID: -2450236591595860430
       vertices: []
       indices: 
@@ -626,19 +626,19 @@ TextureImporter:
       name: emo_curious_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 614
+        y: 1151
+        width: 251
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 02072ad0219ee4044bdb760906208cd4
+      spriteID: b002254e0a8012f80800000000000000
       internalID: -8133209964936028149
       vertices: []
       indices: 
@@ -648,19 +648,19 @@ TextureImporter:
       name: emo_curious_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 1126
+        y: 1151
+        width: 248
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5931d5b9bf6a66c4eb0f8fc034c1eb8a
+      spriteID: 3f855984c84632080800000000000000
       internalID: -9213409858993956621
       vertices: []
       indices: 
@@ -670,19 +670,19 @@ TextureImporter:
       name: emo_curious_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1639
+        y: 1151
+        width: 245
+        height: 267
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fddc1f6bb77420c4488f7fd1ac914f80
+      spriteID: b2b440422589963d0800000000000000
       internalID: -3212869380593136853
       vertices: []
       indices: 
@@ -692,19 +692,19 @@ TextureImporter:
       name: emo_curious_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 2151
+        y: 1151
+        width: 245
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9f014cbffe3379e47b43c8c2fabf2e66
+      spriteID: fc22ad04cbff34850800000000000000
       internalID: 6360208282784244431
       vertices: []
       indices: 
@@ -714,19 +714,19 @@ TextureImporter:
       name: emo_curious_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2664
+        y: 1151
+        width: 244
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e556a1bdda8d0464ab735974a48e0f15
+      spriteID: af086fbd10974f490800000000000000
       internalID: -7713407212886523654
       vertices: []
       indices: 
@@ -736,19 +736,19 @@ TextureImporter:
       name: emo_curious_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 103
+        y: 639
+        width: 245
+        height: 267
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 792011f1a63789047a648e8aee6a2d52
+      spriteID: b680854260f637720800000000000000
       internalID: 2842737861971150955
       vertices: []
       indices: 
@@ -758,19 +758,19 @@ TextureImporter:
       name: emo_curious_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 614
+        y: 639
+        width: 249
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a70940711c63d574f8b6ecdc17486c85
+      spriteID: f691b76c7a361c020800000000000000
       internalID: 2360277251959495023
       vertices: []
       indices: 
@@ -780,19 +780,19 @@ TextureImporter:
       name: emo_curious_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1126
+        y: 639
+        width: 259
+        height: 231
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 150d5dd91eec9584297ddab7fe18272d
+      spriteID: 788fa1f7a4b3d5ca0800000000000000
       internalID: -6026595535205762937
       vertices: []
       indices: 
@@ -802,19 +802,19 @@ TextureImporter:
       name: emo_curious_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 1646
+        y: 639
+        width: 262
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5459076aee3f15d479d9aa674d1eaccc
+      spriteID: 74f5702344eeb9950800000000000000
       internalID: 6457016467430268743
       vertices: []
       indices: 
@@ -824,19 +824,19 @@ TextureImporter:
       name: emo_curious_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 2163
+        y: 639
+        width: 262
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: efa431e53df046a4c92af8f79637c2a0
+      spriteID: 4464fe5e71686b4a0800000000000000
       internalID: -6577922768527997372
       vertices: []
       indices: 
@@ -846,19 +846,19 @@ TextureImporter:
       name: emo_curious_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 2676
+        y: 639
+        width: 263
+        height: 270
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d6d35ebbb38aea84fa394c9c1eccd7fa
+      spriteID: 0133d8385ad61cd70800000000000000
       internalID: 9061644482890248976
       vertices: []
       indices: 
@@ -868,19 +868,19 @@ TextureImporter:
       name: emo_curious_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 117
+        y: 127
+        width: 263
+        height: 272
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7152eca25970c5f43bcf9069b1f3117a
+      spriteID: 01303358c71a090b0800000000000000
       internalID: -5723897570205170928
       vertices: []
       indices: 
@@ -890,19 +890,19 @@ TextureImporter:
       name: emo_curious_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 629
+        y: 127
+        width: 263
+        height: 272
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d00d60fe8ee49e5479de23f258418157
+      spriteID: b536d54aa19c348a0800000000000000
       internalID: -6321988335634128037
       vertices: []
       indices: 
@@ -912,19 +912,19 @@ TextureImporter:
       name: emo_curious_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 1149
+        y: 127
+        width: 251
+        height: 270
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 99962559ace97be47af0e472242191fc
+      spriteID: a9d57b84d67843710800000000000000
       internalID: 1672110265102458266
       vertices: []
       indices: 
@@ -934,19 +934,19 @@ TextureImporter:
       name: emo_curious_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 1673
+        y: 127
+        width: 234
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c778305d33a536346a9742dc8db8a7fe
+      spriteID: 4408d7f3da362b580800000000000000
       internalID: -8812871925064957884
       vertices: []
       indices: 
@@ -956,19 +956,19 @@ TextureImporter:
       name: emo_curious_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2175
+        y: 128
+        width: 257
+        height: 264
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 662b52f989306f54986f1c826451823e
+      spriteID: 61b8b1be60bac3340800000000000000
       internalID: 4844935345346415382
       vertices: []
       indices: 
@@ -978,19 +978,19 @@ TextureImporter:
       name: emo_curious_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2686
+        y: 125
+        width: 259
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 669e007e0a778bd4d89efd0c6075a3a9
+      spriteID: 8c30d093bd244fd20800000000000000
       internalID: 3311345135346582472
       vertices: []
       indices: 
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bd2473d2ff4b7cd46b955dfcb478b05d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1010,16 +1010,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      emo_curious_00: 8360952
-      emo_curious_01: 63264926
-      emo_curious_02: -1503347056
-      emo_curious_03: -1773884687
-      emo_curious_04: -1040631176
-      emo_curious_05: 649123564
-      emo_curious_06: 579942355
-      emo_curious_07: 1970506048
-      emo_curious_08: 2089952813
-      emo_curious_09: -1679895040
+      emo_curious_0: 3192097649451050241
+      emo_curious_1: 3541708118439842945
       emo_curious_10: 5750555485888001801
       emo_curious_11: -3697292693247142390
       emo_curious_12: 1814849559148024807
@@ -1030,6 +1022,7 @@ TextureImporter:
       emo_curious_17: -8984553363010468378
       emo_curious_18: -2450236591595860430
       emo_curious_19: -8133209964936028149
+      emo_curious_2: 6398662318891895760
       emo_curious_20: -9213409858993956621
       emo_curious_21: -3212869380593136853
       emo_curious_22: 6360208282784244431
@@ -1040,12 +1033,19 @@ TextureImporter:
       emo_curious_27: 6457016467430268743
       emo_curious_28: -6577922768527997372
       emo_curious_29: 9061644482890248976
+      emo_curious_3: 2555945583478435126
       emo_curious_30: -5723897570205170928
       emo_curious_31: -6321988335634128037
       emo_curious_32: 1672110265102458266
       emo_curious_33: -8812871925064957884
       emo_curious_34: 4844935345346415382
       emo_curious_35: 3311345135346582472
+      emo_curious_4: -1951467775127720882
+      emo_curious_5: 7999412268839477754
+      emo_curious_6: -8769503370754638507
+      emo_curious_7: -4717825851247305309
+      emo_curious_8: 2562473759189006281
+      emo_curious_9: 6201470579404004096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

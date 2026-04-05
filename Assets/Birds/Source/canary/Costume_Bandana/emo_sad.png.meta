@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ced57fe48e6d8a4cb7ddbd17bc2e7d6
+guid: f1b0014ba0be39d4aad6c9a554aa55a1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,7 +153,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,221 +205,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: emo_sad_00
+      name: emo_sad_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 128
+        y: 2685
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a50c5482e896c344d9dc921ff43101f8
-      internalID: 631147261
+      spriteID: 32641df58ec8ef460800000000000000
+      internalID: 7277408977545152035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_01
+      name: emo_sad_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 640
+        y: 2685
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b1c0a2f7174e0214090edf0a14cf5365
-      internalID: 1021445593
+      spriteID: a02ce3316c39559f0800000000000000
+      internalID: -480315306309402102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_02
+      name: emo_sad_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1153
+        y: 2685
+        width: 255
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4db62cfe0cb6b3a47aa901e0c784d4c9
-      internalID: -1775107625
+      spriteID: c2cf2f6186f6d5ad0800000000000000
+      internalID: -2711888907754865620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_03
+      name: emo_sad_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1665
+        y: 2685
+        width: 252
+        height: 270
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a29a8368faa46a94bad1e1462ea7b235
-      internalID: 1248067368
+      spriteID: 03351b1eb2cfd1d00800000000000000
+      internalID: 945188762217960240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_04
+      name: emo_sad_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2179
+        y: 2687
+        width: 245
+        height: 279
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0397febffb0be814fad340d0a9c08c1a
-      internalID: 1088164310
+      spriteID: 7627b6a193b30ae30800000000000000
+      internalID: 4512671943067660903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_05
+      name: emo_sad_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2691
+        y: 2692
+        width: 244
+        height: 280
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6153e6cdeb1860e478d706ec9d661886
-      internalID: 1868684128
+      spriteID: 13f2b040e505930e0800000000000000
+      internalID: -2289710570816196815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_06
+      name: emo_sad_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 132
+        y: 2186
+        width: 242
+        height: 282
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 74f87dd48a083f446b3f4abf263f5107
-      internalID: 1189175356
+      spriteID: 2c447326165347890800000000000000
+      internalID: -7461279990270180158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_07
+      name: emo_sad_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 644
+        y: 2193
+        width: 243
+        height: 281
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 95a241767599cc949aed34b62326a4c5
-      internalID: -935741406
+      spriteID: 8579eb7534b3c41c0800000000000000
+      internalID: -4518171165738494120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_08
+      name: emo_sad_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1156
+        y: 2197
+        width: 243
+        height: 282
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7487cfd71dc6e7c4b98461f42bc1ce4a
-      internalID: -552675002
+      spriteID: cfb62b9ba3fe57790800000000000000
+      internalID: -7532851766204666884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_sad_09
+      name: emo_sad_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1668
+        y: 2201
+        width: 244
+        height: 283
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 19a82275af76d94438ee947e44f30e83
-      internalID: 1191874949
+      spriteID: 29dff9619615c3500800000000000000
+      internalID: 377265980585278866
       vertices: []
       indices: 
       edges: []
@@ -428,19 +428,19 @@ TextureImporter:
       name: emo_sad_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2180
+        y: 2204
+        width: 245
+        height: 283
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1a8141d45ac3cae499b9276302f5c548
+      spriteID: aa2a00e7647eb6700800000000000000
       internalID: 534775270721233578
       vertices: []
       indices: 
@@ -450,19 +450,19 @@ TextureImporter:
       name: emo_sad_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2691
+        y: 2203
+        width: 248
+        height: 285
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8bb6f1d14785b1343a4d007b6804b30c
+      spriteID: 36f67d528234a7ec0800000000000000
       internalID: -3568465915025068189
       vertices: []
       indices: 
@@ -472,19 +472,19 @@ TextureImporter:
       name: emo_sad_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 129
+        y: 1687
+        width: 251
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aae1174d1e6260648a15ffaf285bbe43
+      spriteID: 4205580141dea5d30800000000000000
       internalID: 4421106654649864228
       vertices: []
       indices: 
@@ -494,19 +494,19 @@ TextureImporter:
       name: emo_sad_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 640
+        y: 1679
+        width: 255
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 297aa56ce8a8dc24f9a39578ab6e4457
+      spriteID: 355dbfbf05e1cc740800000000000000
       internalID: 5173543405115659603
       vertices: []
       indices: 
@@ -516,19 +516,19 @@ TextureImporter:
       name: emo_sad_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1151
+        y: 1673
+        width: 256
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e54a3684b05747c48b8556ba6d2fb11f
+      spriteID: 936e0a4368e8652b0800000000000000
       internalID: -5596128779901540807
       vertices: []
       indices: 
@@ -538,19 +538,19 @@ TextureImporter:
       name: emo_sad_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1660
+        y: 1663
+        width: 260
+        height: 284
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2963e1bf1fd0f0946a8343f77cba2ffe
+      spriteID: 9b77fbf7a9c23eb30800000000000000
       internalID: 4315341910030907321
       vertices: []
       indices: 
@@ -560,19 +560,19 @@ TextureImporter:
       name: emo_sad_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2171
+        y: 1661
+        width: 261
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4018cb3e938c541408c0aa7f384782c0
+      spriteID: b33a07fe9e9db9ee0800000000000000
       internalID: -1253168472524807365
       vertices: []
       indices: 
@@ -582,19 +582,19 @@ TextureImporter:
       name: emo_sad_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2685
+        y: 1661
+        width: 260
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f1a1010a7db4e064ebb947ef6e7d8960
+      spriteID: 9855bfa0a92b9bf60800000000000000
       internalID: 8050662183580423561
       vertices: []
       indices: 
@@ -604,19 +604,19 @@ TextureImporter:
       name: emo_sad_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 122
+        y: 1149
+        width: 263
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 599ff98242d736749b2fc6296acfa068
+      spriteID: fc4bc311fd82abb30800000000000000
       internalID: 4303797332437939407
       vertices: []
       indices: 
@@ -626,19 +626,19 @@ TextureImporter:
       name: emo_sad_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 632
+        y: 1149
+        width: 265
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d7837fd9567e1b646a45183e48165266
+      spriteID: 6aa7f555415d65110800000000000000
       internalID: 1249420229950274214
       vertices: []
       indices: 
@@ -648,19 +648,19 @@ TextureImporter:
       name: emo_sad_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 1135
+        y: 1149
+        width: 274
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8e460e83b93bd5a419c6b4761bb15917
+      spriteID: 2e14d46c2074cac90800000000000000
       internalID: -7157267630556102174
       vertices: []
       indices: 
@@ -670,19 +670,19 @@ TextureImporter:
       name: emo_sad_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1644
+        y: 1149
+        width: 277
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b76ea34fc9ab2a84ea4db00dd444890e
+      spriteID: 70206bf40d3c4ad20800000000000000
       internalID: 3288968927345246727
       vertices: []
       indices: 
@@ -692,19 +692,19 @@ TextureImporter:
       name: emo_sad_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 2168
+        y: 1149
+        width: 265
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6379f81702bc3684281eb3340babfa75
+      spriteID: 35e9170952ebd8e70800000000000000
       internalID: 9119153889041555027
       vertices: []
       indices: 
@@ -714,19 +714,19 @@ TextureImporter:
       name: emo_sad_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2677
+        y: 1149
+        width: 268
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4ed6c1e8be464d4da7346214a9579aa
+      spriteID: 5c9efa44e34451050800000000000000
       internalID: 5770593531776199109
       vertices: []
       indices: 
@@ -736,19 +736,19 @@ TextureImporter:
       name: emo_sad_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 106
+        y: 637
+        width: 279
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 18f4c543a128afc4ba68aae53a539ae3
+      spriteID: 941ccefeca3fac850800000000000000
       internalID: 6398194144718405961
       vertices: []
       indices: 
@@ -758,19 +758,19 @@ TextureImporter:
       name: emo_sad_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 631
+        y: 637
+        width: 266
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 727e94d6e701b474bb87155a0d5d6ee2
+      spriteID: c79da3eac78d6ca40800000000000000
       internalID: 5388232034206013820
       vertices: []
       indices: 
@@ -780,19 +780,19 @@ TextureImporter:
       name: emo_sad_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1145
+        y: 637
+        width: 264
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 61c8afb87560a5042b104c20d59eefa4
+      spriteID: 053e47a11c6fb4a40800000000000000
       internalID: 5353643891292955472
       vertices: []
       indices: 
@@ -802,19 +802,19 @@ TextureImporter:
       name: emo_sad_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 1647
+        y: 637
+        width: 274
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 56d7ba610aad4dc4d8595e43e0bbc360
+      spriteID: 3d75f9c0be85dd980800000000000000
       internalID: -8512549954108041261
       vertices: []
       indices: 
@@ -824,19 +824,19 @@ TextureImporter:
       name: emo_sad_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 2165
+        y: 637
+        width: 268
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d93ba40920268de4fa1ca7d69cdef0f9
+      spriteID: 911bb0da813aecd00800000000000000
       internalID: 994911894073225497
       vertices: []
       indices: 
@@ -846,19 +846,19 @@ TextureImporter:
       name: emo_sad_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 2687
+        y: 637
+        width: 258
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 43b448eef5fa97746b39bae31fca539e
+      spriteID: 86f9a48fa4c44fd00800000000000000
       internalID: 1005512501687394152
       vertices: []
       indices: 
@@ -868,19 +868,19 @@ TextureImporter:
       name: emo_sad_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 128
+        y: 125
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f79b47e0778d1a94ea9f7113c2a93028
+      spriteID: 34c2126bfaf3fdb90800000000000000
       internalID: -7214978054116791229
       vertices: []
       indices: 
@@ -890,19 +890,19 @@ TextureImporter:
       name: emo_sad_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 640
+        y: 125
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 34c092b25e2727940893150552487bf9
+      spriteID: dbe37cdbbfe69c390800000000000000
       internalID: -7797579252315504963
       vertices: []
       indices: 
@@ -912,19 +912,19 @@ TextureImporter:
       name: emo_sad_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 1149
+        y: 125
+        width: 259
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a5da3c2d1464b1f4ab2b1b1172cb5c1a
+      spriteID: 10b78ec00f18b0ee0800000000000000
       internalID: -1293797599930189055
       vertices: []
       indices: 
@@ -934,19 +934,19 @@ TextureImporter:
       name: emo_sad_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 1660
+        y: 125
+        width: 260
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a2d096a57fa78d94186de4156c28ba76
+      spriteID: 882b0f74d4b4b1b60800000000000000
       internalID: 7717845181720998536
       vertices: []
       indices: 
@@ -956,19 +956,19 @@ TextureImporter:
       name: emo_sad_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2172
+        y: 125
+        width: 260
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e0a0fc5f01b7b994187eacaf5149382e
+      spriteID: 0d0c5f15be4013930800000000000000
       internalID: 4121080542759600336
       vertices: []
       indices: 
@@ -978,19 +978,19 @@ TextureImporter:
       name: emo_sad_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2688
+        y: 125
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 713b47caa06cd0d4baafe2e65e7148e7
+      spriteID: 55e27cf5f0bb7d080800000000000000
       internalID: -9162649242156192171
       vertices: []
       indices: 
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b1131506e1467154eaaadc3e3821301f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1010,16 +1010,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      emo_sad_00: 631147261
-      emo_sad_01: 1021445593
-      emo_sad_02: -1775107625
-      emo_sad_03: 1248067368
-      emo_sad_04: 1088164310
-      emo_sad_05: 1868684128
-      emo_sad_06: 1189175356
-      emo_sad_07: -935741406
-      emo_sad_08: -552675002
-      emo_sad_09: 1191874949
+      emo_sad_0: 7277408977545152035
+      emo_sad_1: -480315306309402102
       emo_sad_10: 534775270721233578
       emo_sad_11: -3568465915025068189
       emo_sad_12: 4421106654649864228
@@ -1030,6 +1022,7 @@ TextureImporter:
       emo_sad_17: 8050662183580423561
       emo_sad_18: 4303797332437939407
       emo_sad_19: 1249420229950274214
+      emo_sad_2: -2711888907754865620
       emo_sad_20: -7157267630556102174
       emo_sad_21: 3288968927345246727
       emo_sad_22: 9119153889041555027
@@ -1040,12 +1033,19 @@ TextureImporter:
       emo_sad_27: -8512549954108041261
       emo_sad_28: 994911894073225497
       emo_sad_29: 1005512501687394152
+      emo_sad_3: 945188762217960240
       emo_sad_30: -7214978054116791229
       emo_sad_31: -7797579252315504963
       emo_sad_32: -1293797599930189055
       emo_sad_33: 7717845181720998536
       emo_sad_34: 4121080542759600336
       emo_sad_35: -9162649242156192171
+      emo_sad_4: 4512671943067660903
+      emo_sad_5: -2289710570816196815
+      emo_sad_6: -7461279990270180158
+      emo_sad_7: -4518171165738494120
+      emo_sad_8: -7532851766204666884
+      emo_sad_9: 377265980585278866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07fbb47928637ea4bbb23b287326d9ac
+guid: 4b8183950772ba44291f9221c663ec1b
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,7 +153,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,221 +205,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: act_chirp_sing_00
+      name: act_chirp_sing_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 124
+        y: 2693
+        width: 264
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ad7da297722db0c44a339dfa22d8d218
-      internalID: 866875091
+      spriteID: 8e331e5c5cb296c40800000000000000
+      internalID: 5505980147865564136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_01
+      name: act_chirp_sing_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 636
+        y: 2693
+        width: 263
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1d8938420d2c45c4aa0025a409e49add
-      internalID: -1746384811
+      spriteID: 183ac03e763b1bd90800000000000000
+      internalID: -7083683480104819839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_02
+      name: act_chirp_sing_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1149
+        y: 2693
+        width: 256
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 157c9565380ee3d4082264659a11cb04
-      internalID: 708144655
+      spriteID: 8c8b472c8b535c7c0800000000000000
+      internalID: -4051773222097209144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_03
+      name: act_chirp_sing_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1660
+        y: 2693
+        width: 264
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 62702185dcb284747afc32386d5fa47a
-      internalID: 1875094751
+      spriteID: fd999007e0cbf3190800000000000000
+      internalID: -7980453244481988129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_04
+      name: act_chirp_sing_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2171
+        y: 2693
+        width: 271
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a6d989fe3aeca394f87456a5f5d7f4b5
-      internalID: -517414775
+      spriteID: 7f52219e9a2e2b1a0800000000000000
+      internalID: -6795119668361026057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_05
+      name: act_chirp_sing_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2684
+        y: 2693
+        width: 267
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7789b072b475fa844b9a1c398002ddd6
-      internalID: 2141103700
+      spriteID: afc73f70208327670800000000000000
+      internalID: 8534945825194999034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_06
+      name: act_chirp_sing_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 126
+        y: 2181
+        width: 257
+        height: 251
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8247508e6facf1546936852f54ce8b80
-      internalID: 1840330715
+      spriteID: 0dcd34021e44e5d20800000000000000
+      internalID: 3269126113217207504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_07
+      name: act_chirp_sing_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 638
+        y: 2181
+        width: 259
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7dbab6031b0928b4f988104ca3710526
-      internalID: -695123979
+      spriteID: 2198e3f610d32a240800000000000000
+      internalID: 4801467229101000978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_08
+      name: act_chirp_sing_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1149
+        y: 2181
+        width: 267
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bad0a60ff4715ed4794ebcbb69c0123c
-      internalID: -1102087746
+      spriteID: a157185e5d2743b00800000000000000
+      internalID: 807396496210228506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_chirp_sing_09
+      name: act_chirp_sing_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1662
+        y: 2181
+        width: 268
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 88928273e90693e40a205e91c9ae815d
-      internalID: -2000993489
+      spriteID: 1869d9db56990ff00800000000000000
+      internalID: 1148586567231444609
       vertices: []
       indices: 
       edges: []
@@ -428,19 +428,19 @@ TextureImporter:
       name: act_chirp_sing_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2175
+        y: 2181
+        width: 260
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0f576d2e8a4af8341b17650f07991d1f
+      spriteID: c732bfb535879f580800000000000000
       internalID: -8792864498043378820
       vertices: []
       indices: 
@@ -450,19 +450,19 @@ TextureImporter:
       name: act_chirp_sing_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2687
+        y: 2181
+        width: 256
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d30cddd42555fc643bcc98fc2974b088
+      spriteID: fbb06b39078f3d810800000000000000
       internalID: 1789046639394425791
       vertices: []
       indices: 
@@ -472,19 +472,19 @@ TextureImporter:
       name: act_chirp_sing_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 126
+        y: 1669
+        width: 262
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 748b34e6eee6bc24e988adff83cb700e
+      spriteID: ecfde85000debf420800000000000000
       internalID: 2664984188868812750
       vertices: []
       indices: 
@@ -494,19 +494,19 @@ TextureImporter:
       name: act_chirp_sing_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 636
+        y: 1669
+        width: 269
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 66f5a53526e113146b656d1e17885965
+      spriteID: 46852b834cae2aa10800000000000000
       internalID: 1919354519698954340
       vertices: []
       indices: 
@@ -516,19 +516,19 @@ TextureImporter:
       name: act_chirp_sing_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1147
+        y: 1669
+        width: 266
+        height: 245
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4ad928273a05a648b4daf31300d94e8
+      spriteID: de165aa0779e052e0800000000000000
       internalID: -2138953125511994899
       vertices: []
       indices: 
@@ -538,19 +538,19 @@ TextureImporter:
       name: act_chirp_sing_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1660
+        y: 1669
+        width: 261
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1ac9657f6629b444998e8e5261194351
+      spriteID: f6acb64835a0ec2e0800000000000000
       internalID: -2103732622115222929
       vertices: []
       indices: 
@@ -560,19 +560,19 @@ TextureImporter:
       name: act_chirp_sing_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2172
+        y: 1669
+        width: 259
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 71e4a3da9808b204989210cd62e8ab46
+      spriteID: 0ffc5add5dcafab60800000000000000
       internalID: 7759610717529296880
       vertices: []
       indices: 
@@ -582,19 +582,19 @@ TextureImporter:
       name: act_chirp_sing_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2683
+        y: 1669
+        width: 267
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7d1249deece62c348b349339f471c889
+      spriteID: d912ed737feda69a0800000000000000
       internalID: -6238929180392808035
       vertices: []
       indices: 
@@ -604,19 +604,19 @@ TextureImporter:
       name: act_chirp_sing_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 123
+        y: 1157
+        width: 271
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e7c4431ac875eb74286772546fb5ba3f
+      spriteID: e01a847239f07bfe0800000000000000
       internalID: -1173452053213044466
       vertices: []
       indices: 
@@ -626,19 +626,19 @@ TextureImporter:
       name: act_chirp_sing_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 636
+        y: 1157
+        width: 267
+        height: 245
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c4c4cb76c6cbd2f4d9e47e66e035bf94
+      spriteID: 49ad2690a5c4b6d20800000000000000
       internalID: 3272793503803038356
       vertices: []
       indices: 
@@ -648,19 +648,19 @@ TextureImporter:
       name: act_chirp_sing_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 1149
+        y: 1157
+        width: 259
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a79934aa762ee644eacdd22566acf4bc
+      spriteID: af5db41990f06f690800000000000000
       internalID: -7568845589982751238
       vertices: []
       indices: 
@@ -670,19 +670,19 @@ TextureImporter:
       name: act_chirp_sing_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1662
+        y: 1157
+        width: 257
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: eeb198ced66c29f46933c35e32a40965
+      spriteID: 5311b7d0798599880800000000000000
       internalID: -8603748207325146827
       vertices: []
       indices: 
@@ -692,19 +692,19 @@ TextureImporter:
       name: act_chirp_sing_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 2174
+        y: 1157
+        width: 265
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e29336cd234b6524c99c386d5f205da7
+      spriteID: d05f42967416ab1b0800000000000000
       internalID: -5640088623993522931
       vertices: []
       indices: 
@@ -714,19 +714,19 @@ TextureImporter:
       name: act_chirp_sing_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2687
+        y: 1157
+        width: 264
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 876cc8a3747735f40b013856388bd54a
+      spriteID: 2192385c1f586a4c0800000000000000
       internalID: -4276583522694387438
       vertices: []
       indices: 
@@ -736,19 +736,19 @@ TextureImporter:
       name: act_chirp_sing_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 127
+        y: 645
+        width: 259
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 67245b0514d540d4cb1a43446e881ef7
+      spriteID: 30959833afa0f0d80800000000000000
       internalID: -8282389119988311805
       vertices: []
       indices: 
@@ -758,19 +758,19 @@ TextureImporter:
       name: act_chirp_sing_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 639
+        y: 645
+        width: 256
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 32a2f11fec15a624c8c4abd51ca11d3b
+      spriteID: 9eb7304dc545a4d00800000000000000
       internalID: 957670628440374249
       vertices: []
       indices: 
@@ -780,19 +780,19 @@ TextureImporter:
       name: act_chirp_sing_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1149
+        y: 645
+        width: 267
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5b7a811fbdd3abc4cb28f1b0dcf69c02
+      spriteID: 9c316983dfa2626a0800000000000000
       internalID: -6474440147234057271
       vertices: []
       indices: 
@@ -802,19 +802,19 @@ TextureImporter:
       name: act_chirp_sing_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 1660
+        y: 645
+        width: 273
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81cf2396c58005e43ae97c1695624294
+      spriteID: 0cdcfa9200b265820800000000000000
       internalID: 2906557889213615552
       vertices: []
       indices: 
@@ -824,19 +824,19 @@ TextureImporter:
       name: act_chirp_sing_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 2172
+        y: 645
+        width: 271
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4fbd1f0aeeaf0b41b2f397adb449b5e
+      spriteID: c8c53a932b2f63500800000000000000
       internalID: 375754466217122956
       vertices: []
       indices: 
@@ -846,19 +846,19 @@ TextureImporter:
       name: act_chirp_sing_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 2684
+        y: 645
+        width: 269
+        height: 247
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9f39fdc64c7421c4d9a230680e9c205f
+      spriteID: ec35c13dc8bc65c30800000000000000
       internalID: 4347886295970501582
       vertices: []
       indices: 
@@ -868,19 +868,19 @@ TextureImporter:
       name: act_chirp_sing_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 124
+        y: 133
+        width: 267
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 338dae4d7dac1e54ca1e5fe38b5d7ce0
+      spriteID: a94daaaf374ce7af0800000000000000
       internalID: -396663714756242278
       vertices: []
       indices: 
@@ -890,19 +890,19 @@ TextureImporter:
       name: act_chirp_sing_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 636
+        y: 133
+        width: 264
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c6a5197a70bf1f64ab75dba38fd1e5d4
+      spriteID: 5f84af7fc601053a0800000000000000
       internalID: -6678820187187558155
       vertices: []
       indices: 
@@ -912,19 +912,19 @@ TextureImporter:
       name: act_chirp_sing_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 1149
+        y: 133
+        width: 262
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9d4ac4444d5ebf74b9492ccc6ef6524f
+      spriteID: 3b1acfa9a7fc5b810800000000000000
       internalID: 1780557353188106675
       vertices: []
       indices: 
@@ -934,19 +934,19 @@ TextureImporter:
       name: act_chirp_sing_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 1660
+        y: 133
+        width: 261
+        height: 249
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 40e5699e68839e0449336ed653b05840
+      spriteID: 713a1b56f5deef570800000000000000
       internalID: 8502494140505891607
       vertices: []
       indices: 
@@ -956,19 +956,19 @@ TextureImporter:
       name: act_chirp_sing_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2172
+        y: 133
+        width: 261
+        height: 249
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2eac2dedd9a3ad2478c949c0171df180
+      spriteID: feeb39c27901bc850800000000000000
       internalID: 6398225937083907823
       vertices: []
       indices: 
@@ -978,19 +978,19 @@ TextureImporter:
       name: act_chirp_sing_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2684
+        y: 133
+        width: 263
+        height: 249
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1a0e596ae83e54e4382bf00db398ea83
+      spriteID: 76737abd2aae2ed00800000000000000
       internalID: 1000620052420441959
       vertices: []
       indices: 
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2ec919907e94df343ba651295baee32d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1010,16 +1010,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      act_chirp_sing_00: 866875091
-      act_chirp_sing_01: -1746384811
-      act_chirp_sing_02: 708144655
-      act_chirp_sing_03: 1875094751
-      act_chirp_sing_04: -517414775
-      act_chirp_sing_05: 2141103700
-      act_chirp_sing_06: 1840330715
-      act_chirp_sing_07: -695123979
-      act_chirp_sing_08: -1102087746
-      act_chirp_sing_09: -2000993489
+      act_chirp_sing_0: 5505980147865564136
+      act_chirp_sing_1: -7083683480104819839
       act_chirp_sing_10: -8792864498043378820
       act_chirp_sing_11: 1789046639394425791
       act_chirp_sing_12: 2664984188868812750
@@ -1030,6 +1022,7 @@ TextureImporter:
       act_chirp_sing_17: -6238929180392808035
       act_chirp_sing_18: -1173452053213044466
       act_chirp_sing_19: 3272793503803038356
+      act_chirp_sing_2: -4051773222097209144
       act_chirp_sing_20: -7568845589982751238
       act_chirp_sing_21: -8603748207325146827
       act_chirp_sing_22: -5640088623993522931
@@ -1040,12 +1033,19 @@ TextureImporter:
       act_chirp_sing_27: 2906557889213615552
       act_chirp_sing_28: 375754466217122956
       act_chirp_sing_29: 4347886295970501582
+      act_chirp_sing_3: -7980453244481988129
       act_chirp_sing_30: -396663714756242278
       act_chirp_sing_31: -6678820187187558155
       act_chirp_sing_32: 1780557353188106675
       act_chirp_sing_33: 8502494140505891607
       act_chirp_sing_34: 6398225937083907823
       act_chirp_sing_35: 1000620052420441959
+      act_chirp_sing_4: -6795119668361026057
+      act_chirp_sing_5: 8534945825194999034
+      act_chirp_sing_6: 3269126113217207504
+      act_chirp_sing_7: 4801467229101000978
+      act_chirp_sing_8: 807396496210228506
+      act_chirp_sing_9: 1148586567231444609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

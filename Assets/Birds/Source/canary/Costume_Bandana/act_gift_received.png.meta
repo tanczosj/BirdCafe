@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5613a39801cea88498042d222206b04c
+guid: 25083b4553d56d4409369a299765605c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,7 +153,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,221 +205,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: act_gift_received_00
+      name: act_gift_received_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 127
+        y: 2685
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 979d6bb95185b854481ed68b02d3770d
-      internalID: -141523706
+      spriteID: 77e8872e93bb0cea0800000000000000
+      internalID: -5854473658294563209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_01
+      name: act_gift_received_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 637
+        y: 2685
+        width: 260
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c6920f314bb5b5c4aab3b80122d5db86
-      internalID: 1246506336
+      spriteID: 33c724e187e7495c0800000000000000
+      internalID: -4209600697315722189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_02
+      name: act_gift_received_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1151
+        y: 2685
+        width: 253
+        height: 267
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d88e1abea1b7b2498e4a8d10538bb2f
-      internalID: -1626529533
+      spriteID: 611710e712b924540800000000000000
+      internalID: 4990721905230180630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_03
+      name: act_gift_received_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1667
+        y: 2711
+        width: 235
+        height: 278
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aab3a69fb82f0944d8fda9e98e946f96
-      internalID: -113165403
+      spriteID: a138528386f391490800000000000000
+      internalID: -7775113564827319526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_04
+      name: act_gift_received_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2179
+        y: 2719
+        width: 239
+        height: 274
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3df3b55575472924db14fd9aa198f2e8
-      internalID: 1607114982
+      spriteID: 0cbf0aab7af375bd0800000000000000
+      internalID: -2641572666806305856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_05
+      name: act_gift_received_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2690
+        y: 2718
+        width: 247
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dab195225d6ebe14681f118b7b8268b6
-      internalID: 928245723
+      spriteID: d5860401390f42c30800000000000000
+      internalID: 4333853255860775005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_06
+      name: act_gift_received_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 121
+        y: 2173
+        width: 264
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1e97c634d88e1374fb32c94ac5088a54
-      internalID: -2137817544
+      spriteID: f26b805cc6fce7b70800000000000000
+      internalID: 8898777979799778863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_07
+      name: act_gift_received_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 642
+        y: 2173
+        width: 250
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 99466994f0b9a8249a5bd3e43fb923a7
-      internalID: -697535774
+      spriteID: 33f4bc782c03a6a70800000000000000
+      internalID: 8820916432218574643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_08
+      name: act_gift_received_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1156
+        y: 2186
+        width: 242
+        height: 279
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 402f0182343d1c440bd8a84bc3170ba5
-      internalID: -1272564466
+      spriteID: 465cde2ddca445e30800000000000000
+      internalID: 4491296976262776164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_gift_received_09
+      name: act_gift_received_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1665
+        y: 2181
+        width: 254
+        height: 274
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8b4c4542b88987044b1ec231d66856d1
-      internalID: 222827689
+      spriteID: db2445fc59439f2c0800000000000000
+      internalID: -4397425743117401411
       vertices: []
       indices: 
       edges: []
@@ -428,19 +428,19 @@ TextureImporter:
       name: act_gift_received_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2171
+        y: 2173
+        width: 263
+        height: 241
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 954bb83af7675d940bdafacd3dfb3ac4
+      spriteID: 9879183402ba5e190800000000000000
       internalID: -7933747013483391095
       vertices: []
       indices: 
@@ -450,19 +450,19 @@ TextureImporter:
       name: act_gift_received_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2693
+        y: 2203
+        width: 232
+        height: 277
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 02f9295c0b528374295a51335166e8f5
+      spriteID: dad8f3bdfca5f7d50800000000000000
       internalID: 6737203416352656813
       vertices: []
       indices: 
@@ -472,19 +472,19 @@ TextureImporter:
       name: act_gift_received_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 134
+        y: 1710
+        width: 232
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 22e62c16f66874d439774b135e285d56
+      spriteID: a00beb0647db0b370800000000000000
       internalID: 8336371217799753738
       vertices: []
       indices: 
@@ -494,19 +494,19 @@ TextureImporter:
       name: act_gift_received_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 645
+        y: 1712
+        width: 241
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9cb216a9f022e0941a583df97fb6b73b
+      spriteID: 5efb2d74e27cb8ed0800000000000000
       internalID: -2410614173939351579
       vertices: []
       indices: 
@@ -516,19 +516,19 @@ TextureImporter:
       name: act_gift_received_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1156
+        y: 1703
+        width: 247
+        height: 280
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 978f7448ac6448040b5b8f4d468139c2
+      spriteID: 6cfd63845e2f56750800000000000000
       internalID: 6297706720520495046
       vertices: []
       indices: 
@@ -538,19 +538,19 @@ TextureImporter:
       name: act_gift_received_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1657
+        y: 1661
+        width: 262
+        height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 32063b486035fb942a7f40c595eefff5
+      spriteID: 5b2dfefd432e88a20800000000000000
       internalID: 3064948263148835509
       vertices: []
       indices: 
@@ -560,19 +560,19 @@ TextureImporter:
       name: act_gift_received_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2173
+        y: 1661
+        width: 260
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59e3d427c6873e141a508bc6fc75af33
+      spriteID: e8fbdd2a0eba4fd20800000000000000
       internalID: 3311460607317622670
       vertices: []
       indices: 
@@ -582,19 +582,19 @@ TextureImporter:
       name: act_gift_received_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2686
+        y: 1661
+        width: 257
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 17d31b55029e73c42a1d5aa9a4b1a2ed
+      spriteID: 1040ce43686308cf0800000000000000
       internalID: -252141629091347455
       vertices: []
       indices: 
@@ -604,19 +604,19 @@ TextureImporter:
       name: act_gift_received_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 124
+        y: 1149
+        width: 259
+        height: 265
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5e79148864b97ef4793a4383883c1219
+      spriteID: 6ef72ff4ae2849c80800000000000000
       internalID: -8316878668971212826
       vertices: []
       indices: 
@@ -626,19 +626,19 @@ TextureImporter:
       name: act_gift_received_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 627
+        y: 1151
+        width: 258
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a28807d8aa3c174396933d79386b2bd
+      spriteID: 32f62483a146e0b60800000000000000
       internalID: 7714213275508043555
       vertices: []
       indices: 
@@ -648,19 +648,19 @@ TextureImporter:
       name: act_gift_received_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 1120
+        y: 1151
+        width: 304
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 46a2ff6213b065f41b421c7463b365ff
+      spriteID: dbddb7a3c3903fbf0800000000000000
       internalID: -291879396565066307
       vertices: []
       indices: 
@@ -670,19 +670,19 @@ TextureImporter:
       name: act_gift_received_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1591
+        y: 1151
+        width: 388
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8be55d5b8cb596245be6dafef1385356
+      spriteID: 94f12174e18fcabc0800000000000000
       internalID: -3770365979090870455
       vertices: []
       indices: 
@@ -692,19 +692,19 @@ TextureImporter:
       name: act_gift_received_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 2129
+        y: 1151
+        width: 345
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0a727254e13befe40bbdd6b37752b2cd
+      spriteID: b6bfabd47212ce110800000000000000
       internalID: 1291443645840030571
       vertices: []
       indices: 
@@ -714,19 +714,19 @@ TextureImporter:
       name: act_gift_received_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2649
+        y: 1151
+        width: 332
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f9052b3b4bf71464592f8c2f0d5da995
+      spriteID: ae2b3e7e07c7c89e0800000000000000
       internalID: -1617781341764209942
       vertices: []
       indices: 
@@ -736,19 +736,19 @@ TextureImporter:
       name: act_gift_received_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 83
+        y: 639
+        width: 342
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d3d6fac2648cf34b8319c8dc65dd20f
+      spriteID: 4bdf6afe2e6c35050800000000000000
       internalID: 5788188624086826420
       vertices: []
       indices: 
@@ -758,19 +758,19 @@ TextureImporter:
       name: act_gift_received_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 575
+        y: 639
+        width: 372
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8d3eb92cf541ef428611e333ac6261f
+      spriteID: 1f37ef79d6d6d0f70800000000000000
       internalID: 9155093934982984689
       vertices: []
       indices: 
@@ -780,19 +780,19 @@ TextureImporter:
       name: act_gift_received_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1082
+        y: 639
+        width: 385
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6bc94a3e8e79832499e0928859f68a8b
+      spriteID: 894e9e724306cea50800000000000000
       internalID: 6551717335041434776
       vertices: []
       indices: 
@@ -802,19 +802,19 @@ TextureImporter:
       name: act_gift_received_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 1596
+        y: 639
+        width: 383
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cd3315d77df525c41bedde28b73c6d2e
+      spriteID: 2c1ec46d8d7be7e80800000000000000
       internalID: -8178897731322060350
       vertices: []
       indices: 
@@ -824,19 +824,19 @@ TextureImporter:
       name: act_gift_received_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 2109
+        y: 639
+        width: 380
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f4a9547feb208b24d9ca45042f743ca9
+      spriteID: e24c6c6b63953a750800000000000000
       internalID: 6314989194033153070
       vertices: []
       indices: 
@@ -846,19 +846,19 @@ TextureImporter:
       name: act_gift_received_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 2621
+        y: 639
+        width: 380
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fcc0a695f1c9d1f4d8df0e7b9ccc7f66
+      spriteID: f8697e1307cd12360800000000000000
       internalID: 7143232858418026127
       vertices: []
       indices: 
@@ -868,19 +868,19 @@ TextureImporter:
       name: act_gift_received_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 58
+        y: 127
+        width: 386
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fc8e91ba14795cd47a793c7a39446bde
+      spriteID: c18560ece525caee0800000000000000
       internalID: -1248532429551544292
       vertices: []
       indices: 
@@ -890,19 +890,19 @@ TextureImporter:
       name: act_gift_received_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 571
+        y: 127
+        width: 380
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5db5de1d51eedc849bc3d9674ac2ed69
+      spriteID: 4ad846524fe3f33c0800000000000000
       internalID: -4377711094460543580
       vertices: []
       indices: 
@@ -912,19 +912,19 @@ TextureImporter:
       name: act_gift_received_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 1146
+        y: 127
+        width: 239
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b91624c218f479547b357b78720161e9
+      spriteID: 156dca1c0eb1a35d0800000000000000
       internalID: -3082120342845729199
       vertices: []
       indices: 
@@ -934,19 +934,19 @@ TextureImporter:
       name: act_gift_received_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 1665
+        y: 128
+        width: 238
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1619aefbd7768454d88266a372f32883
+      spriteID: 16ac68377819a62c0800000000000000
       internalID: -4437574471875376543
       vertices: []
       indices: 
@@ -956,19 +956,19 @@ TextureImporter:
       name: act_gift_received_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2178
+        y: 128
+        width: 248
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d788364e74ec15b46badaa1a92088cae
+      spriteID: 698d0a52ed9ae04f0800000000000000
       internalID: -860563707202053994
       vertices: []
       indices: 
@@ -978,19 +978,19 @@ TextureImporter:
       name: act_gift_received_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2687
+        y: 125
+        width: 258
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 84d0a78f94e4cff438176e3fd1b314c5
+      spriteID: c509cf3f896285330800000000000000
       internalID: 3699749532255162460
       vertices: []
       indices: 
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c472500d9094902418d0dc3f432f9886
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1010,16 +1010,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      act_gift_received_00: -141523706
-      act_gift_received_01: 1246506336
-      act_gift_received_02: -1626529533
-      act_gift_received_03: -113165403
-      act_gift_received_04: 1607114982
-      act_gift_received_05: 928245723
-      act_gift_received_06: -2137817544
-      act_gift_received_07: -697535774
-      act_gift_received_08: -1272564466
-      act_gift_received_09: 222827689
+      act_gift_received_0: -5854473658294563209
+      act_gift_received_1: -4209600697315722189
       act_gift_received_10: -7933747013483391095
       act_gift_received_11: 6737203416352656813
       act_gift_received_12: 8336371217799753738
@@ -1030,6 +1022,7 @@ TextureImporter:
       act_gift_received_17: -252141629091347455
       act_gift_received_18: -8316878668971212826
       act_gift_received_19: 7714213275508043555
+      act_gift_received_2: 4990721905230180630
       act_gift_received_20: -291879396565066307
       act_gift_received_21: -3770365979090870455
       act_gift_received_22: 1291443645840030571
@@ -1040,12 +1033,19 @@ TextureImporter:
       act_gift_received_27: -8178897731322060350
       act_gift_received_28: 6314989194033153070
       act_gift_received_29: 7143232858418026127
+      act_gift_received_3: -7775113564827319526
       act_gift_received_30: -1248532429551544292
       act_gift_received_31: -4377711094460543580
       act_gift_received_32: -3082120342845729199
       act_gift_received_33: -4437574471875376543
       act_gift_received_34: -860563707202053994
       act_gift_received_35: 3699749532255162460
+      act_gift_received_4: -2641572666806305856
+      act_gift_received_5: 4333853255860775005
+      act_gift_received_6: 8898777979799778863
+      act_gift_received_7: 8820916432218574643
+      act_gift_received_8: 4491296976262776164
+      act_gift_received_9: -4397425743117401411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

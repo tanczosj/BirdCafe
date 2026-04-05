@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 238fc997b7148a946856a0c03e5aeb40
+guid: 66d23d457d997c54b9e716fa3654af97
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,7 +153,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,221 +205,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: act_accept_treat_00
+      name: act_accept_treat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 124
+        y: 2693
+        width: 264
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e3d843d785bf9a947af3ed497190e2cb
-      internalID: 205594097
+      spriteID: a0115584f43b92890800000000000000
+      internalID: -7482252152802045686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_01
+      name: act_accept_treat_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 635
+        y: 2694
+        width: 264
+        height: 247
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8a23f0f0c442e7447a83353fddc6d390
-      internalID: 2096010149
+      spriteID: cd0c6de6d457fc510800000000000000
+      internalID: 1571603770408091868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_02
+      name: act_accept_treat_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1143
+        y: 2696
+        width: 265
+        height: 245
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8e9d2389d3a5d04aab0432bff29b307
-      internalID: 292946550
+      spriteID: d5084811c88b1a160800000000000000
+      internalID: 7035107004658253917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_03
+      name: act_accept_treat_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1657
+        y: 2696
+        width: 264
+        height: 238
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4500b26a11a70c47a3e7add77cc2c62
-      internalID: -884640024
+      spriteID: 9bf2d9051d420e200800000000000000
+      internalID: 207206064278286265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_04
+      name: act_accept_treat_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2174
+        y: 2695
+        width: 265
+        height: 226
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b64730cd364e9f64da520a375cab832b
-      internalID: 1253452413
+      spriteID: 2252f7f2b6a78c230800000000000000
+      internalID: 3659309298015479074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_05
+      name: act_accept_treat_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2692
+        y: 2695
+        width: 239
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b72c11eb2ed617647ad31b42af3d7d1a
-      internalID: -35913261
+      spriteID: 5e789dce7564f6260800000000000000
+      internalID: 7092965281581598693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_06
+      name: act_accept_treat_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 127
+        y: 2183
+        width: 229
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: eefc0fa214760c546a804cf19e8f1cff
-      internalID: -1496771115
+      spriteID: 0b9ac28db665eec40800000000000000
+      internalID: 5543463212527954352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_07
+      name: act_accept_treat_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 631
+        y: 2183
+        width: 244
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c585895f0dd8385498dfbc16e0af8b1c
-      internalID: 19192352
+      spriteID: 47fddc1d9dd11bb30800000000000000
+      internalID: 4301251940480573300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_08
+      name: act_accept_treat_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1155
+        y: 2183
+        width: 247
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bc0ce5483b87d024f97b012a37a944c0
-      internalID: 2033380347
+      spriteID: 220a0e97931cd3590800000000000000
+      internalID: -7692780135876878302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_accept_treat_09
+      name: act_accept_treat_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1667
+        y: 2183
+        width: 250
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b69beae3c822aec46acb7b8a9c48ed1f
-      internalID: -284945429
+      spriteID: 8d970761e9dd0dbd0800000000000000
+      internalID: -2607340513196475944
       vertices: []
       indices: 
       edges: []
@@ -428,19 +428,19 @@ TextureImporter:
       name: act_accept_treat_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2179
+        y: 2183
+        width: 249
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7f2d86afe4c1ef640836a69405238b27
+      spriteID: 0c538a358bcae0440800000000000000
       internalID: 4904046951930541504
       vertices: []
       indices: 
@@ -450,19 +450,19 @@ TextureImporter:
       name: act_accept_treat_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2691
+        y: 2183
+        width: 248
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 573af1eb4e8d4cf4aa84340bd9c19231
+      spriteID: adf3acf45f59c9000800000000000000
       internalID: 44074977205043162
       vertices: []
       indices: 
@@ -472,19 +472,19 @@ TextureImporter:
       name: act_accept_treat_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 124
+        y: 1671
+        width: 257
+        height: 237
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d63ca5ea1691f44fbdaefb0b693cd3b
+      spriteID: c9271ab345e196110800000000000000
       internalID: 1254567318325916316
       vertices: []
       indices: 
@@ -494,19 +494,19 @@ TextureImporter:
       name: act_accept_treat_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 629
+        y: 1671
+        width: 264
+        height: 226
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 175d6a4e775185542928ed54ba3f07ff
+      spriteID: e944b2ea3137af290800000000000000
       internalID: -7855840071630764898
       vertices: []
       indices: 
@@ -516,19 +516,19 @@ TextureImporter:
       name: act_accept_treat_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1157
+        y: 1671
+        width: 228
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6e8b50acb67a38348a740762545e8842
+      spriteID: 3a82f77b02ec65d90800000000000000
       internalID: -7109268321844909917
       vertices: []
       indices: 
@@ -538,19 +538,19 @@ TextureImporter:
       name: act_accept_treat_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1670
+        y: 1671
+        width: 231
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2129b7696446ca7439f3978230b234e6
+      spriteID: 3f749cccde29d7900800000000000000
       internalID: 683864268470831091
       vertices: []
       indices: 
@@ -560,19 +560,19 @@ TextureImporter:
       name: act_accept_treat_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2179
+        y: 1671
+        width: 244
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5fae254fd80795d4986722388f340a73
+      spriteID: 1135dc0d52a2cdc80800000000000000
       internalID: -8296710071618022639
       vertices: []
       indices: 
@@ -582,19 +582,19 @@ TextureImporter:
       name: act_accept_treat_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2688
+        y: 1671
+        width: 255
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 45220b4681834b64e921b3a080def2db
+      spriteID: a5acf0bf665c66720800000000000000
       internalID: 2839173661193128538
       vertices: []
       indices: 
@@ -604,19 +604,19 @@ TextureImporter:
       name: act_accept_treat_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 130
+        y: 1159
+        width: 251
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87b58edcec2f08342b240f482c0c06eb
+      spriteID: 5a51d77747538cdc0800000000000000
       internalID: -3618583526255028827
       vertices: []
       indices: 
@@ -626,19 +626,19 @@ TextureImporter:
       name: act_accept_treat_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 641
+        y: 1159
+        width: 252
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d2f2a36b3c94da3449239f5fb81f315d
+      spriteID: 34e9963f5f5b9ab60800000000000000
       internalID: 7757931901077790275
       vertices: []
       indices: 
@@ -648,19 +648,19 @@ TextureImporter:
       name: act_accept_treat_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 1147
+        y: 1159
+        width: 261
+        height: 230
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d527cf41fad9b2b45821c4a8d6b801ea
+      spriteID: 7a0ee97336e306e90800000000000000
       internalID: -7034554022096871257
       vertices: []
       indices: 
@@ -670,19 +670,19 @@ TextureImporter:
       name: act_accept_treat_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1661
+        y: 1159
+        width: 253
+        height: 236
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 02dd8eb8d3d37af409cdc6e80fb0f082
+      spriteID: 6f1c685ba70cc4380800000000000000
       internalID: -8985595523246931466
       vertices: []
       indices: 
@@ -692,19 +692,19 @@ TextureImporter:
       name: act_accept_treat_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 2186
+        y: 1159
+        width: 226
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8fa8b8997377d42438062a53547374cc
+      spriteID: 9e4a0b94f7a803840800000000000000
       internalID: 5201809848914715881
       vertices: []
       indices: 
@@ -714,19 +714,19 @@ TextureImporter:
       name: act_accept_treat_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2699
+        y: 1159
+        width: 227
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c095a062a47570e4584ac6fd22757f54
+      spriteID: 02b00abe67f9bf940800000000000000
       internalID: 5331029917031205664
       vertices: []
       indices: 
@@ -736,19 +736,19 @@ TextureImporter:
       name: act_accept_treat_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 137
+        y: 647
+        width: 239
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 049cfe7ef1ab04c47996abae00516346
+      spriteID: 5c85331892e7bddc0800000000000000
       internalID: -3613155559308306235
       vertices: []
       indices: 
@@ -758,19 +758,19 @@ TextureImporter:
       name: act_accept_treat_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 647
+        y: 647
+        width: 246
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ba6833ad1b6e7444aa1367d213920df
+      spriteID: d5660554969fee350800000000000000
       internalID: 6048045580134934109
       vertices: []
       indices: 
@@ -780,19 +780,19 @@ TextureImporter:
       name: act_accept_treat_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1148
+        y: 647
+        width: 256
+        height: 225
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 30a7568499f1197458429cc180c82628
+      spriteID: 9e820cfe01fe827f0800000000000000
       internalID: -636996491252061975
       vertices: []
       indices: 
@@ -802,19 +802,19 @@ TextureImporter:
       name: act_accept_treat_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 1656
+        y: 647
+        width: 255
+        height: 229
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8514726055914a24592688d490523e1f
+      spriteID: 5cad0301929af50b0800000000000000
       internalID: -5737681406416332091
       vertices: []
       indices: 
@@ -824,19 +824,19 @@ TextureImporter:
       name: act_accept_treat_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 2162
+        y: 648
+        width: 256
+        height: 237
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f85b0c18315968143974a9bb5b8da273
+      spriteID: e7bf52a2727444fa0800000000000000
       internalID: -5817446585119409282
       vertices: []
       indices: 
@@ -846,19 +846,19 @@ TextureImporter:
       name: act_accept_treat_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 2676
+        y: 645
+        width: 259
+        height: 237
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7b13a160883fbd44b8f35d2c8fe452c9
+      spriteID: 8b5ed7b69a341ef80800000000000000
       internalID: -8079101861594012232
       vertices: []
       indices: 
@@ -868,19 +868,19 @@ TextureImporter:
       name: act_accept_treat_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 122
+        y: 132
+        width: 258
+        height: 236
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 394fdf79c9a11174bacfdd4306db5e8e
+      spriteID: 4bdd1b8b7015cb860800000000000000
       internalID: 7546996169171393972
       vertices: []
       indices: 
@@ -890,19 +890,19 @@ TextureImporter:
       name: act_accept_treat_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 636
+        y: 133
+        width: 251
+        height: 242
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5c1d4106a69207a48b3e1adbc7f7ac1f
+      spriteID: f5a376ee4f2e04a30800000000000000
       internalID: 4197604394308942431
       vertices: []
       indices: 
@@ -912,19 +912,19 @@ TextureImporter:
       name: act_accept_treat_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 1148
+        y: 133
+        width: 256
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e722fb1317350a5439544c9d685c9883
+      spriteID: 8c13ecf55da5925d0800000000000000
       internalID: -3086836197103881784
       vertices: []
       indices: 
@@ -934,19 +934,19 @@ TextureImporter:
       name: act_accept_treat_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 1661
+        y: 133
+        width: 260
+        height: 249
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a3cade2bc7e4eb048b987fadb265492c
+      spriteID: 4e72d528cbb123270800000000000000
       internalID: 8228669965614262244
       vertices: []
       indices: 
@@ -956,19 +956,19 @@ TextureImporter:
       name: act_accept_treat_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2173
+        y: 133
+        width: 264
+        height: 249
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ca1792fec0b34174583cc1bf8847f28a
+      spriteID: 3ce3de26a5e36b7d0800000000000000
       internalID: -2903064351866011965
       vertices: []
       indices: 
@@ -978,19 +978,19 @@ TextureImporter:
       name: act_accept_treat_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2684
+        y: 133
+        width: 264
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd1944ebd9db1ec4eaeff03ae431e733
+      spriteID: e6e0a3e09b5103040800000000000000
       internalID: 4625220701861318254
       vertices: []
       indices: 
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 03969068ed269ce469746fb4c7447690
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1010,16 +1010,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      act_accept_treat_00: 205594097
-      act_accept_treat_01: 2096010149
-      act_accept_treat_02: 292946550
-      act_accept_treat_03: -884640024
-      act_accept_treat_04: 1253452413
-      act_accept_treat_05: -35913261
-      act_accept_treat_06: -1496771115
-      act_accept_treat_07: 19192352
-      act_accept_treat_08: 2033380347
-      act_accept_treat_09: -284945429
+      act_accept_treat_0: -7482252152802045686
+      act_accept_treat_1: 1571603770408091868
       act_accept_treat_10: 4904046951930541504
       act_accept_treat_11: 44074977205043162
       act_accept_treat_12: 1254567318325916316
@@ -1030,6 +1022,7 @@ TextureImporter:
       act_accept_treat_17: 2839173661193128538
       act_accept_treat_18: -3618583526255028827
       act_accept_treat_19: 7757931901077790275
+      act_accept_treat_2: 7035107004658253917
       act_accept_treat_20: -7034554022096871257
       act_accept_treat_21: -8985595523246931466
       act_accept_treat_22: 5201809848914715881
@@ -1040,12 +1033,19 @@ TextureImporter:
       act_accept_treat_27: -5737681406416332091
       act_accept_treat_28: -5817446585119409282
       act_accept_treat_29: -8079101861594012232
+      act_accept_treat_3: 207206064278286265
       act_accept_treat_30: 7546996169171393972
       act_accept_treat_31: 4197604394308942431
       act_accept_treat_32: -3086836197103881784
       act_accept_treat_33: 8228669965614262244
       act_accept_treat_34: -2903064351866011965
       act_accept_treat_35: 4625220701861318254
+      act_accept_treat_4: 3659309298015479074
+      act_accept_treat_5: 7092965281581598693
+      act_accept_treat_6: 5543463212527954352
+      act_accept_treat_7: 4301251940480573300
+      act_accept_treat_8: -7692780135876878302
+      act_accept_treat_9: -2607340513196475944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

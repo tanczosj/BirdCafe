@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7559ac9b4d5d0164eab73474a71535d2
+guid: 82e64a2b1de300c48be5c974915a7473
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -140,12 +140,6 @@ TextureImporter:
   - first:
       213: 3744016601645713060
     second: emo_love_45
-  - first:
-      213: -9206655444846488526
-    second: emo_love_46
-  - first:
-      213: -4100782123033181808
-    second: emo_love_47
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -189,7 +183,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -213,10 +207,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -241,221 +235,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: emo_love_00
+      name: emo_love_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3840
-        width: 768
-        height: 768
+        x: 128
+        y: 2685
+        width: 257
+        height: 263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8d0949d834afa9641a308a41179e0c19
-      internalID: 2110376565
+      spriteID: 748bcd74df8c41d60800000000000000
+      internalID: 7860128239826286663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_01
+      name: emo_love_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3840
-        width: 768
-        height: 768
+        x: 637
+        y: 2685
+        width: 258
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6920c359d8ca5974cb31c792f1088e23
-      internalID: -706310395
+      spriteID: dcc8056c726bd5790800000000000000
+      internalID: -7539669919201194803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_02
+      name: emo_love_2
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3840
-        width: 768
-        height: 768
+        x: 1139
+        y: 2688
+        width: 257
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3697cb7ab0dc83f40b4cfc4fab7ff734
-      internalID: -1169281373
+      spriteID: 97b44981d0c3a0ef0800000000000000
+      internalID: -141234411364136071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_03
+      name: emo_love_3
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3840
-        width: 768
-        height: 768
+        x: 1645
+        y: 2689
+        width: 240
+        height: 266
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ab74ed6efd306b44a39dea6b15f60c5
-      internalID: 736088277
+      spriteID: adfb21a1508a72d20800000000000000
+      internalID: 3253753995664211930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_04
+      name: emo_love_4
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3840
-        width: 768
-        height: 768
+        x: 2161
+        y: 2689
+        width: 228
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e180263d1aaa1ae4ea92bac77e290c6e
-      internalID: 360200590
+      spriteID: c1bbf4b8d175ad670800000000000000
+      internalID: 8564253425801345820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_05
+      name: emo_love_5
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3840
-        width: 768
-        height: 768
+        x: 2684
+        y: 2687
+        width: 221
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b0b5fefe03b24394badd143efdca6c46
-      internalID: -248665439
+      spriteID: ea3ea3ed92ee4d270800000000000000
+      internalID: 8274500278975914926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_06
+      name: emo_love_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3072
-        width: 768
-        height: 768
+        x: 129
+        y: 2175
+        width: 220
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b9c03d204f30b249a355351afe682ab
-      internalID: -1938143888
+      spriteID: 1d482c1038a532380800000000000000
+      internalID: -8997248111839378223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_07
+      name: emo_love_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 3072
-        width: 768
-        height: 768
+        x: 645
+        y: 2175
+        width: 224
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d8b376249f7ad2c4899b9b6e456d818a
-      internalID: 1710363128
+      spriteID: 9e67ec8ab864da490800000000000000
+      internalID: -7733447419478771991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_08
+      name: emo_love_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 3072
-        width: 768
-        height: 768
+        x: 1156
+        y: 2175
+        width: 229
+        height: 254
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2a40a38dc69de2f4989005b9f1a60533
-      internalID: 1255169284
+      spriteID: 49ebb735f6fdb22e0800000000000000
+      internalID: -2149378727904297324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emo_love_09
+      name: emo_love_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 3072
-        width: 768
-        height: 768
+        x: 1665
+        y: 2175
+        width: 234
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e2f46c10fc21b1c4a929362426617671
-      internalID: -418041373
+      spriteID: 17af6a937fadaef40800000000000000
+      internalID: 5758655828905622129
       vertices: []
       indices: 
       edges: []
@@ -464,19 +458,19 @@ TextureImporter:
       name: emo_love_10
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 3072
-        width: 768
-        height: 768
+        x: 2174
+        y: 2173
+        width: 244
+        height: 265
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1957ac669e4f17a4f9d6fedac0dcd0c2
+      spriteID: 1564f00a2d363bcd0800000000000000
       internalID: -2543579608254560687
       vertices: []
       indices: 
@@ -486,19 +480,19 @@ TextureImporter:
       name: emo_love_11
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3072
-        width: 768
-        height: 768
+        x: 2686
+        y: 2172
+        width: 247
+        height: 262
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4af9f3a9461216d4aa9eddd9f2700643
+      spriteID: 226e75284779f10b0800000000000000
       internalID: -5755715272097405406
       vertices: []
       indices: 
@@ -508,19 +502,19 @@ TextureImporter:
       name: emo_love_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 768
-        height: 768
+        x: 125
+        y: 1663
+        width: 244
+        height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ea06713df9824344a8fb7052244904bd
+      spriteID: f6530faec90d17ce0800000000000000
       internalID: -1409115836015168145
       vertices: []
       indices: 
@@ -530,19 +524,19 @@ TextureImporter:
       name: emo_love_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 2304
-        width: 768
-        height: 768
+        x: 639
+        y: 1663
+        width: 243
+        height: 264
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 571b6b4c8ac10f74788ed8901f239cff
+      spriteID: 0444831ce4b486b70800000000000000
       internalID: 8892440265864266816
       vertices: []
       indices: 
@@ -552,19 +546,19 @@ TextureImporter:
       name: emo_love_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 2304
-        width: 768
-        height: 768
+        x: 1153
+        y: 1660
+        width: 244
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cde4ce36032fdbe4ab5c2a4c4023f09d
+      spriteID: 71ee312c233073650800000000000000
       internalID: 6212437727520222743
       vertices: []
       indices: 
@@ -574,19 +568,19 @@ TextureImporter:
       name: emo_love_15
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 2304
-        width: 768
-        height: 768
+        x: 1668
+        y: 1659
+        width: 238
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a34e55447012cb349862a084b0de77b2
+      spriteID: 796a73644a0398630800000000000000
       internalID: 3929725631968290455
       vertices: []
       indices: 
@@ -596,19 +590,19 @@ TextureImporter:
       name: emo_love_16
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 2304
-        width: 768
-        height: 768
+        x: 2191
+        y: 1663
+        width: 227
+        height: 265
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fa9e3069ca46b2c478d63fad0a062e4e
+      spriteID: dec11c385ed202130800000000000000
       internalID: 3539879770894441709
       vertices: []
       indices: 
@@ -618,19 +612,19 @@ TextureImporter:
       name: emo_love_17
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2304
-        width: 768
-        height: 768
+        x: 2702
+        y: 1663
+        width: 228
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e217105276d461843860a5b418bdb046
+      spriteID: 165c7deaa2469dbd0800000000000000
       internalID: -2604940774972340895
       vertices: []
       indices: 
@@ -640,19 +634,19 @@ TextureImporter:
       name: emo_love_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 768
-        height: 768
+        x: 139
+        y: 1152
+        width: 241
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7f3562ef95a2f7b41b7b91e3931fa4bd
+      spriteID: 802b103dfdb3e4ac0800000000000000
       internalID: -3869089197360827896
       vertices: []
       indices: 
@@ -662,19 +656,19 @@ TextureImporter:
       name: emo_love_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 648
+        y: 1152
+        width: 255
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c31c025b2c520834191394af672bdbc6
+      spriteID: 94f89170efda03fc0800000000000000
       internalID: -3517120002423943351
       vertices: []
       indices: 
@@ -684,19 +678,19 @@ TextureImporter:
       name: emo_love_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 768
-        height: 768
+        x: 749
+        y: 1419
+        width: 10
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 475bf283f9ad6a34ea6d0e3ca10dc088
+      spriteID: be880535623606b10800000000000000
       internalID: 1972685653045971179
       vertices: []
       indices: 
@@ -706,19 +700,19 @@ TextureImporter:
       name: emo_love_21
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 1536
-        width: 768
-        height: 768
+        x: 1258
+        y: 1417
+        width: 13
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 28dd537371401c94eb08cf4766ed96bd
+      spriteID: e212bc7fd22a28400800000000000000
       internalID: 325000441438609710
       vertices: []
       indices: 
@@ -728,19 +722,19 @@ TextureImporter:
       name: emo_love_22
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1536
-        width: 768
-        height: 768
+        x: 1763
+        y: 1413
+        width: 26
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1925d5f1c28423149b1570ab31bce169
+      spriteID: ce2de446dd9c146d0800000000000000
       internalID: -3007901123398937876
       vertices: []
       indices: 
@@ -750,19 +744,19 @@ TextureImporter:
       name: emo_love_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1536
-        width: 768
-        height: 768
+        x: 2177
+        y: 1149
+        width: 256
+        height: 305
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7d13c53c1248bf44bb11f45c7dda6573
+      spriteID: ce97e96e52acae2d0800000000000000
       internalID: -3248561917062645268
       vertices: []
       indices: 
@@ -772,19 +766,19 @@ TextureImporter:
       name: emo_love_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 2688
+        y: 1149
+        width: 255
+        height: 317
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a66abeed31fb3c846adec00851bff2a6
+      spriteID: 4768b87b2b8da8a30800000000000000
       internalID: 4218422263081043572
       vertices: []
       indices: 
@@ -794,19 +788,19 @@ TextureImporter:
       name: emo_love_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 1158
+        y: 1149
+        width: 258
+        height: 268
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c1b1bd531debad04086fb1cbc0d90c5f
+      spriteID: f81d68c6257ecc990800000000000000
       internalID: -7364256949463494257
       vertices: []
       indices: 
@@ -816,19 +810,19 @@ TextureImporter:
       name: emo_love_26
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 768
-        height: 768
+        x: 1667
+        y: 1149
+        width: 257
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8d77e14e86e291c418e5d1eef4a1b7e0
+      spriteID: e8eae98f968f2c3e0800000000000000
       internalID: -2034790947591639410
       vertices: []
       indices: 
@@ -838,19 +832,19 @@ TextureImporter:
       name: emo_love_27
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 768
-        width: 768
-        height: 768
+        x: 128
+        y: 637
+        width: 255
+        height: 328
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1ae5c0d090378a74698f6dcaf1b732ba
+      spriteID: 7f773ecc7c9b4d6e0800000000000000
       internalID: -1813620482136377353
       vertices: []
       indices: 
@@ -860,19 +854,19 @@ TextureImporter:
       name: emo_love_28
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 768
-        width: 768
-        height: 768
+        x: 639
+        y: 637
+        width: 256
+        height: 330
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 99bfbe762099cff408ae7f3d818f80fa
+      spriteID: b39377cc088fac3d0800000000000000
       internalID: -3185460554341336773
       vertices: []
       indices: 
@@ -882,19 +876,19 @@ TextureImporter:
       name: emo_love_29
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 768
-        width: 768
-        height: 768
+        x: 1150
+        y: 637
+        width: 259
+        height: 320
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 66d0abc5259dc2749bb19bb729ba1396
+      spriteID: 998b32c9cab173320800000000000000
       internalID: 2537527343214475417
       vertices: []
       indices: 
@@ -904,19 +898,19 @@ TextureImporter:
       name: emo_love_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 1660
+        y: 637
+        width: 260
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 047476620f841d94b830cf0ae31b3fac
+      spriteID: eb3b14002e7979b80800000000000000
       internalID: -8388068784031550530
       vertices: []
       indices: 
@@ -926,19 +920,19 @@ TextureImporter:
       name: emo_love_31
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 1740
+        y: 885
+        width: 63
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e5e8e87b4bf319d478730b6aa83de445
+      spriteID: d9faa6326fba83f00800000000000000
       internalID: 1096815582909214621
       vertices: []
       indices: 
@@ -948,19 +942,19 @@ TextureImporter:
       name: emo_love_32
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 768
-        height: 768
+        x: 2172
+        y: 637
+        width: 260
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a1a4f6736236aa441a45d4cbfead291b
+      spriteID: df97ac31e2659ec40800000000000000
       internalID: 5542055572356626941
       vertices: []
       indices: 
@@ -970,19 +964,19 @@ TextureImporter:
       name: emo_love_33
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 768
-        height: 768
+        x: 2250
+        y: 884
+        width: 68
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a86adf147e4a3f74da8f9198c62d8deb
+      spriteID: 1a5c805dc5564c530800000000000000
       internalID: 3874333028830987681
       vertices: []
       indices: 
@@ -992,19 +986,19 @@ TextureImporter:
       name: emo_love_34
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 768
-        height: 768
+        x: 2684
+        y: 637
+        width: 260
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4520b83cc3f64524cad62b6b7457b93f
+      spriteID: 44993f93f14bf7d80800000000000000
       internalID: -8250677946110207676
       vertices: []
       indices: 
@@ -1014,20 +1008,240 @@ TextureImporter:
       name: emo_love_35
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 768
-        height: 768
+        x: 2751
+        y: 877
+        width: 90
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 50b8eaba1dc10a145ae7b137ed3d7e83
+      spriteID: abbfa372b7d1fe200800000000000000
       internalID: 211420122286062522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_36
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 125
+        width: 260
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500d3f6cf07727840800000000000000
+      internalID: 5220365827721908229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_37
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 125
+        width: 261
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c69f6102c3eaca80800000000000000
+      internalID: -8445687728792693047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_38
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 365
+        width: 90
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d9c15885442f050800000000000000
+      internalID: 5832799614379269400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_39
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 125
+        width: 260
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146aa5565ba6f6d30800000000000000
+      internalID: 4426874286050551361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_40
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 369
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8768f4883940b810800000000000000
+      internalID: 1779002359909214095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_41
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 125
+        width: 259
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e39f046692eeafc0800000000000000
+      internalID: -3481596326359100441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_42
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 367
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d52c045b7435470800000000000000
+      internalID: 8382122175267757422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_43
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 125
+        width: 259
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed6675651d51fc50800000000000000
+      internalID: 6697236467354594793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_44
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 365
+        width: 90
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fe25f7ae18586f0800000000000000
+      internalID: -682996924318290167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo_love_45
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 125
+        width: 257
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a60246334b65f330800000000000000
+      internalID: 3744016601645713060
       vertices: []
       indices: 
       edges: []
@@ -1036,7 +1250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5cbb91eb860e5a544bfdb90d2956b363
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1046,16 +1260,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      emo_love_00: 2110376565
-      emo_love_01: -706310395
-      emo_love_02: -1169281373
-      emo_love_03: 736088277
-      emo_love_04: 360200590
-      emo_love_05: -248665439
-      emo_love_06: -1938143888
-      emo_love_07: 1710363128
-      emo_love_08: 1255169284
-      emo_love_09: -418041373
+      emo_love_0: 7860128239826286663
+      emo_love_1: -7539669919201194803
       emo_love_10: -2543579608254560687
       emo_love_11: -5755715272097405406
       emo_love_12: -1409115836015168145
@@ -1066,6 +1272,7 @@ TextureImporter:
       emo_love_17: -2604940774972340895
       emo_love_18: -3869089197360827896
       emo_love_19: -3517120002423943351
+      emo_love_2: -141234411364136071
       emo_love_20: 1972685653045971179
       emo_love_21: 325000441438609710
       emo_love_22: -3007901123398937876
@@ -1076,12 +1283,29 @@ TextureImporter:
       emo_love_27: -1813620482136377353
       emo_love_28: -3185460554341336773
       emo_love_29: 2537527343214475417
+      emo_love_3: 3253753995664211930
       emo_love_30: -8388068784031550530
       emo_love_31: 1096815582909214621
       emo_love_32: 5542055572356626941
       emo_love_33: 3874333028830987681
       emo_love_34: -8250677946110207676
       emo_love_35: 211420122286062522
+      emo_love_36: 5220365827721908229
+      emo_love_37: -8445687728792693047
+      emo_love_38: 5832799614379269400
+      emo_love_39: 4426874286050551361
+      emo_love_4: 8564253425801345820
+      emo_love_40: 1779002359909214095
+      emo_love_41: -3481596326359100441
+      emo_love_42: 8382122175267757422
+      emo_love_43: 6697236467354594793
+      emo_love_44: -682996924318290167
+      emo_love_45: 3744016601645713060
+      emo_love_5: 8274500278975914926
+      emo_love_6: -8997248111839378223
+      emo_love_7: -7733447419478771991
+      emo_love_8: -2149378727904297324
+      emo_love_9: 5758655828905622129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
