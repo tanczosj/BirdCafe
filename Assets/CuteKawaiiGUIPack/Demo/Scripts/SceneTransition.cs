@@ -13,10 +13,11 @@ namespace Ricimi
         public string scene = "<Insert scene name>";
         public float duration = 1.0f;
         public Color color = Color.black;
+        public bool additive = false;
 
         public void PerformTransition()
         {
-            Transition.LoadLevel(scene, duration, color);
+            Transition.LoadLevel(scene, duration, color, additive);
         }
     }
 }

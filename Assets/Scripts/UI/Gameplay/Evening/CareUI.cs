@@ -1,6 +1,7 @@
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
 using BirdCafe.UI.Components;
+using Ricimi;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -522,7 +523,8 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public void OnPlayClicked()
         {
-            StartCoroutine(OpenFlappy());
+            //StartCoroutine(OpenFlappy());
+            Transition.LoadLevel("Flappy", 1.0f, Color.black);
 
             AttemptAction("Play");
         }
@@ -530,7 +532,7 @@ namespace BirdCafe.UI.Gameplay.Evening
         public IEnumerator OpenFlappy()
         {
             // Load Flappy additively
-            yield return SceneManager.LoadSceneAsync("Flappy", LoadSceneMode.Additive);
+            yield return SceneManager.LoadSceneAsync("Flappy", LoadSceneMode.Single);
 
             // Make Flappy the active scene so spawned objects go into it
             Scene flappyScene = SceneManager.GetSceneByName("Flappy");

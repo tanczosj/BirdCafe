@@ -3,6 +3,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [InitializeOnLoad]
+
 public static class PlayFromMainMenu
 {
     private const string MainMenuScenePath = "Assets/Scenes/MainMenu.unity";

@@ -1,6 +1,7 @@
 using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 // using BirdCafe.Shared.ViewModels;
@@ -10,6 +11,9 @@ public class PetPopupUI : MonoBehaviour
     [Header("Bird Sale List")]
     [SerializeField] private Transform birdSaleItemContainer;
     [SerializeField] private BirdSaleItemUI birdSaleItemPrefab;
+
+    [Header("Optional Money Label")]
+    [SerializeField] private TMP_Text moneyText;
 
     private readonly List<BirdSaleItemUI> spawnedItems = new List<BirdSaleItemUI>();
 
@@ -38,6 +42,12 @@ public class PetPopupUI : MonoBehaviour
         {
             Debug.LogError("Bird sale item prefab is not assigned.");
             return;
+        }
+
+        if (moneyText != null)
+        {
+            var dashboard = BirdCafeGame.Instance.GetPetStoreDashboard();
+            moneyText.text = $"${dashboard.CurrentMoney:F2}";
         }
 
         List<PetStoreBirdOfferViewModel> offers = BirdCafeGame.Instance.GetPetStoreBirdOffers();

@@ -1,4 +1,5 @@
 using BirdCafe.Shared;
+using Ricimi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("You Win!");
         Time.timeScale = 0f;
-        SceneManager.UnloadSceneAsync("Flappy");
+        
+        Ricimi.Transition.LoadLevel("MainMenu", 1.0f, Color.black, false);
     }
 }
