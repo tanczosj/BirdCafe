@@ -1,31 +1,18 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using BirdCafe.Shared.ViewModels;
+using BirdCafe.Unity.Birds;
 
 namespace BirdCafe.UI.Components
 {
     public class BirdCareCard : MonoBehaviour
     {
-        [Serializable]
-        private class SpeciesSpriteEntry
-        {
-            public string speciesId;
-            public Sprite sprite;
-        }
-
         [Header("Text References")]
         [SerializeField] private TMP_Text nameLabel;
         [SerializeField] private TMP_Text statusLabel;
 
-        [Header("Image References")]
-        [SerializeField] private Image birdImage;
-        [SerializeField] private Sprite fallbackSprite;
-
-        [Header("Species Sprite Mapping")]
-        [SerializeField] private List<SpeciesSpriteEntry> speciesSprites = new List<SpeciesSpriteEntry>();
+        [Header("Animated Bird View")]
+        [SerializeField] private BirdVisualController birdVisualController;
 
         [Header("Stat Containers")]
         [SerializeField] private BirdStatContainer hungerStat;
@@ -45,68 +32,67 @@ namespace BirdCafe.UI.Components
 
         private BirdCareViewModel _viewModel;
         private string _lastBirdId = string.Empty;
-        private Dictionary<string, Sprite> _speciesSpriteLookup;
 
         public BirdCareViewModel ViewModel
         {
             get => _viewModel;
             set
             {
-                bool isSameBird = (value != null && value.Id == _lastBirdId);
+                bool isSameBird = value != null && value.Id == _lastBirdId;
 
                 _viewModel = value;
 
-                if (_viewModel != null)
+                if (_viewModel == null)
                 {
-                    _lastBirdId = _viewModel.Id;
-                    RefreshVisuals(isSameBird);
+                    _lastBirdId = string.Empty;
+                    ClearVisuals();
+                    return;
                 }
+
+                _lastBirdId = _viewModel.Id ?? string.Empty;
+                RefreshVisuals(isSameBird);
             }
         }
 
-        private void Awake()
+        private void OnDisable()
         {
-            BuildSpeciesLookup();
-        }
-
-        private void BuildSpeciesLookup()
-        {
-            _speciesSpriteLookup = new Dictionary<string, Sprite>(StringComparer.OrdinalIgnoreCase);
-
-            foreach (var entry in speciesSprites)
+            // Cards may be pooled or hidden. Hide the embedded bird view cleanly when disabled.
+            if (birdVisualController != null)
             {
-                if (entry == null || string.IsNullOrWhiteSpace(entry.speciesId))
-                    continue;
-
-                if (_speciesSpriteLookup.ContainsKey(entry.speciesId))
-                {
-                    Debug.LogWarning($"Duplicate speciesId mapping found on {name}: {entry.speciesId}", this);
-                    continue;
-                }
-
-                _speciesSpriteLookup.Add(entry.speciesId, entry.sprite);
+                birdVisualController.Unbind(hideVisual: true);
             }
         }
 
         private void RefreshVisuals(bool isUpdate)
         {
             if (_viewModel == null)
+            {
+                ClearVisuals();
                 return;
+            }
 
             if (nameLabel != null)
+            {
                 nameLabel.text = _viewModel.Name;
+            }
 
             if (statusLabel != null)
             {
                 if (_viewModel.IsSick)
+                {
                     statusLabel.text = "Status: <color=red>SICK</color>";
+                }
                 else if (_viewModel.WillRestTomorrow)
+                {
                     statusLabel.text = "Status: <color=blue>Resting</color>";
+                }
                 else
+                {
                     statusLabel.text = "Status: <color=green>Happy</color>";
+                }
             }
 
-            RefreshBirdImage();
+            RefreshBirdVisual(isUpdate);
 
             if (isUpdate)
             {
@@ -148,22 +134,45 @@ namespace BirdCafe.UI.Components
             }
         }
 
-        private void RefreshBirdImage()
+        private void RefreshBirdVisual(bool isUpdate)
         {
-            if (birdImage == null)
-                return;
-
-            Sprite spriteToUse = fallbackSprite;
-
-            if (!string.IsNullOrWhiteSpace(_viewModel.SpeciesId) &&
-                _speciesSpriteLookup != null &&
-                _speciesSpriteLookup.TryGetValue(_viewModel.SpeciesId, out var mappedSprite) &&
-                mappedSprite != null)
+            if (birdVisualController == null)
             {
-                spriteToUse = mappedSprite;
+                return;
             }
 
-            birdImage.sprite = spriteToUse;
+            if (_viewModel == null || string.IsNullOrWhiteSpace(_viewModel.Id))
+            {
+                birdVisualController.Unbind(hideVisual: true);
+                return;
+            }
+
+            if (isUpdate && birdVisualController.IsBound && birdVisualController.BirdId == _viewModel.Id)
+            {
+                birdVisualController.RefreshVisualFromShared();
+            }
+            else
+            {
+                birdVisualController.BindToBird(_viewModel.Id, immediateRefresh: true);
+            }
+        }
+
+        private void ClearVisuals()
+        {
+            if (nameLabel != null)
+            {
+                nameLabel.text = string.Empty;
+            }
+
+            if (statusLabel != null)
+            {
+                statusLabel.text = string.Empty;
+            }
+
+            if (birdVisualController != null)
+            {
+                birdVisualController.Unbind(hideVisual: true);
+            }
         }
     }
 }

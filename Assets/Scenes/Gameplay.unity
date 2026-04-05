@@ -5346,7 +5346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837140863332298591, guid: a181dec836fea524c98d62313bff1e40, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 554.8782
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 2837140863332298591, guid: a181dec836fea524c98d62313bff1e40, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9309,7 +9309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138.24927
+      value: -138.24928
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11752,33 +11752,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a181dec836fea524c98d62313bff1e40, type: 3}
---- !u!1 &1017374141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 913917523772611533, guid: 5989d2b5a75531f489269776f59c3f36, type: 3}
-  m_PrefabInstance: {fileID: 1694477141}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1017374142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017374141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2067db99cf37eff4bb94bbb4c519d860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CartoonBob2D
-  bobHeight: 4
-  bobSpeed: 0.7
-  rotationAmount: 3
-  rotationSpeed: 0.7
-  useLocalPosition: 1
-  maxParallaxOffset: 10
-  parallaxSmoothSpeed: 5
-  invertParallax: 1
-  hoverScaleMultiplier: 1.1
-  scaleSmoothSpeed: 8
 --- !u!1 &1025571140
 GameObject:
   m_ObjectHideFlags: 0
@@ -11817,7 +11790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -24.881058}
+  m_AnchoredPosition: {x: -0.00012207031, y: -24.881042}
   m_SizeDelta: {x: -0, y: 49.762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1025571142
@@ -12042,7 +12015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837140863332298591, guid: a181dec836fea524c98d62313bff1e40, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18.448822
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2837140863332298591, guid: a181dec836fea524c98d62313bff1e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17407,7 +17380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138.24927
+      value: -138.24928
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -18742,10 +18715,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 913917523772611533, guid: 5989d2b5a75531f489269776f59c3f36, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1017374142}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5989d2b5a75531f489269776f59c3f36, type: 3}
 --- !u!224 &1694477142 stripped
 RectTransform:
@@ -23413,6 +23383,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4365256660316828196, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
+      propertyPath: enableAutomaticUpdate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5794645039965553528, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -23516,6 +23490,10 @@ PrefabInstance:
     - target: {fileID: 7729096123621593113, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
       propertyPath: m_Name
       value: TopBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149825666784516577, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
+      propertyPath: enableAutomaticUpdate
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

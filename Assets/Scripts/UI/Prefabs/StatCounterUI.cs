@@ -46,7 +46,8 @@ namespace BirdCafe.UI.Components
             }
 
             // 2. Start the new animation
-            _activeCoroutine = StartCoroutine(CountRoutine(_currentValue, newValue, duration));
+            if (gameObject.activeInHierarchy)
+                _activeCoroutine = StartCoroutine(CountRoutine(_currentValue, newValue, duration));
         }
 
         private IEnumerator CountRoutine(float start, float end, float duration)
