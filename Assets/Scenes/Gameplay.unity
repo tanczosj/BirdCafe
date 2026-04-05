@@ -5398,12 +5398,11 @@ MonoBehaviour:
   arrowRight: {fileID: 869484673}
   birdNameInput: {fileID: 896321454}
   costumes:
-  - id: Costume_None
-    sprite: {fileID: 21300000, guid: d823fc2b06947489f90867f6084eb4bc, type: 3}
   - id: Costume_Bandana
     sprite: {fileID: 4783202043866508890, guid: b36df7065c1e6d34aada477ace54a30a, type: 3}
   - id: Costume_RoyalCape
     sprite: {fileID: 4066210322289388729, guid: 8e29fde63573db4488f05f34b326462a, type: 3}
+  noCostumeSprite: {fileID: 21300000, guid: f69219f41c5eb404bac8698f8e5cbc15, type: 3}
   moveDuration: 0.25
   useUnscaledTime: 1
 --- !u!114 &483779038 stripped
@@ -9309,7 +9308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138.24928
+      value: -138.24927
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -17380,7 +17379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138.24928
+      value: -138.24927
       objectReference: {fileID: 0}
     - target: {fileID: 5677123181747020673, guid: 5d9367b986d834bad8ac68f5d86644bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

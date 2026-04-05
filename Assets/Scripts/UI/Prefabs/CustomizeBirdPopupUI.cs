@@ -23,6 +23,8 @@ namespace BirdCafe.UI.Components
             public Sprite sprite;
         }
 
+        private const string NoCostumeId = "__NONE__";
+
         [Header("References")]
         [SerializeField] private CareUI careUI;
         [SerializeField] private RectTransform birdCostumeSelector;
@@ -35,6 +37,9 @@ namespace BirdCafe.UI.Components
         [Header("Costumes")]
         [Tooltip("Inspector-configured sprite catalog. At runtime this list is filtered to only the owned costumes returned by BirdCafeGame.")]
         [SerializeField] private List<CostumeOption> costumes = new List<CostumeOption>();
+
+        [Tooltip("Sprite shown for the built-in no-costume option. Selecting it will equip no costume (null).")]
+        [SerializeField] private Sprite noCostumeSprite;
 
         [Header("Animation")]
         [SerializeField] private float moveDuration = 0.25f;
@@ -123,15 +128,15 @@ namespace BirdCafe.UI.Components
             {
                 loadedBirdId = string.Empty;
                 loadedBirdName = string.Empty;
-                loadedCostumeId = string.Empty;
+                loadedCostumeId = NoCostumeId;
 
-                SetCostumes(new List<CostumeOption>(), 0, string.Empty);
+                SetCostumes(BuildOwnedCostumeOptions(), 0, string.Empty);
                 return;
             }
 
             loadedBirdId = selectedBird.Id ?? string.Empty;
             loadedBirdName = selectedBird.Name ?? string.Empty;
-            loadedCostumeId = selectedBird.CostumeId ?? string.Empty;
+            loadedCostumeId = ToUiCostumeId(selectedBird.CostumeId);
 
             List<CostumeOption> ownedCostumes = BuildOwnedCostumeOptions();
             int startingIndex = ResolveCostumeIndex(ownedCostumes, loadedCostumeId);
@@ -149,14 +154,14 @@ namespace BirdCafe.UI.Components
             if (!string.Equals(bird.Name, requestedName, StringComparison.Ordinal))
                 bird.Name = requestedName;
 
-            string desiredCostumeId = string.IsNullOrWhiteSpace(SelectedCostumeId) ? null : SelectedCostumeId;
-            string currentCostumeId = string.IsNullOrWhiteSpace(bird.CostumeId) ? null : bird.CostumeId;
+            string desiredCostumeId = ToStoredCostumeId(SelectedCostumeId);
+            string currentCostumeId = ToStoredCostumeId(bird.CostumeId);
 
             if (!string.Equals(currentCostumeId, desiredCostumeId, StringComparison.Ordinal))
                 BirdCafeGame.Instance.EquipBirdCostume(bird.Id, desiredCostumeId);
 
             loadedBirdName = bird.Name ?? string.Empty;
-            loadedCostumeId = desiredCostumeId ?? string.Empty;
+            loadedCostumeId = ToUiCostumeId(desiredCostumeId);
         }
 
         public void ClosePopup()
@@ -382,12 +387,24 @@ namespace BirdCafe.UI.Components
                     if (offer == null)
                         continue;
 
-                    if (offer.SupplyType == PetStoreSupplyType.Costume && offer.OwnedQuantity > 0 && !string.IsNullOrWhiteSpace(offer.ItemId))
+                    if (offer.SupplyType == PetStoreSupplyType.Costume &&
+                        offer.OwnedQuantity > 0 &&
+                        !string.IsNullOrWhiteSpace(offer.ItemId))
+                    {
                         ownedIds.Add(offer.ItemId);
+                    }
                 }
             }
 
-            var ownedCostumes = new List<CostumeOption>();
+            var availableCostumes = new List<CostumeOption>
+            {
+                new CostumeOption
+                {
+                    id = NoCostumeId,
+                    sprite = noCostumeSprite
+                }
+            };
+
             for (int i = 0; i < costumeCatalog.Count; i++)
             {
                 CostumeOption option = costumeCatalog[i];
@@ -397,29 +414,48 @@ namespace BirdCafe.UI.Components
                 if (!ownedIds.Contains(option.id))
                     continue;
 
-                ownedCostumes.Add(new CostumeOption
+                availableCostumes.Add(new CostumeOption
                 {
                     id = option.id,
                     sprite = option.sprite
                 });
             }
 
-            return ownedCostumes;
+            return availableCostumes;
         }
 
         private int ResolveCostumeIndex(List<CostumeOption> options, string costumeId)
         {
-            if (options == null || options.Count == 0 || string.IsNullOrWhiteSpace(costumeId))
+            if (options == null || options.Count == 0)
                 return 0;
+
+            string targetCostumeId = ToUiCostumeId(costumeId);
 
             for (int i = 0; i < options.Count; i++)
             {
                 CostumeOption option = options[i];
-                if (option != null && string.Equals(option.id, costumeId, StringComparison.Ordinal))
+                if (option != null && string.Equals(option.id, targetCostumeId, StringComparison.Ordinal))
                     return i;
             }
 
             return 0;
+        }
+
+        private static string ToUiCostumeId(string storedCostumeId)
+        {
+            return string.IsNullOrWhiteSpace(storedCostumeId)
+                ? NoCostumeId
+                : storedCostumeId;
+        }
+
+        private static string ToStoredCostumeId(string selectedCostumeId)
+        {
+            if (string.IsNullOrWhiteSpace(selectedCostumeId))
+                return null;
+
+            return string.Equals(selectedCostumeId, NoCostumeId, StringComparison.Ordinal)
+                ? null
+                : selectedCostumeId;
         }
 
         private string GetRequestedBirdName(string fallbackName)
