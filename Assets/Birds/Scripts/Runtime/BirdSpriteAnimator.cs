@@ -1,13 +1,13 @@
-
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BirdCafe.Unity.Birds
 {
     [DisallowMultipleComponent]
     public sealed class BirdSpriteAnimator : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private Image targetImage;
 
         public event Action<BirdAnimationStateClip> ClipCompleted;
 
@@ -19,9 +19,9 @@ namespace BirdCafe.Unity.Birds
         private bool _playing;
         private bool _completionRaised;
 
-        public void SetSpriteRenderer(SpriteRenderer renderer)
+        public void SetTargetImage(Image image)
         {
-            spriteRenderer = renderer;
+            targetImage = image;
         }
 
         public void Play(BirdAnimationStateClip clip, bool restart = true)
@@ -57,9 +57,14 @@ namespace BirdCafe.Unity.Birds
 
         private void Reset()
         {
-            if (spriteRenderer == null)
+            if (targetImage == null)
             {
-                spriteRenderer = GetComponent<SpriteRenderer>();
+                targetImage = GetComponent<Image>();
+            }
+
+            if (targetImage == null)
+            {
+                targetImage = GetComponentInChildren<Image>(true);
             }
         }
 
@@ -128,9 +133,9 @@ namespace BirdCafe.Unity.Birds
 
         private void ApplyFrame()
         {
-            if (spriteRenderer == null)
+            if (targetImage == null)
             {
-                Debug.LogWarning("[BirdSpriteAnimator] Missing SpriteRenderer reference.", this);
+                Debug.LogWarning("[BirdSpriteAnimator] Missing target Image reference.", this);
                 return;
             }
 
@@ -140,7 +145,7 @@ namespace BirdCafe.Unity.Birds
             }
 
             int clampedIndex = Mathf.Clamp(_frameIndex, 0, _currentClip.Frames.Length - 1);
-            spriteRenderer.sprite = _currentClip.Frames[clampedIndex];
+            targetImage.sprite = _currentClip.Frames[clampedIndex];
         }
 
         private void RaiseCompletedOnce()

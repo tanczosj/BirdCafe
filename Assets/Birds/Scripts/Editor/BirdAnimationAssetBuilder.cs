@@ -1,12 +1,11 @@
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using BirdCafe.Unity.Birds;
 using UnityEditor;
-using UnityEngine;
 using UnityEditor.U2D.Sprites;
+using UnityEngine;
 
 namespace BirdCafe.Unity.Birds.Editor
 {
@@ -168,6 +167,25 @@ namespace BirdCafe.Unity.Birds.Editor
 
         private static void ConfigureAndSlice(string path)
         {
+            if (!TryGetSourceImageSize(path, out int sourceWidth, out int sourceHeight))
+            {
+                Debug.LogWarning($"[BirdAnimationAssetBuilder] Could not read source image size for {path}");
+                return;
+            }
+
+            if (sourceWidth <= 0 || sourceHeight <= 0)
+            {
+                Debug.LogWarning($"[BirdAnimationAssetBuilder] Invalid source image size for {path}: {sourceWidth}x{sourceHeight}");
+                return;
+            }
+
+            if (sourceWidth % GridColumns != 0 || sourceHeight % GridRows != 0)
+            {
+                Debug.LogWarning(
+                    $"[BirdAnimationAssetBuilder] Source image {path} is {sourceWidth}x{sourceHeight}, which is not evenly divisible by {GridColumns}x{GridRows}.");
+                return;
+            }
+
             TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
             if (importer == null)
             {
@@ -200,6 +218,21 @@ namespace BirdCafe.Unity.Birds.Editor
                 importerDirty = true;
             }
 
+            if (importer.npotScale != TextureImporterNPOTScale.None)
+            {
+                importer.npotScale = TextureImporterNPOTScale.None;
+                importerDirty = true;
+            }
+
+            int requiredSize = Mathf.NextPowerOfTwo(Mathf.Max(sourceWidth, sourceHeight));
+            requiredSize = Mathf.Clamp(requiredSize, 32, 8192);
+
+            if (importer.maxTextureSize < requiredSize)
+            {
+                importer.maxTextureSize = requiredSize;
+                importerDirty = true;
+            }
+
             if (importerDirty)
             {
                 importer.SaveAndReimport();
@@ -210,14 +243,8 @@ namespace BirdCafe.Unity.Birds.Editor
                 }
             }
 
-            Texture2D texture = AssetDatabase.LoadAssetAtPath<Texture2D>(path);
-            if (texture == null)
-            {
-                return;
-            }
-
-            int frameWidth = texture.width / GridColumns;
-            int frameHeight = texture.height / GridRows;
+            int frameWidth = sourceWidth / GridColumns;
+            int frameHeight = sourceHeight / GridRows;
 
             var factory = new SpriteDataProviderFactories();
             factory.Init();
@@ -234,15 +261,16 @@ namespace BirdCafe.Unity.Birds.Editor
             SpriteRect[] spriteRects = BuildSpriteRects(path, frameWidth, frameHeight);
             dataProvider.SetSpriteRects(spriteRects);
 
-            // Needed on newer Unity versions so names and IDs are registered correctly.
             ISpriteNameFileIdDataProvider nameFileIdDataProvider =
                 dataProvider.GetDataProvider<ISpriteNameFileIdDataProvider>();
 
             if (nameFileIdDataProvider != null)
             {
-                var nameFileIdPairs = spriteRects
-                    .Select(r => new SpriteNameFileIdPair(r.name, r.spriteID))
-                    .ToList();
+                var nameFileIdPairs = new List<SpriteNameFileIdPair>(spriteRects.Length);
+                for (int i = 0; i < spriteRects.Length; i++)
+                {
+                    nameFileIdPairs.Add(new SpriteNameFileIdPair(spriteRects[i].name, spriteRects[i].spriteID));
+                }
 
                 nameFileIdDataProvider.SetNameFileIdPairs(nameFileIdPairs);
             }
@@ -278,6 +306,39 @@ namespace BirdCafe.Unity.Birds.Editor
             }
 
             return rects;
+        }
+
+        private static bool TryGetSourceImageSize(string assetPath, out int width, out int height)
+        {
+            width = 0;
+            height = 0;
+
+            string projectRoot = Directory.GetCurrentDirectory();
+            string fullPath = Path.GetFullPath(Path.Combine(projectRoot, assetPath));
+
+            if (!File.Exists(fullPath))
+            {
+                return false;
+            }
+
+            byte[] bytes = File.ReadAllBytes(fullPath);
+            Texture2D temp = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+
+            try
+            {
+                if (!temp.LoadImage(bytes, true))
+                {
+                    return false;
+                }
+
+                width = temp.width;
+                height = temp.height;
+                return true;
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(temp);
+            }
         }
 
         private static Sprite[] LoadFrames(string path)

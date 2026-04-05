@@ -1,6 +1,6 @@
-
 using BirdCafe.Shared.ViewModels;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BirdCafe.Unity.Birds
 {
@@ -10,7 +10,7 @@ namespace BirdCafe.Unity.Birds
         [SerializeField] private string birdId;
         [SerializeField] private BirdAppearanceLibrary appearanceLibrary;
         [SerializeField] private BirdSpriteAnimator spriteAnimator;
-        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private Image targetImage;
         [SerializeField] private GameObject visualRoot;
         [SerializeField] private bool initializeOnEnable = true;
         [SerializeField] private bool hideWhenUnbound = true;
@@ -31,9 +31,14 @@ namespace BirdCafe.Unity.Birds
                 spriteAnimator = GetComponent<BirdSpriteAnimator>();
             }
 
-            if (spriteRenderer == null)
+            if (targetImage == null)
             {
-                spriteRenderer = GetComponent<SpriteRenderer>();
+                targetImage = GetComponent<Image>();
+            }
+
+            if (targetImage == null)
+            {
+                targetImage = GetComponentInChildren<Image>(true);
             }
         }
 
@@ -146,9 +151,9 @@ namespace BirdCafe.Unity.Birds
             {
                 visualRoot.SetActive(true);
             }
-            else if (spriteRenderer != null)
+            else if (targetImage != null)
             {
-                spriteRenderer.enabled = true;
+                targetImage.enabled = true;
             }
         }
 
@@ -161,18 +166,18 @@ namespace BirdCafe.Unity.Birds
                 spriteAnimator.Stop();
             }
 
-            if (spriteRenderer != null)
+            if (targetImage != null)
             {
-                spriteRenderer.sprite = null;
+                targetImage.sprite = null;
             }
 
             if (visualRoot != null && visualRoot != gameObject)
             {
                 visualRoot.SetActive(false);
             }
-            else if (spriteRenderer != null)
+            else if (targetImage != null)
             {
-                spriteRenderer.enabled = false;
+                targetImage.enabled = false;
             }
         }
 
@@ -253,14 +258,19 @@ namespace BirdCafe.Unity.Birds
                 spriteAnimator = GetComponent<BirdSpriteAnimator>();
             }
 
-            if (spriteRenderer == null)
+            if (targetImage == null)
             {
-                spriteRenderer = GetComponent<SpriteRenderer>();
+                targetImage = GetComponent<Image>();
             }
 
-            if (spriteAnimator != null && spriteRenderer != null)
+            if (targetImage == null)
             {
-                spriteAnimator.SetSpriteRenderer(spriteRenderer);
+                targetImage = GetComponentInChildren<Image>(true);
+            }
+
+            if (spriteAnimator != null && targetImage != null)
+            {
+                spriteAnimator.SetTargetImage(targetImage);
             }
         }
 
