@@ -1,20 +1,20 @@
-// Copyright (C) 2024 ricimi. All rights reserved.
-// This code can only be used under the standard Unity Asset Store EULA,
-// a copy of which is available at https://unity.com/legal/as-terms.
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Ricimi
 {
-    // This class is responsible for popup management. Popups follow the traditional behavior of
-    // automatically blocking the input on elements behind it and adding a background texture.
     public class Popup : MonoBehaviour
     {
         [Header("Background")]
         public bool useBackground = true;
-        public Color backgroundColor = new Color(10.0f / 255.0f, 10.0f / 255.0f, 10.0f / 255.0f, 0.6f);
+        public Color backgroundTint = new Color(10f / 255f, 10f / 255f, 10f / 255f, 0.35f);
+
+        [Tooltip("A camera output texture that shows the scene behind the popup.")]
+        public RenderTexture blurredBackgroundTexture;
+
+        [Tooltip("Optional blur material for the RawImage.")]
+        public Material blurMaterial;
 
         [Header("Timing")]
         public float destroyTime = 0.5f;
@@ -101,27 +101,14 @@ namespace Ricimi
 
             var rootCanvas = parentCanvas.rootCanvas;
 
-            var bgTex = new Texture2D(1, 1);
-            bgTex.SetPixel(0, 0, backgroundColor);
-            bgTex.Apply();
-
             m_background = new GameObject("PopupBackground");
 
             var rectTransform = m_background.AddComponent<RectTransform>();
-            var image = m_background.AddComponent<Image>();
-
-            var rect = new Rect(0, 0, bgTex.width, bgTex.height);
-            var sprite = Sprite.Create(bgTex, rect, new Vector2(0.5f, 0.5f), 1);
-
-            image.material = new Material(image.material);
-            image.material.mainTexture = bgTex;
-            image.sprite = sprite;
-            image.raycastTarget = true;
+            var rawImage = m_background.AddComponent<RawImage>();
 
             m_background.transform.SetParent(rootCanvas.transform, false);
             m_background.transform.localScale = Vector3.one;
 
-            // Stretch to fill the entire root canvas / screen.
             rectTransform.anchorMin = Vector2.zero;
             rectTransform.anchorMax = Vector2.one;
             rectTransform.pivot = new Vector2(0.5f, 0.5f);
@@ -129,6 +116,16 @@ namespace Ricimi
             rectTransform.offsetMax = Vector2.zero;
             rectTransform.anchoredPosition = Vector2.zero;
             rectTransform.sizeDelta = Vector2.zero;
+
+            // Show the captured scene texture.
+            rawImage.texture = blurredBackgroundTexture;
+            rawImage.color = backgroundTint;
+            rawImage.raycastTarget = true;
+
+            if (blurMaterial != null)
+            {
+                rawImage.material = new Material(blurMaterial);
+            }
 
             var bgCanvas = m_background.AddComponent<Canvas>();
             bgCanvas.overrideSorting = true;
@@ -140,8 +137,8 @@ namespace Ricimi
                 m_background.AddComponent<GraphicRaycaster>();
             }
 
-            image.canvasRenderer.SetAlpha(0.0f);
-            image.CrossFadeAlpha(1.0f, 0.4f, false);
+            rawImage.canvasRenderer.SetAlpha(0.0f);
+            rawImage.CrossFadeAlpha(1.0f, 0.4f, false);
         }
 
         private void RemoveBackground()
@@ -151,10 +148,10 @@ namespace Ricimi
                 return;
             }
 
-            var image = m_background.GetComponent<Image>();
-            if (image != null)
+            var rawImage = m_background.GetComponent<RawImage>();
+            if (rawImage != null)
             {
-                image.CrossFadeAlpha(0.0f, 0.2f, false);
+                rawImage.CrossFadeAlpha(0.0f, 0.2f, false);
             }
         }
     }

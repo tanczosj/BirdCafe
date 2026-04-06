@@ -42,6 +42,11 @@ namespace BirdCafe.UI.Gameplay.Evening
         [Header("Animation")]
         [SerializeField] private float cardMoveDuration = 0.22f;
         [SerializeField] private float drawerDuration = 0.24f;
+        [SerializeField] private float careOptionsDuration = 0.14f;
+        [SerializeField] private float switchBirdDuration = 0.14f;
+        [SerializeField] private float careOptionsHiddenPadding = 120f;
+        [SerializeField] private float switchBirdHiddenPadding = 120f;
+        [SerializeField] private float movementOvershoot = 1.0f;
         [SerializeField] private float cardFlipDuration = 0.12f;
         [SerializeField] private AnimationCurve moveEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         [SerializeField] private AnimationCurve flipEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
@@ -62,6 +67,11 @@ namespace BirdCafe.UI.Gameplay.Evening
         private Coroutine _flipCoroutine;
         private RectTransform _birdCardRect;
         private RectTransform _birdSelectGridRect;
+        private RectTransform _careOptionsRect;
+        private RectTransform _switchBirdButtonRect;
+        private RectTransform _rootCanvasRect;
+        private Vector2 _careOptionsVisiblePosition;
+        private Vector2 _switchBirdButtonVisiblePosition;
         private bool _isDrawerVisible;
         private bool _isFlippingCard;
 
@@ -69,6 +79,15 @@ namespace BirdCafe.UI.Gameplay.Evening
         {
             _birdCardRect = birdCard != null ? birdCard.GetComponent<RectTransform>() : null;
             _birdSelectGridRect = birdSelectGrid != null ? birdSelectGrid.GetComponent<RectTransform>() : null;
+            _careOptionsRect = careOptionsPanel != null ? careOptionsPanel.GetComponent<RectTransform>() : null;
+            _switchBirdButtonRect = switchBirdButton != null ? switchBirdButton.GetComponent<RectTransform>() : null;
+
+            Canvas rootCanvas = GetComponentInParent<Canvas>();
+            if (rootCanvas != null && rootCanvas.rootCanvas != null)
+                _rootCanvasRect = rootCanvas.rootCanvas.GetComponent<RectTransform>();
+
+            CacheCareOptionsVisiblePosition();
+            CacheSwitchBirdButtonVisiblePosition();
 
             if (customizeBirdPopup != null)
                 customizeBirdPopup.SetCareUI(this);
@@ -321,14 +340,23 @@ namespace BirdCafe.UI.Gameplay.Evening
                 _isFlippingCard = false;
             }
 
-            if (careOptionsPanel != null)
-                careOptionsPanel.SetActive(false);
-
             if (_birdSelectGridRect == null && birdSelectGrid != null)
                 _birdSelectGridRect = birdSelectGrid.GetComponent<RectTransform>();
 
+            if (_careOptionsRect == null && careOptionsPanel != null)
+                _careOptionsRect = careOptionsPanel.GetComponent<RectTransform>();
+
+            if (_switchBirdButtonRect == null && switchBirdButton != null)
+                _switchBirdButtonRect = switchBirdButton.GetComponent<RectTransform>();
+
             Vector2 gridOpenPosition = Vector2.zero;
             Vector2 gridClosedPosition = GetBirdSelectGridHiddenPosition();
+
+            Vector2 careVisiblePosition = _careOptionsVisiblePosition;
+            Vector2 careHiddenPosition = GetCareOptionsHiddenPosition();
+
+            Vector2 switchVisiblePosition = _switchBirdButtonVisiblePosition;
+            Vector2 switchHiddenPosition = GetSwitchBirdButtonHiddenPosition();
 
             if (showDrawer)
             {
@@ -337,6 +365,39 @@ namespace BirdCafe.UI.Gameplay.Evening
 
                 if (_birdSelectGridRect != null)
                     _birdSelectGridRect.anchoredPosition = gridClosedPosition;
+
+                if (careOptionsPanel != null && careOptionsPanel.activeSelf)
+                {
+                    RefreshRectLayout(_careOptionsRect);
+
+                    if (_careOptionsRect != null)
+                        _careOptionsRect.anchoredPosition = careVisiblePosition;
+                }
+
+                if (switchBirdButton != null && switchBirdButton.gameObject.activeSelf)
+                {
+                    RefreshRectLayout(_switchBirdButtonRect);
+
+                    if (_switchBirdButtonRect != null)
+                        _switchBirdButtonRect.anchoredPosition = switchVisiblePosition;
+                }
+            }
+            else
+            {
+                if (careOptionsPanel != null && !careOptionsPanel.activeSelf)
+                    careOptionsPanel.SetActive(true);
+
+                if (switchBirdButton != null && !switchBirdButton.gameObject.activeSelf)
+                    switchBirdButton.gameObject.SetActive(true);
+
+                RefreshRectLayout(_careOptionsRect);
+                RefreshRectLayout(_switchBirdButtonRect);
+
+                if (_careOptionsRect != null)
+                    _careOptionsRect.anchoredPosition = careHiddenPosition;
+
+                if (_switchBirdButtonRect != null)
+                    _switchBirdButtonRect.anchoredPosition = switchHiddenPosition;
             }
 
             Vector2 birdStartPosition = _birdCardRect.anchoredPosition;
@@ -349,13 +410,25 @@ namespace BirdCafe.UI.Gameplay.Evening
             Vector2 gridStartPosition = _birdSelectGridRect != null ? _birdSelectGridRect.anchoredPosition : gridClosedPosition;
             Vector2 gridTargetPosition = showDrawer ? gridOpenPosition : gridClosedPosition;
 
-            float duration = Mathf.Max(0.0001f, Mathf.Max(cardMoveDuration, drawerDuration));
+            Vector2 careStartPosition = _careOptionsRect != null ? _careOptionsRect.anchoredPosition : careHiddenPosition;
+            Vector2 careTargetPosition = showDrawer ? careHiddenPosition : careVisiblePosition;
+
+            Vector2 switchStartPosition = _switchBirdButtonRect != null ? _switchBirdButtonRect.anchoredPosition : switchHiddenPosition;
+            Vector2 switchTargetPosition = showDrawer ? switchHiddenPosition : switchVisiblePosition;
+
+            float duration = Mathf.Max(
+                0.0001f,
+                Mathf.Max(
+                    cardMoveDuration,
+                    Mathf.Max(drawerDuration, Mathf.Max(careOptionsDuration, switchBirdDuration))
+                )
+            );
+
             float elapsed = 0f;
 
             while (elapsed < duration)
             {
                 elapsed += Time.unscaledDeltaTime;
-                float t = Mathf.Clamp01(elapsed / duration);
 
                 float cardT = Mathf.Clamp01(elapsed / Mathf.Max(0.0001f, cardMoveDuration));
                 float cardEased = moveEase != null ? moveEase.Evaluate(cardT) : cardT;
@@ -371,6 +444,20 @@ namespace BirdCafe.UI.Gameplay.Evening
                     _birdSelectGridRect.anchoredPosition = Vector2.LerpUnclamped(gridStartPosition, gridTargetPosition, drawerEased);
                 }
 
+                if (_careOptionsRect != null)
+                {
+                    float careT = Mathf.Clamp01(elapsed / Mathf.Max(0.0001f, careOptionsDuration));
+                    float careEased = EvaluateOvershoot(careT);
+                    _careOptionsRect.anchoredPosition = Vector2.LerpUnclamped(careStartPosition, careTargetPosition, careEased);
+                }
+
+                if (_switchBirdButtonRect != null)
+                {
+                    float switchT = Mathf.Clamp01(elapsed / Mathf.Max(0.0001f, switchBirdDuration));
+                    float switchEased = EvaluateOvershoot(switchT);
+                    _switchBirdButtonRect.anchoredPosition = Vector2.LerpUnclamped(switchStartPosition, switchTargetPosition, switchEased);
+                }
+
                 yield return null;
             }
 
@@ -380,6 +467,15 @@ namespace BirdCafe.UI.Gameplay.Evening
 
                 if (_birdSelectGridRect != null)
                     _birdSelectGridRect.anchoredPosition = gridOpenPosition;
+
+                if (_careOptionsRect != null)
+                    _careOptionsRect.anchoredPosition = careHiddenPosition;
+
+                if (_switchBirdButtonRect != null)
+                    _switchBirdButtonRect.anchoredPosition = switchHiddenPosition;
+
+                if (careOptionsPanel != null)
+                    careOptionsPanel.SetActive(false);
 
                 if (switchBirdButton != null)
                     switchBirdButton.gameObject.SetActive(false);
@@ -393,6 +489,12 @@ namespace BirdCafe.UI.Gameplay.Evening
 
                 if (birdSelectGrid != null)
                     birdSelectGrid.SetActive(false);
+
+                if (_careOptionsRect != null)
+                    _careOptionsRect.anchoredPosition = careVisiblePosition;
+
+                if (_switchBirdButtonRect != null)
+                    _switchBirdButtonRect.anchoredPosition = switchVisiblePosition;
 
                 if (careOptionsPanel != null)
                     careOptionsPanel.SetActive(true);
@@ -411,6 +513,100 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             float hiddenY = _birdSelectGridRect.rect.height + DrawerHiddenPadding;
             return new Vector2(0f, hiddenY);
+        }
+
+        private Vector2 GetCareOptionsHiddenPosition()
+        {
+            if (_careOptionsRect == null)
+                return _careOptionsVisiblePosition + new Vector2(0f, -1600f);
+
+            float panelHeight = Mathf.Max(_careOptionsRect.rect.height, Mathf.Abs(_careOptionsRect.sizeDelta.y));
+            float parentHeight = 0f;
+            float canvasHeight = 0f;
+
+            RectTransform parentRect = _careOptionsRect.parent as RectTransform;
+            if (parentRect != null)
+                parentHeight = Mathf.Abs(parentRect.rect.height);
+
+            if (_rootCanvasRect != null)
+                canvasHeight = Mathf.Abs(_rootCanvasRect.rect.height);
+
+            float travelDistance = Mathf.Max(parentHeight, canvasHeight, 1200f) + panelHeight + careOptionsHiddenPadding;
+
+            return _careOptionsVisiblePosition + new Vector2(0f, -travelDistance);
+        }
+
+        private Vector2 GetSwitchBirdButtonHiddenPosition()
+        {
+            if (_switchBirdButtonRect == null)
+                return _switchBirdButtonVisiblePosition + new Vector2(1600f, 0f);
+
+            float buttonWidth = Mathf.Max(_switchBirdButtonRect.rect.width, Mathf.Abs(_switchBirdButtonRect.sizeDelta.x));
+            float parentWidth = 0f;
+            float canvasWidth = 0f;
+
+            RectTransform parentRect = _switchBirdButtonRect.parent as RectTransform;
+            if (parentRect != null)
+                parentWidth = Mathf.Abs(parentRect.rect.width);
+
+            if (_rootCanvasRect != null)
+                canvasWidth = Mathf.Abs(_rootCanvasRect.rect.width);
+
+            float travelDistance = Mathf.Max(parentWidth, canvasWidth, 1200f) + buttonWidth + switchBirdHiddenPadding;
+
+            return _switchBirdButtonVisiblePosition + new Vector2(travelDistance, 0f);
+        }
+
+        private void CacheCareOptionsVisiblePosition()
+        {
+            if (_careOptionsRect == null && careOptionsPanel != null)
+                _careOptionsRect = careOptionsPanel.GetComponent<RectTransform>();
+
+            if (_careOptionsRect == null)
+                return;
+
+            RefreshRectLayout(_careOptionsRect);
+            _careOptionsVisiblePosition = _careOptionsRect.anchoredPosition;
+        }
+
+        private void CacheSwitchBirdButtonVisiblePosition()
+        {
+            if (_switchBirdButtonRect == null && switchBirdButton != null)
+                _switchBirdButtonRect = switchBirdButton.GetComponent<RectTransform>();
+
+            if (_switchBirdButtonRect == null)
+                return;
+
+            RefreshRectLayout(_switchBirdButtonRect);
+            _switchBirdButtonVisiblePosition = _switchBirdButtonRect.anchoredPosition;
+        }
+
+        private void RefreshRectLayout(RectTransform rectTransform)
+        {
+            if (rectTransform == null)
+                return;
+
+            RectTransform parentRect = rectTransform.parent as RectTransform;
+
+            Canvas.ForceUpdateCanvases();
+
+            if (parentRect != null)
+                LayoutRebuilder.ForceRebuildLayoutImmediate(parentRect);
+
+            LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
+            Canvas.ForceUpdateCanvases();
+        }
+
+        private float EvaluateOvershoot(float t)
+        {
+            t = Mathf.Clamp01(t);
+
+            if (movementOvershoot <= 0f)
+                return t;
+
+            float s = movementOvershoot;
+            float inv = t - 1f;
+            return 1f + (s + 1f) * inv * inv * inv + s * inv * inv;
         }
 
         private void ApplyVisualStateImmediate(bool showDrawer)
@@ -433,11 +629,53 @@ namespace BirdCafe.UI.Gameplay.Evening
                     _birdSelectGridRect.anchoredPosition = showDrawer ? Vector2.zero : GetBirdSelectGridHiddenPosition();
             }
 
+            if (_careOptionsRect == null && careOptionsPanel != null)
+                _careOptionsRect = careOptionsPanel.GetComponent<RectTransform>();
+
+            if (_switchBirdButtonRect == null && switchBirdButton != null)
+                _switchBirdButtonRect = switchBirdButton.GetComponent<RectTransform>();
+
             if (careOptionsPanel != null)
-                careOptionsPanel.SetActive(!showDrawer);
+            {
+                if (showDrawer)
+                {
+                    RefreshRectLayout(_careOptionsRect);
+
+                    if (_careOptionsRect != null)
+                        _careOptionsRect.anchoredPosition = GetCareOptionsHiddenPosition();
+
+                    careOptionsPanel.SetActive(false);
+                }
+                else
+                {
+                    careOptionsPanel.SetActive(true);
+                    RefreshRectLayout(_careOptionsRect);
+
+                    if (_careOptionsRect != null)
+                        _careOptionsRect.anchoredPosition = _careOptionsVisiblePosition;
+                }
+            }
 
             if (switchBirdButton != null)
-                switchBirdButton.gameObject.SetActive(!showDrawer);
+            {
+                if (showDrawer)
+                {
+                    RefreshRectLayout(_switchBirdButtonRect);
+
+                    if (_switchBirdButtonRect != null)
+                        _switchBirdButtonRect.anchoredPosition = GetSwitchBirdButtonHiddenPosition();
+
+                    switchBirdButton.gameObject.SetActive(false);
+                }
+                else
+                {
+                    switchBirdButton.gameObject.SetActive(true);
+                    RefreshRectLayout(_switchBirdButtonRect);
+
+                    if (_switchBirdButtonRect != null)
+                        _switchBirdButtonRect.anchoredPosition = _switchBirdButtonVisiblePosition;
+                }
+            }
         }
 
         private void ForceBirdCardClosedState()
@@ -524,7 +762,6 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public void OnPlayClicked()
         {
-            //StartCoroutine(OpenFlappy());
             if (string.IsNullOrEmpty(_currentBirdId))
                 return;
 
@@ -533,10 +770,8 @@ namespace BirdCafe.UI.Gameplay.Evening
 
         public IEnumerator OpenFlappy()
         {
-            // Load Flappy additively
             yield return SceneManager.LoadSceneAsync("Flappy", LoadSceneMode.Single);
 
-            // Make Flappy the active scene so spawned objects go into it
             Scene flappyScene = SceneManager.GetSceneByName("Flappy");
             if (flappyScene.IsValid() && flappyScene.isLoaded)
             {
