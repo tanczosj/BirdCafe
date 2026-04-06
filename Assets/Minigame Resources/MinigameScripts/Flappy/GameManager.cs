@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
     public int maxScore = 10;
 
     public static GameManager instance;
+    private MinigameSceneController _sceneController;
 
     void Awake()
     {
         instance = this;
         score = 0;
+        _sceneController = FindAnyObjectByType<MinigameSceneController>();
     }
 
     public void AddScore()
@@ -30,8 +32,8 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         Debug.Log("You Win!");
-        Time.timeScale = 0f;
-        
-        Ricimi.Transition.LoadLevel("MainMenu", 1.0f, Color.black, false);
+
+        if (_sceneController != null)
+            _sceneController.ReportSuccess(score, "Flappy completed.");
     }
 }

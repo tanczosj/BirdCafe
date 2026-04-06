@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Ricimi;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -420,6 +421,8 @@ public class AdvancedTimingBarGame : MonoBehaviour
         }
 
         StartCoroutine(FeedbackRoutine(HitResult.Perfect));
+
+        Transition.LoadLevel("Gameplay", 1f, Color.black);
     }
 
     private void HandleMiss()

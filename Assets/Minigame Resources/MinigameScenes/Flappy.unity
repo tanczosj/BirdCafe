@@ -456,6 +456,7 @@ GameObject:
   - component: {fileID: 1198164069}
   - component: {fileID: 1198164068}
   - component: {fileID: 1198164072}
+  - component: {fileID: 1198164073}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Player
@@ -626,6 +627,18 @@ MonoBehaviour:
   maxUpAngle: 30
   maxDownAngle: -90
   rotationSpeed: 5
+--- !u!114 &1198164073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198164067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7273ca43f3616a14794c0e7c3801f5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinigameSceneController
 --- !u!1 &1731527376
 GameObject:
   m_ObjectHideFlags: 0

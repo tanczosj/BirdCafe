@@ -13,11 +13,12 @@ public class Bird : MonoBehaviour
     public float maxUpAngle = 30f;
     public float maxDownAngle = -90f;
     public float rotationSpeed = 5f;
+    private MinigameSceneController _sceneController;
 
     void Start()
     {
-        // Rigid body
         rb = GetComponent<Rigidbody2D>();
+        _sceneController = FindAnyObjectByType<MinigameSceneController>();
     }
 
     void Update()
@@ -33,7 +34,8 @@ public class Bird : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         isAlive = false;
-        Ricimi.Transition.LoadLevel("Gameplay", 1.0f, Color.black, false);
-        Time.timeScale = 0f;
+
+        if (_sceneController != null)
+            _sceneController.ReportFailure(0, "You crashed.");
     }
 }

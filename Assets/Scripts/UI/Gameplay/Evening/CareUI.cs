@@ -1,4 +1,5 @@
 using BirdCafe.Shared;
+using BirdCafe.Shared.Enums;
 using BirdCafe.Shared.ViewModels;
 using BirdCafe.UI.Components;
 using Ricimi;
@@ -524,9 +525,10 @@ namespace BirdCafe.UI.Gameplay.Evening
         public void OnPlayClicked()
         {
             //StartCoroutine(OpenFlappy());
-            Transition.LoadLevel("Flappy", 1.0f, Color.black);
+            if (string.IsNullOrEmpty(_currentBirdId))
+                return;
 
-            AttemptAction("Play");
+            BirdCafeGame.Instance.TryStartCareMinigame(_currentBirdId, CareActionIds.Play);
         }
 
         public IEnumerator OpenFlappy()

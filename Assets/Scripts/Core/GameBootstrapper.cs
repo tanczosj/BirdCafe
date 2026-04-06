@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using BirdCafe.Shared;
+using BirdCafe.Shared.Enums;
 using BirdCafe.Shared.ViewModels;
 
 public class GameBootstrapper : MonoBehaviour
@@ -31,11 +32,8 @@ public class GameBootstrapper : MonoBehaviour
         string targetScene = GetSceneNameForScreen(newScreen);
         string currentScene = SceneManager.GetActiveScene().name;
 
-        // Only load if the scene is actually changing
         if (targetScene != currentScene)
         {
-            // CHANGED: Use the Transition script instead of direct SceneManager
-            // We use a 1.0 second fade (0.5s to black, 0.5s to new scene)
             SceneTransition.LoadScene(targetScene, 1.0f, Color.black);
         }
     }
@@ -48,8 +46,28 @@ public class GameBootstrapper : MonoBehaviour
             case GameScreen.LoadGame:
                 return "MainMenu";
 
+            case GameScreen.Minigame:
+                return ResolveMinigameSceneName();
+
             default:
                 return "Gameplay";
+        }
+    }
+
+    private string ResolveMinigameSceneName()
+    {
+        var session = BirdCafeGame.Instance.GetCurrentMinigameSession();
+        if (session == null)
+            return "Gameplay";
+
+        switch (session.Minigame)
+        {
+            case MinigameId.TimingBarGame:
+                return "TimingGame";
+
+            case MinigameId.Flappy:
+            default:
+                return "Flappy";
         }
     }
 }
