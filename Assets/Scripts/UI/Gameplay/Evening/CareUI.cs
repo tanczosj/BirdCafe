@@ -5,6 +5,7 @@ using BirdCafe.UI.Components;
 using Ricimi;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -25,6 +26,12 @@ namespace BirdCafe.UI.Gameplay.Evening
         [SerializeField] private Transform cardContainer;
         [SerializeField] private GameObject birdSelectGrid;
         [SerializeField] private GameObject careOptionsPanel;
+
+        [Header("Inventory")]
+        [SerializeField] private GameObject inventoryStats;
+        [SerializeField] private TMP_Text seedmixLabel;
+        [SerializeField] private TMP_Text fruitMedleyLabel;
+        [SerializeField] private TMP_Text nutriPelletsLabel;
 
         [Header("Actions")]
         [SerializeField] private Button feedButton;
@@ -141,6 +148,25 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             if (moneyCounter) moneyCounter.AnimateValue((float)dashboard.CurrentMoney, 0.5f);
             if (popularityCounter) popularityCounter.AnimateValue((float)dashboard.CurrentPopularity, 0.5f);
+
+            inventoryStats.SetActive(!_isDrawerVisible);
+
+            var seedMixUnits = BirdCafeGame.Instance.Controller.CurrentState.PetStore.GetFoodUnits(BirdFoodType.SeedMix).ToString();
+            var fruitMedleyUnits = BirdCafeGame.Instance.Controller.CurrentState.PetStore.GetFoodUnits(BirdFoodType.FruitMedley).ToString();
+            var nutriPelletsUnits = BirdCafeGame.Instance.Controller.CurrentState.PetStore.GetFoodUnits(BirdFoodType.NutriPellets).ToString();
+
+            var seedMixText = $"Seed Mix (x{seedMixUnits})";
+            var fruitMedleyText = $"Fruit Medley (x{fruitMedleyUnits})";
+            var nutriPelletsText = $"Nutri Pellets (x{nutriPelletsUnits})";
+
+            if (seedmixLabel != null) 
+                seedmixLabel.text = seedMixText;
+
+            if (fruitMedleyLabel != null) 
+                fruitMedleyLabel.text = fruitMedleyText;
+
+            if (nutriPelletsLabel != null)
+                nutriPelletsLabel.text = nutriPelletsText;
 
             if (dashboard.Birds == null || dashboard.Birds.Count == 0)
                 return;
@@ -502,6 +528,8 @@ namespace BirdCafe.UI.Gameplay.Evening
                 if (switchBirdButton != null)
                     switchBirdButton.gameObject.SetActive(true);
             }
+
+            inventoryStats.SetActive(!_isDrawerVisible);
 
             _layoutCoroutine = null;
         }

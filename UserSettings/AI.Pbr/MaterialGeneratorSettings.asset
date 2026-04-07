@@ -15,11 +15,32 @@ MonoBehaviour:
   m_Session:
     settings:
       lastSelectedModels:
-        serializedData: []
+        serializedData:
+        - key: 0
+          value:
+            rid: 7078914401802387849
+        - key: 1
+          value:
+            rid: 7078914401802387850
+        - key: 2
+          value:
+            rid: 7078914401802387851
       lastMaterialMappings:
         serializedData: []
       previewSettings:
         sizeFactor: 1
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7078914401802387849
+      type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
+      data:
+        modelID: 
+    - rid: 7078914401802387850
+      type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
+      data:
+        modelID: 
+    - rid: 7078914401802387851
+      type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
+      data:
+        modelID: 
