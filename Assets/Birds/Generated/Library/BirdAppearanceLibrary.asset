@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6a24ceb5dee7e4f8de3a0887fe644d, type: 3}
+  m_Name: BirdAppearanceLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.Unity.Birds.BirdAppearanceLibrary
+  animationSets:
+  - {fileID: 11400000, guid: 589cf31c1d53c4f4ebf7737cfc77fc59, type: 2}
+  - {fileID: 11400000, guid: 10b29234b2094a34fab71ba08feb02d3, type: 2}
+  - {fileID: 11400000, guid: d7e4eb2d1a7dbb5439c44ec23f638807, type: 2}
+  - {fileID: 11400000, guid: 923f848ac451f6c499d0f87a43d595ee, type: 2}
+  - {fileID: 11400000, guid: a8250005891ee8e4b9b4a0f8de3f0568, type: 2}
+  - {fileID: 11400000, guid: 03bd9fbc9f273164db60e69b153a171e, type: 2}
+  - {fileID: 11400000, guid: 94f410391fecfd94e93858c84d42979a, type: 2}
+  globalFallbackSet: {fileID: 11400000, guid: 10b29234b2094a34fab71ba08feb02d3, type: 2}
