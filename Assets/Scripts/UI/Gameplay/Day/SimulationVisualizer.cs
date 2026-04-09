@@ -143,7 +143,7 @@ namespace BirdCafe.UI.Gameplay.Day
             // Initialize the UI elements with starting values.
             if (moneyCounter) moneyCounter.Value = _currentMoney;
             if (popularityCounter) popularityCounter.Value = _currentPopularity;
-
+            
             // Pass 0 seconds to initialize the clock at start time (e.g., 7:00 AM).
             if (dayProgress) dayProgress.UpdateVisuals(0f);
 

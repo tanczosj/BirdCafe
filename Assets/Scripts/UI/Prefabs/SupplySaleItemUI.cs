@@ -31,7 +31,7 @@ public class SupplySaleItemUI : MonoBehaviour
             effectText.text = offer.EffectText;
 
         if (ownedText != null)
-            ownedText.text = $"Owned: {offer.OwnedQuantity}";
+            ownedText.text = offer.OwnedQuantity > 0 ? $"(x{offer.OwnedQuantity})" : "";
 
         if (priceText != null)
             priceText.text = $"${offer.Price:F2}";

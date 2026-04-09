@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static int score = 0;
-    public int maxScore = 10;
+    public int maxScore = 3;
 
     public static GameManager instance;
     private MinigameSceneController _sceneController;

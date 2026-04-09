@@ -747,7 +747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useBackground: 1
-  backgroundColor: {r: 0.125, g: 0.15, b: 0.25, a: 0.90588236}
+  backgroundTint: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 0.35}
+  blurredBackgroundTexture: {fileID: 0}
+  blurMaterial: {fileID: 0}
   destroyTime: 0.5
   popupSortingOrder: 9
   backgroundSortingOrder: 8
@@ -819,6 +821,8 @@ MonoBehaviour:
     sprite: {fileID: 4783202043866508890, guid: b36df7065c1e6d34aada477ace54a30a, type: 3}
   - itemId: Costume_RoyalCape
     sprite: {fileID: 4066210322289388729, guid: 8e29fde63573db4488f05f34b326462a, type: 3}
+  - itemId: SpecialEggToy
+    sprite: {fileID: 21300000, guid: 1de3732822bc5479a9b7895b16c5ba43, type: 3}
   openEggButton: {fileID: 0}
   openEggButtonText: {fileID: 0}
   eggRewardText: {fileID: 0}

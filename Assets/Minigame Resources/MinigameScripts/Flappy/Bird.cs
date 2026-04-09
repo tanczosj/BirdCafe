@@ -8,7 +8,6 @@ public class Bird : MonoBehaviour
 {
     public float jumpForce = 5f;
     private Rigidbody2D rb;
-    private bool isAlive = true;
 
     public float maxUpAngle = 30f;
     public float maxDownAngle = -90f;
@@ -33,8 +32,6 @@ public class Bird : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        isAlive = false;
-
         if (_sceneController != null)
             _sceneController.ReportFailure(0, "You crashed.");
     }

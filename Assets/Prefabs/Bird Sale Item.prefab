@@ -663,7 +663,17 @@ MonoBehaviour:
   buyButton: {fileID: 208175094006021916}
   priceText: {fileID: 8962942019169851087}
   fallbackSprite: {fileID: 21300000, guid: a41b0964b2eea498f9a017a304abf450, type: 3}
-  speciesSprites: []
+  speciesSprites:
+  - speciesId: canary
+    sprite: {fileID: 7628035545873492859, guid: 9279f108e44acf14299317073279b496, type: 3}
+  - speciesId: budgie
+    sprite: {fileID: -3426913756509349206, guid: 594167f04701d8846b27d382033f3549, type: 3}
+  - speciesId: cockatiel
+    sprite: {fileID: -7167190013095767753, guid: ce8cce721231d9c45b9e2a843bd974f5, type: 3}
+  - speciesId: lorikeet
+    sprite: {fileID: -8098007663549259092, guid: ea772e8c233c52640bd61a5c953ea6e3, type: 3}
+  - speciesId: kingfisher
+    sprite: {fileID: 3312334890903944949, guid: 7b82a7f22eb479547a1a2aaaf1b532f4, type: 3}
 --- !u!114 &3602687785421474325
 MonoBehaviour:
   m_ObjectHideFlags: 0

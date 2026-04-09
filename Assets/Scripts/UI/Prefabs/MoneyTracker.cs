@@ -28,6 +28,7 @@ public class MoneyTracker : MonoBehaviour
     {
         if (moneyCounter != null && oldAmount != newAmount)
         {
+            moneyCounter.Value = (int)oldAmount;
             moneyCounter.AnimateValue((float)newAmount, 1f);
         }
     }
