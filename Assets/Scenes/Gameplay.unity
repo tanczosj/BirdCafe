@@ -20657,7 +20657,7 @@ MonoBehaviour:
   cardContainer: {fileID: 992978738}
   birdSelectGrid: {fileID: 1565636083}
   careOptionsPanel: {fileID: 1443473619}
-  inventoryStats: {fileID: 411685928}
+  inventoryStats: {fileID: 1906204251}
   seedmixLabel: {fileID: 1580514866}
   fruitMedleyLabel: {fileID: 169196870}
   nutriPelletsLabel: {fileID: 1622674490}
@@ -24823,10 +24823,15 @@ PrefabInstance:
       value: TopBar
       objectReference: {fileID: 0}
     - target: {fileID: 9149825666784516577, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149825666784516577, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
       propertyPath: enableAutomaticUpdate
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9149825666784516577, guid: 6dda0f76e56caa5458b389f3a6116d56, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
