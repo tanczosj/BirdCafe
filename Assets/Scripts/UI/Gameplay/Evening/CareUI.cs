@@ -5,9 +5,12 @@ using BirdCafe.UI.Components;
 using Ricimi;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -140,6 +143,25 @@ namespace BirdCafe.UI.Gameplay.Evening
             customizeBirdPopup.OpenForSelectedBird(this);
         }
 
+        private void Update()
+        {
+            if (Keyboard.current == null)
+                return;
+
+            bool ctrlPressed =
+                Keyboard.current.leftCtrlKey.isPressed ||
+                Keyboard.current.rightCtrlKey.isPressed;
+
+            bool shiftPressed =
+                Keyboard.current.leftShiftKey.isPressed ||
+                Keyboard.current.rightShiftKey.isPressed;
+
+            if (ctrlPressed && shiftPressed && Keyboard.current.sKey.wasPressedThisFrame)
+            {
+                MakeBirdSick();
+            }
+        }
+
         private void Refresh()
         {
             var dashboard = BirdCafeGame.Instance.GetCareDashboard();
@@ -182,6 +204,25 @@ namespace BirdCafe.UI.Gameplay.Evening
             }
 
             LoadBirdIntoCard(selectedBird, dashboard.CurrentMoney);
+        }
+
+        private void MakeBirdSick()
+        {
+            Debug.Log("MakeBirdSick() called.");
+
+            if (SelectedBirdId == null)
+            {
+                Debug.LogWarning("No bird is currently selected to make sick.");
+                return;
+            }
+
+            var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
+            bird.IsSick = true;
+            bird.Energy = 10;
+            bird.Hunger = 10;
+
+            BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
+            Refresh();
         }
 
         private BirdCareViewModel FindBirdById(List<BirdCareViewModel> birds, string birdId)
