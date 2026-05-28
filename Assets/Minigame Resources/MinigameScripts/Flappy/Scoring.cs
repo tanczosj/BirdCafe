@@ -6,6 +6,9 @@ public class ScoreZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (GameManager.IsGameOver)
+                return;
+
             GameManager.instance.AddScore();
         }
     }

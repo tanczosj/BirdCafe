@@ -10,7 +10,7 @@ public class ScoreDisplay : MonoBehaviour
         // Access the score from the GameManager instance and convert to string
         if (GameManager.instance != null)
         {
-            scoreText.text = "Score: " + GameManager.score.ToString();
+            scoreText.text = GameManager.score.ToString();
         }
     }
 }
