@@ -7,6 +7,7 @@ using UnityEngine;
 public static class PlayFromMainMenu
 {
     private const string MainMenuScenePath = "Assets/Scenes/MainMenu.unity";
+    //private const string MainMenuScenePath = "Assets/Scenes/Stage.unity";
 
     static PlayFromMainMenu()
     {
