@@ -860,6 +860,15 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             bool success = BirdCafeGame.Instance.PerformCare(_currentBirdId, actionId);
 
+            // This is a hack to bring back bird energy
+            if (actionId == "Vet" && success)
+            {
+                var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
+                bird.Energy = 100;
+
+                BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
+            }
+
             if (success)
                 Refresh();
         }
