@@ -218,6 +218,7 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
             bird.IsSick = true;
+            bird.Hunger = 45;
             bird.Energy = 10;
             bird.Health = 10;
 
@@ -865,12 +866,16 @@ namespace BirdCafe.UI.Gameplay.Evening
             {
                 var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
                 bird.Energy = 100;
-
-                BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
             }
 
             if (success)
+            {
+                var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
+
+                BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
+
                 Refresh();
+            }
         }
 
         public void OnRestToggled(bool isOn)
