@@ -25,7 +25,6 @@ public class AnimationSoundTrigger : StateMachineBehaviour
 
         if (audioSource == null)
         {
-            Debug.LogWarning("AnimationSoundTrigger: No AudioSource found on the Animator's GameObject. Adding one.");
             audioSource = animator.gameObject.AddComponent<AudioSource>();
         }
 

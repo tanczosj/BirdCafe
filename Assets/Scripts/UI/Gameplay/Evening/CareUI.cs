@@ -219,7 +219,7 @@ namespace BirdCafe.UI.Gameplay.Evening
             var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
             bird.IsSick = true;
             bird.Energy = 10;
-            bird.Hunger = 10;
+            bird.Health = 10;
 
             BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
             Refresh();

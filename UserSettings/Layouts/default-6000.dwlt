@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
   m_PixelRect:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 43
     width: 1920
     height: 989
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 722
+  controlID: 28623
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 723
+  controlID: 28599
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 724
+  controlID: 28600
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 257
+    width: 258
     height: 569
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
@@ -214,9 +214,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 257
+    x: 258
     y: 0
-    width: 1300
+    width: 1299
     height: 569
   m_MinSize: {x: 52, y: 76}
   m_MaxSize: {x: 4002, y: 4026}
@@ -286,7 +286,7 @@ MonoBehaviour:
   - {fileID: 25}
   - {fileID: 26}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 43
     width: 1920
     height: 36
@@ -536,12 +536,12 @@ MonoBehaviour:
       displayed: 1
       id: Play Mode Controls
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-910.0,"y":-36.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -910, y: -36}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -574,9 +574,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 258
+    x: 259
     y: 24
-    width: 1298
+    width: 1297
     height: 543
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -591,8 +591,10 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - C:\Users\Morgan\Documents\BirdCafe\BirdCafeRepo\BirdCafe\Library\PlayModeViewStates\ae73d5c512c7f204cacc51f18fe23aeb
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -677,9 +679,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 79
-    width: 256
+    width: 257
     height: 543
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -701,7 +703,39 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -1438
+      - m_Data: -138386
+      - m_Data: -120580
+      - m_Data: -118866
+      - m_Data: -118710
+      - m_Data: -117620
+      - m_Data: -60672
+      - m_Data: -49690
+      - m_Data: -40702
+      - m_Data: -19468
+      - m_Data: -17646
+      - m_Data: -11874
+      - m_Data: -11516
+      - m_Data: -11508
+      - m_Data: -11460
+      - m_Data: -2158
+      - m_Data: 94046
+      - m_Data: 94358
+      - m_Data: 95184
+      - m_Data: 98988
+      - m_Data: 99288
+      - m_Data: 99548
+      - m_Data: 166748
+      - m_Data: 169738
+      - m_Data: 170652
+      - m_Data: 180378
+      - m_Data: 183368
+      - m_Data: 184282
+      - m_Data: 281186
+      - m_Data: 281238
+      - m_Data: 281458
+      - m_Data: 281474
+      - m_Data: 281534
+      - m_Data: 281648
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -749,9 +783,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -1663
+    x: 258
     y: 79
-    width: 1298
+    width: 1297
     height: 543
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1239,9 +1273,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.420868, y: 1.3301067, z: 8.824389}
+    m_Target: {x: -13.085536, y: 0.72471404, z: 132.13129}
     speed: 2
-    m_Value: {x: -0.420868, y: 1.3301067, z: 8.824389}
+    m_Value: {x: -13.085536, y: 0.72471404, z: 132.13129}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1266,7 +1300,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_OffsetAlongAxis: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 0
@@ -1292,9 +1326,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.889783
+    m_Target: 7.5428
     speed: 2
-    m_Value: 4.889783
+    m_Value: 7.5428
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -3318,7 +3352,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 648
     width: 1556
     height: 338
@@ -3346,7 +3380,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts/Utilities
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -3356,51 +3390,26 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/TriForge Assets
+  - Assets/Scripts/Utilities
   m_LastFoldersGridSize: 67
-  m_LastProjectPath: C:\Users\josh\Documents\Github\BirdCafe
+  m_LastProjectPath: C:\Users\Morgan\Documents\BirdCafe\BirdCafeRepo\BirdCafe
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
+    scrollPos: {x: 0, y: 2}
     m_SelectedIDs:
-    - m_Data: 91854
+    - m_Data: 171412
     m_LastClickedID:
-      m_Data: 91854
+      m_Data: 171412
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 82128
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3434,37 +3443,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3517,6 +3500,7 @@ MonoBehaviour:
     - m_Data: 130254
     - m_Data: 111902
     - m_Data: 137222
+    - m_Data: 85612
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3534,7 +3518,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_EntityId:
@@ -3568,7 +3552,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 648
     width: 1556
     height: 338
@@ -3697,37 +3681,11 @@ MonoBehaviour:
       m_Data: 92076
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3761,37 +3719,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3900,7 +3832,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: 0
+    m_Data: 281534
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -3922,7 +3854,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -363
+    x: 1557
     y: 79
     width: 362
     height: 907
@@ -3947,7 +3879,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectEntityId:
     m_Data: 0
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 514
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -3994,7 +3926,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: 0
+    m_Data: 281534
 --- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4016,9 +3948,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: -516
+    x: 1557
     y: 79
-    width: 515
+    width: 362
     height: 907
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -4044,7 +3976,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Stage
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -4054,51 +3986,25 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Stage
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\josh\Documents\Github\BirdCafe
+  m_LastProjectPath: C:\Users\Morgan\Documents\BirdCafe\BirdCafeRepo\BirdCafe
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 110898
+    - m_Data: 81986
     m_LastClickedID:
-      m_Data: 110898
+      m_Data: 81986
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4132,37 +4038,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 91854
-    - m_Data: 91856
-    - m_Data: 91860
-    - m_Data: 91862
-    - m_Data: 91864
-    - m_Data: 91866
-    - m_Data: 91868
-    - m_Data: 91870
-    - m_Data: 91872
-    - m_Data: 91874
-    - m_Data: 91876
-    - m_Data: 91878
-    - m_Data: 91880
-    - m_Data: 91882
-    - m_Data: 91884
-    - m_Data: 91886
-    - m_Data: 91888
-    - m_Data: 91890
-    - m_Data: 91892
-    - m_Data: 91894
-    - m_Data: 91896
-    - m_Data: 91902
-    - m_Data: 91904
-    - m_Data: 91906
-    - m_Data: 91908
-    - m_Data: 91910
-    - m_Data: 91912
-    - m_Data: 91918
-    - m_Data: 91920
-    - m_Data: 91922
-    - m_Data: 2147483647
+    - m_Data: 81986
+    - m_Data: 157774
+    - m_Data: 157784
+    - m_Data: 157800
+    - m_Data: 157808
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4191,10 +4071,10 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 111606
+    - m_Data: 281376
     m_LastClickedEntityId:
-      m_Data: 111606
-    m_HadKeyboardFocusLastEvent: 1
+      m_Data: 281376
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 111384
     - m_Data: 110940
@@ -4231,7 +4111,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 2460}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 200

@@ -80,15 +80,15 @@ namespace BirdCafe.UI.Components
             {
                 if (_viewModel.IsSick)
                 {
-                    statusLabel.text = "Status: <color=red>SICK</color>";
+                    statusLabel.text = "Status: <color=#C70000>Sick</color>";
                 }
                 else if (_viewModel.WillRestTomorrow)
                 {
-                    statusLabel.text = "Status: <color=blue>Resting</color>";
+                    statusLabel.text = "Status: <color=#413780>Resting</color>";
                 }
                 else
                 {
-                    statusLabel.text = "Status: <color=green>Happy</color>";
+                    statusLabel.text = "Status: <color=#40A600>Happy</color>";
                 }
             }
 

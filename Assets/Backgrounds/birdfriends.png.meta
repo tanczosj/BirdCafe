@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 52eb7d3230709ab4282e5134be8e7552
+guid: 1c9f23348d2dabb44a7f43c51adc50d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1322342491913567322
-    second: bird-friends_0
+      213: 9168169556489313032
+    second: birdfriends 1_0
   - first:
-      213: 6468391826929076692
-    second: bird-friends_1
-  - first:
-      213: -3042644719682633349
-    second: bird-friends_2
+      213: 5673968453516859125
+    second: birdfriends 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,17 +99,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bird-friends_0
+      name: birdfriends 1_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 88
-        width: 967
-        height: 835
+        x: 0
+        y: 47
+        width: 1024
+        height: 889
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a3461a728816ade0800000000000000
-      internalID: -1322342491913567322
+      spriteID: 80b9817f2a1eb3f70800000000000000
+      internalID: 9168169556489313032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird-friends_1
+      name: birdfriends 1_1
       rect:
         serializedVersion: 2
-        x: 624
-        y: 812
-        width: 23
-        height: 38
+        x: 697
+        y: 847
+        width: 69
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,30 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9c528781854c950800000000000000
-      internalID: 6468391826929076692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bird-friends_2
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 817
-        width: 14
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7149918fba56c5d0800000000000000
-      internalID: -3042644719682633349
+      spriteID: 5f615aa1f3cfdbe40800000000000000
+      internalID: 5673968453516859125
       vertices: []
       indices: 
       edges: []
@@ -185,9 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bird-friends_0: -1322342491913567322
-      bird-friends_1: 6468391826929076692
-      bird-friends_2: -3042644719682633349
+      birdfriends 1_0: 9168169556489313032
+      birdfriends 1_1: 5673968453516859125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
