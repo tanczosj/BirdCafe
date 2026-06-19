@@ -39,8 +39,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 14}
-  m_SizeDelta: {x: 236.84, y: 110}
+  m_AnchoredPosition: {x: 91.9917, y: 14}
+  m_SizeDelta: {x: 300.3027, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3611712640569804596
 MonoBehaviour:
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.UI.Gameplay.Day.ThoughtBubble
   label: {fileID: 3913946766241885580}
+  canvasGroup: {fileID: 0}
 --- !u!1 &3758216932873564329
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,11 +488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 178.538
+      value: 228.0175
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 65.198
+      value: 70.0384
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -523,11 +524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 118.981384
+      value: 143.72107
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -49.71588
+      value: -52.13611
       objectReference: {fileID: 0}
     - target: {fileID: 1119702927001515310, guid: c3d70d73ad57c4e5896bb5d897fc31d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
