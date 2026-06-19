@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BirdCafe.Shared;
@@ -41,6 +41,18 @@ namespace BirdCafe.UI.Gameplay.Day
         [Tooltip("Maximum number of timeline events to process per frame to prevent freezing.")]
         public int maxEventsPerFrame = 10;
 
+        [Header("Event Log")]
+        public int maxVisibleEvents = 5;
+        public float eventSpacing = 140f;
+        public float slideDuration = 0.25f;
+        public float smoothSpeed = 12f;
+        public float fadeSpeed = 8f;
+
+        private readonly List<RectTransform> _bubbles = new();
+        private readonly List<CanvasGroup> _groups = new();
+
+        private readonly List<RectTransform> _activeBubbles = new();
+
         // Internal State
 
         /// <summary>
@@ -70,6 +82,12 @@ namespace BirdCafe.UI.Gameplay.Day
             InitializeSayings();
         }
 
+        private void Update()
+        {
+            UpdateBubbleStack();
+        }
+
+
         private void InitializeSayings()
         {
             _sayings = new Dictionary<string, List<string>>
@@ -78,8 +96,8 @@ namespace BirdCafe.UI.Gameplay.Day
                     "Coffee", new List<string>
                     {
                         "Order up - one coffee!",
-                        "I’ve got a cappuccino here.",
-                        "Coffee’s ready for pickup!"
+                        "Iâ€™ve got a cappuccino here.",
+                        "Coffeeâ€™s ready for pickup!"
                     }
                 },
                 {
@@ -143,7 +161,7 @@ namespace BirdCafe.UI.Gameplay.Day
             // Initialize the UI elements with starting values.
             if (moneyCounter) moneyCounter.Value = _currentMoney;
             if (popularityCounter) popularityCounter.Value = _currentPopularity;
-            
+
             // Pass 0 seconds to initialize the clock at start time (e.g., 7:00 AM).
             if (dayProgress) dayProgress.UpdateVisuals(0f);
 
@@ -313,25 +331,109 @@ namespace BirdCafe.UI.Gameplay.Day
         /// <param name="text">Text to display inside the bubble.</param>
         private void SpawnBubble(string text)
         {
-            if (thoughtBubblePrefab && birdAnchor)
+            if (!thoughtBubblePrefab || !birdAnchor)
+                return;
+
+            var go = Instantiate(thoughtBubblePrefab, birdAnchor);
+            var rect = go.GetComponent<RectTransform>();
+            var bubble = go.GetComponent<ThoughtBubble>();
+
+            rect.localScale = Vector3.one;
+            rect.anchoredPosition = Vector2.zero;
+
+            bubble.Initialize(text);
+
+            var group = bubble.GetCanvasGroup();
+
+            _bubbles.Insert(0, rect);
+            _groups.Insert(0, group);
+
+            if (_bubbles.Count > maxVisibleEvents)
             {
-                // Create the bubble as a child of the anchor point.
-                var go = Instantiate(thoughtBubblePrefab, birdAnchor);
+                int last = _bubbles.Count - 1;
 
-                // Reset transform to ensure it appears at the anchor's position.
-                var rect = go.GetComponent<RectTransform>();
+                if (_bubbles[last] != null)
+                    Destroy(_bubbles[last].gameObject);
 
-                // Add a tiny random offset so bubbles don't stack perfectly if 2 happen at once
-                float rX = Random.Range(-80f, 80f);
-                float rY = Random.Range(-10f, 10f);
-                rect.anchoredPosition = new Vector2(rX, rY);
-
-                rect.localScale = Vector3.one;
-
-                // Set the text content.
-                var script = go.GetComponent<ThoughtBubble>();
-                if (script) script.Initialize(text);
+                _bubbles.RemoveAt(last);
+                _groups.RemoveAt(last);
             }
+        }
+        private void UpdateBubblePositions()
+        {
+            for (int i = 0; i < _activeBubbles.Count; i++)
+            {
+                if (_activeBubbles[i] == null)
+                    continue;
+
+                Vector2 targetPos = new Vector2(
+                    0,
+                    -i * eventSpacing
+                );
+
+                StartCoroutine(
+                    SlideBubble(
+                        _activeBubbles[i],
+                        targetPos,
+                        slideDuration
+                    )
+                );
+            }
+        }
+        private void UpdateBubbleStack()
+        {
+            for (int i = 0; i < _bubbles.Count; i++)
+            {
+                var rect = _bubbles[i];
+                var group = _groups[i];
+
+                if (!rect) continue;
+
+                // target stacked position
+                Vector2 targetPos = new Vector2(0, -i * eventSpacing);
+
+                // smooth position (critical: frame-based lerp)
+                rect.anchoredPosition = Vector2.Lerp(
+                    rect.anchoredPosition,
+                    targetPos,
+                    Time.deltaTime * smoothSpeed
+                );
+
+                // fade in based on position settling
+                if (group != null)
+                {
+                    float targetAlpha = 1f;
+
+                    group.alpha = Mathf.Lerp(
+                        group.alpha,
+                        targetAlpha,
+                        Time.deltaTime * fadeSpeed
+                    );
+                }
+            }
+        }
+        private IEnumerator SlideBubble(
+    RectTransform rect,
+    Vector2 targetPos,
+    float duration)
+        {
+            Vector2 startPos = rect.anchoredPosition;
+            float elapsed = 0f;
+
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+
+                rect.anchoredPosition = Vector2.Lerp(
+                    startPos,
+                    targetPos,
+                    elapsed / duration
+                );
+
+                yield return null;
+            }
+
+            rect.anchoredPosition = targetPos;
         }
     }
 }
