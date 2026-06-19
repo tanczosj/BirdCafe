@@ -2834,26 +2834,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293505924}
   m_CullTransparentMesh: 1
---- !u!114 &302805561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6767467903028508777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 8127280911426095340}
-  buttonAnimator: {fileID: 0}
-  startScale: 0
-  popScale: 1.35
-  finalScale: 1.2
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0.3
 --- !u!114 &302805562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4874,7 +4854,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -12145,7 +12126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
   targetButton: {fileID: 541752816}
-  buttonAnimator: {fileID: 961172827}
+  buttonAnimator: {fileID: 0}
   startScale: 1
   popScale: 1.2
   finalScale: 1
@@ -17150,6 +17131,10 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6520138428253045064, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 1757304975}
+    - target: {fileID: 6520138428253045064, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17181,9 +17166,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button-OpenCafe
       objectReference: {fileID: 0}
+    - target: {fileID: 7477068480714166128, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: hoverScale.x
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477068480714166128, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: hoverScale.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477068480714166128, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: hoverScale.z
+      value: 1.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7551363795264726561, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.9999695
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805095838598527132, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_Pivot.x
@@ -17292,18 +17293,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1757304970}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1757304971}
   m_SourcePrefab: {fileID: 100100000, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
 --- !u!224 &961172826 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 961172825}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &961172827 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 961172825}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &961172828 stripped
@@ -19865,26 +19858,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208148988}
   m_CullTransparentMesh: 1
---- !u!114 &1211998976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6767467902392002720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 8127280910722422821}
-  buttonAnimator: {fileID: 0}
-  startScale: 0
-  popScale: 1.35
-  finalScale: 1.2
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0.2
 --- !u!114 &1211998977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20723,12 +20696,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1328878232}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1328878231}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1328878230}
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
@@ -20742,11 +20709,6 @@ RectTransform:
 --- !u!1 &1328878228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 1328878226}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1328878229 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 1328878226}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1328878230
@@ -20789,7 +20751,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1328878236}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -20805,40 +20767,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1328878231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328878228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 1328878227}
-  buttonAnimator: {fileID: 1328878229}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
---- !u!114 &1328878232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328878228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d812138b6b575c14ab348bbe4200dc9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ParallaxBackground
-  maxOffset: 10
-  smoothSpeed: 3
 --- !u!114 &1328878233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20853,6 +20781,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxBackground
   maxOffset: 30
   smoothSpeed: 5
+--- !u!114 &1328878236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3459080192976141608, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+  m_PrefabInstance: {fileID: 1328878226}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328878228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1341492916
 GameObject:
   m_ObjectHideFlags: 0
@@ -24657,26 +24596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622674488}
   m_CullTransparentMesh: 1
---- !u!114 &1632225957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6767467902805901565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 8127280911102783608}
-  buttonAnimator: {fileID: 0}
-  startScale: 0
-  popScale: 1.35
-  finalScale: 1.2
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &1632225958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24703,8 +24622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddfc70512f7da847bc48fef73d8614b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverShrink
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  hoverScale: {x: 0.8, y: 0.8, z: 0.8}
+  normalScale: {x: 1, y: 1, z: 1}
+  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
   shrinkSpeed: 6
   visual: {fileID: 136501867}
   audioSource: {fileID: 273327584}
@@ -24721,8 +24640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ff195b1fa9dca41b45728ecda5f1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonClickEffect
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  pressedScale: {x: 0.5, y: 0.5, z: 0.5}
+  normalScale: {x: 1, y: 1, z: 1}
+  pressedScale: {x: 0.8, y: 0.8, z: 0.8}
   pressSpeed: 18
   releaseBounceScale: 1.05
   bounceDuration: 0.08
@@ -26251,26 +26170,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxBackground
   maxOffset: 10
   smoothSpeed: 3
---- !u!114 &1757304971
+--- !u!114 &1757304975 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3459080192976141608, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+  m_PrefabInstance: {fileID: 961172825}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757304969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 961172826}
-  buttonAnimator: {fileID: 961172827}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1777515539
 GameObject:
   m_ObjectHideFlags: 0
@@ -26536,26 +26446,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1795603865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6767467902910461897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 8127280911274690380}
-  buttonAnimator: {fileID: 0}
-  startScale: 0
-  popScale: 1.35
-  finalScale: 1.2
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0.1
 --- !u!114 &1795603866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27177,7 +27067,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -35850,7 +35741,6 @@ GameObject:
   - component: {fileID: 6520138427312645044}
   - component: {fileID: 8914166931462246199}
   - component: {fileID: 1211998977}
-  - component: {fileID: 1211998976}
   - component: {fileID: 8914166931462246201}
   - component: {fileID: 8914166931462246200}
   - component: {fileID: 8914166931462246202}
@@ -35874,7 +35764,6 @@ GameObject:
   - component: {fileID: 6520138426655460329}
   - component: {fileID: 8914166931878258538}
   - component: {fileID: 1632225958}
-  - component: {fileID: 1632225957}
   - component: {fileID: 1632225959}
   - component: {fileID: 1632225960}
   - component: {fileID: 8914166931878258539}
@@ -35898,7 +35787,6 @@ GameObject:
   - component: {fileID: 6520138426759724253}
   - component: {fileID: 8914166931983716446}
   - component: {fileID: 1795603866}
-  - component: {fileID: 1795603865}
   - component: {fileID: 8914166931983716448}
   - component: {fileID: 8914166931983716447}
   - component: {fileID: 8914166931983716449}
@@ -35922,7 +35810,6 @@ GameObject:
   - component: {fileID: 6520138427951346557}
   - component: {fileID: 8914166930490171390}
   - component: {fileID: 302805562}
-  - component: {fileID: 302805561}
   - component: {fileID: 8914166930490171392}
   - component: {fileID: 8914166930490171391}
   - component: {fileID: 8914166930490171393}
@@ -35942,7 +35829,7 @@ RectTransform:
   m_GameObject: {fileID: 6767467902392002720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1394560991}
@@ -35950,7 +35837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 378.52167, y: -737.73706}
+  m_AnchoredPosition: {x: 420, y: -720}
   m_SizeDelta: {x: 380, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8127280911102783608
@@ -35962,7 +35849,7 @@ RectTransform:
   m_GameObject: {fileID: 6767467902805901565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 136501867}
@@ -35970,7 +35857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 880, y: -500}
+  m_AnchoredPosition: {x: 880, y: -515}
   m_SizeDelta: {x: 380, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8127280911274690380
@@ -35982,7 +35869,7 @@ RectTransform:
   m_GameObject: {fileID: 6767467902910461897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 526687890}
@@ -35990,7 +35877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 872.3327, y: -741}
+  m_AnchoredPosition: {x: 872.3327, y: -720}
   m_SizeDelta: {x: 380, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8127280911426095340
@@ -36002,7 +35889,7 @@ RectTransform:
   m_GameObject: {fileID: 6767467903028508777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1725614158}
@@ -36010,7 +35897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -500}
+  m_AnchoredPosition: {x: 420, y: -515}
   m_SizeDelta: {x: 380, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &8914166930490171390
@@ -36037,8 +35924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ff195b1fa9dca41b45728ecda5f1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonClickEffect
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  pressedScale: {x: 0.5, y: 0.5, z: 0.5}
+  normalScale: {x: 1, y: 1, z: 1}
+  pressedScale: {x: 0.8, y: 0.8, z: 0.8}
   pressSpeed: 18
   releaseBounceScale: 1.05
   bounceDuration: 0.08
@@ -36054,8 +35941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddfc70512f7da847bc48fef73d8614b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverShrink
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  hoverScale: {x: 0.8, y: 0.8, z: 0.8}
+  normalScale: {x: 1, y: 1, z: 1}
+  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
   shrinkSpeed: 6
   visual: {fileID: 1725614158}
   audioSource: {fileID: 273327584}
@@ -36114,8 +36001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ff195b1fa9dca41b45728ecda5f1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonClickEffect
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  pressedScale: {x: 0.5, y: 0.5, z: 0.5}
+  normalScale: {x: 1, y: 1, z: 1}
+  pressedScale: {x: 0.8, y: 0.8, z: 0.8}
   pressSpeed: 18
   releaseBounceScale: 1.05
   bounceDuration: 0.08
@@ -36131,8 +36018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddfc70512f7da847bc48fef73d8614b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverShrink
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  hoverScale: {x: 0.8, y: 0.8, z: 0.8}
+  normalScale: {x: 1, y: 1, z: 1}
+  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
   shrinkSpeed: 6
   visual: {fileID: 1394560991}
   audioSource: {fileID: 273327584}
@@ -36233,8 +36120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ff195b1fa9dca41b45728ecda5f1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonClickEffect
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  pressedScale: {x: 0.5, y: 0.5, z: 0.5}
+  normalScale: {x: 1, y: 1, z: 1}
+  pressedScale: {x: 0.8, y: 0.8, z: 0.8}
   pressSpeed: 18
   releaseBounceScale: 1.05
   bounceDuration: 0.08
@@ -36250,8 +36137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddfc70512f7da847bc48fef73d8614b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHoverShrink
-  normalScale: {x: 1.2, y: 1.2, z: 1.2}
-  hoverScale: {x: 0.8, y: 0.8, z: 0.8}
+  normalScale: {x: 1, y: 1, z: 1}
+  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
   shrinkSpeed: 6
   visual: {fileID: 526687890}
   audioSource: {fileID: 273327584}
