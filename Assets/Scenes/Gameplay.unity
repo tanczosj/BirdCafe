@@ -1155,7 +1155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1437.636
+      value: 1423
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362049676}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4347,7 +4347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1233.8907, y: -172.27267}
+  m_AnchoredPosition: {x: 1222.7, y: -172.27267}
   m_SizeDelta: {x: 364.17, y: 88.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395911504
@@ -4546,7 +4546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1437.636
+      value: 1423
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4678,6 +4678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 320768675}
     m_Modifications:
+    - target: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1238381098325344969, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_Color.b
       value: 0.9056604
@@ -4852,7 +4856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1242
+      value: 1232
       objectReference: {fileID: 0}
     - target: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4877,9 +4881,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 408252192}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 408252191}
   m_SourcePrefab: {fileID: 100100000, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
 --- !u!224 &408252188 stripped
 RectTransform:
@@ -4891,31 +4892,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 408252187}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &408252190 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 408252187}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &408252191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408252189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 408252188}
-  buttonAnimator: {fileID: 408252190}
-  startScale: 1
-  popScale: 1.1
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &408252192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5316,7 +5292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1233.8907, y: -606.73425}
+  m_AnchoredPosition: {x: 1227, y: -606.73425}
   m_SizeDelta: {x: 364.17, y: 88.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419119206
@@ -10817,7 +10793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8272016253182194899, guid: e31972c5924b54ad68becfcdf601f09c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 771.2124
+      value: 759
       objectReference: {fileID: 0}
     - target: {fileID: 8272016253182194899, guid: e31972c5924b54ad68becfcdf601f09c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -15860,7 +15836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2283160021479020963, guid: 1f0791ab6f947b74c948d5d81691129b, type: 3}
+  m_Sprite: {fileID: -4423241938696554017, guid: 0e56e59ba07e66e4fb81e9a93efb3c7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21913,7 +21889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1437.636
+      value: 1423
       objectReference: {fileID: 0}
     - target: {fileID: 221124704646071079, guid: c1c32be7d97a55e40ac9cee85f790cfc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -23204,9 +23180,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1482405552}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1482405551}
   m_SourcePrefab: {fileID: 100100000, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
 --- !u!224 &1482405547 stripped
 RectTransform:
@@ -23223,31 +23196,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 1482405546}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1482405550 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 1482405546}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1482405551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482405549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 1482405547}
-  buttonAnimator: {fileID: 1482405550}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &1482405552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23793,9 +23741,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1523884899}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1523884898}
   m_SourcePrefab: {fileID: 100100000, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
 --- !u!224 &1523884895 stripped
 RectTransform:
@@ -23807,31 +23752,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 1523884894}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1523884897 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 1523884894}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1523884898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523884896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 1523884895}
-  buttonAnimator: {fileID: 1523884897}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &1523884899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26709,7 +26629,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803892843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -27239,7 +27159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1664
+      value: 1651
       objectReference: {fileID: 0}
     - target: {fileID: 8127280911660219097, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -27264,9 +27184,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1847857217}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1847857216}
   m_SourcePrefab: {fileID: 100100000, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
 --- !u!224 &1847857213 stripped
 RectTransform:
@@ -27278,31 +27195,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 1847857212}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1847857215 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 1847857212}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1847857216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847857214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 1847857213}
-  buttonAnimator: {fileID: 1847857215}
-  startScale: 1
-  popScale: 1.1
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &1847857217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32990,7 +32882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318992183349883254, guid: 61d7ecc5366934a4aafaa7c78b534f93, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 517.04224
+      value: 504
       objectReference: {fileID: 0}
     - target: {fileID: 6318992183349883254, guid: 61d7ecc5366934a4aafaa7c78b534f93, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -35055,9 +34947,6 @@ PrefabInstance:
       addedObject: {fileID: 2052672187}
     - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2052672186}
-    - targetCorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2052672188}
     - targetCorrespondingSourceObject: {fileID: 8788289330399158378, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
       insertIndex: -1
@@ -35073,31 +34962,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6767467903329716828, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
   m_PrefabInstance: {fileID: 2052672182}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2052672185 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1032166714693072749, guid: 4d877eb7704614920befbf96850a1fe1, type: 3}
-  m_PrefabInstance: {fileID: 2052672182}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2052672186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052672184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8bedc343e687d47abe9324e06aa44a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonIntroPop
-  targetButton: {fileID: 2052672183}
-  buttonAnimator: {fileID: 2052672185}
-  startScale: 1
-  popScale: 1.2
-  finalScale: 1
-  expandTime: 0.35
-  settleTime: 0.15
-  startDelay: 0
 --- !u!114 &2052672187
 MonoBehaviour:
   m_ObjectHideFlags: 0
