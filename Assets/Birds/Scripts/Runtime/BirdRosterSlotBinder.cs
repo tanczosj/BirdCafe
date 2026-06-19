@@ -1,5 +1,7 @@
 
+using BirdCafe.Shared;
 using BirdCafe.Shared.ViewModels;
+using System.Linq;
 using UnityEngine;
 
 namespace BirdCafe.Unity.Birds
@@ -53,7 +55,9 @@ namespace BirdCafe.Unity.Birds
                 return;
             }
 
-            birdVisualController.Unbind(hideVisual: hideIfMissing);
+            //var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds?.FirstOrDefault(b => b.Id == viewModel.BirdId);
+
+            birdVisualController.Unbind(hideVisual: hideIfMissing); // || bird?.AssignedDayOffNextDay == true);
         }
 
         public void SetRosterIndex(int newRosterIndex, bool refreshNow = true)
