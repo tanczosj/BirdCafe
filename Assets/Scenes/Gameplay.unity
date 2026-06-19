@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5293922649093493807, guid: 6908a7a5c7dddf54f951a715530416a9, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7956527079732709916, guid: 6908a7a5c7dddf54f951a715530416a9, type: 3}
       propertyPath: m_Name
       value: CustomizeBird-Popup
@@ -11025,10 +11029,10 @@ MonoBehaviour:
   birdNameInput: {fileID: 896321454}
   costumes:
   - id: Costume_Bandana
-    sprite: {fileID: 4783202043866508890, guid: b36df7065c1e6d34aada477ace54a30a, type: 3}
+    sprite: {fileID: -4419601988928341694, guid: 8faad0ecf31ee4d4098d72ba4b10ccf0, type: 3}
   - id: Costume_RoyalCape
-    sprite: {fileID: 4066210322289388729, guid: 8e29fde63573db4488f05f34b326462a, type: 3}
-  noCostumeSprite: {fileID: 21300000, guid: f69219f41c5eb404bac8698f8e5cbc15, type: 3}
+    sprite: {fileID: -1551825427106176984, guid: 386de416243bc2348acc78af050d7298, type: 3}
+  noCostumeSprite: {fileID: -1208155354335249007, guid: ee7eed8d50435df4fbfbd30ad6a6fe24, type: 3}
   moveDuration: 0.25
   useUnscaledTime: 1
 --- !u!114 &483779038 stripped
@@ -24108,7 +24112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1254902, g: 0.14901961, b: 0.2509804, a: 0.72156864}
+  m_Color: {r: 0.1254902, g: 0.14901961, b: 0.2509804, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
