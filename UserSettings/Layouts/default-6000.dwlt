@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 7359
+  controlID: 2475
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 7360
+  controlID: 2476
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 7361
+  controlID: 2477
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: AnimationWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -278,15 +278,15 @@ MonoBehaviour:
     y: 0
     width: 812
     height: 933
-  m_MinSize: {x: 276, y: 76}
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 24}
   - {fileID: 25}
   - {fileID: 26}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -699,17 +699,13 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: -3212
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: -3212
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -3220
-      - m_Data: -3212
       - m_Data: -1430
-      - m_Data: 55588
-      - m_Data: 56038
-      - m_Data: 56310
+      - m_Data: 55592
+      - m_Data: 56322
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3371,7 +3367,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Birds/Scripts/Runtime
+    - Assets/Backgrounds
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -3381,7 +3377,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Birds/Scripts/Runtime
+  - Assets/Backgrounds
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\josh\Documents\Github\BirdCafe
   m_LockTracker:
@@ -3390,45 +3386,44 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 193914
+    - m_Data: 82116
     m_LastClickedID:
-      m_Data: 193914
+      m_Data: 82116
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
-    - m_Data: 81810
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3462,39 +3457,39 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3522,10 +3517,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: -3212
+    m_SelectedInstanceIDs: []
     m_LastClickedEntityId:
-      m_Data: -3212
+      m_Data: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 56078
@@ -3555,6 +3549,11 @@ MonoBehaviour:
     - m_Data: 104006
     - m_Data: 103636
     - m_Data: 103784
+    - m_Data: 80824
+    - m_Data: 89954
+    - m_Data: 89960
+    - m_Data: 89956
+    - m_Data: 89958
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3581,7 +3580,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 1352.5}
     m_GridSize: 67
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 276
@@ -3735,39 +3734,39 @@ MonoBehaviour:
       m_Data: 92076
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3801,39 +3800,39 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3942,7 +3941,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: -3212
+    m_Data: 0
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4036,7 +4035,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: -3212
+    m_Data: 0
 --- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4110,39 +4109,39 @@ MonoBehaviour:
       m_Data: 81986
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4176,39 +4175,39 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 81624
-    - m_Data: 81626
-    - m_Data: 81628
-    - m_Data: 81630
-    - m_Data: 81632
-    - m_Data: 81634
-    - m_Data: 81636
-    - m_Data: 81638
-    - m_Data: 81640
-    - m_Data: 81642
-    - m_Data: 81644
-    - m_Data: 81646
-    - m_Data: 81648
-    - m_Data: 81650
-    - m_Data: 81652
-    - m_Data: 81654
-    - m_Data: 81656
-    - m_Data: 81658
-    - m_Data: 81660
-    - m_Data: 81662
-    - m_Data: 81664
-    - m_Data: 81666
-    - m_Data: 81668
-    - m_Data: 81670
-    - m_Data: 81672
-    - m_Data: 81674
-    - m_Data: 81676
-    - m_Data: 81678
-    - m_Data: 81680
-    - m_Data: 81682
-    - m_Data: 81684
-    - m_Data: 81686
-    - m_Data: 81688
+    - m_Data: 81932
+    - m_Data: 81934
+    - m_Data: 81936
+    - m_Data: 81938
+    - m_Data: 81940
+    - m_Data: 81942
+    - m_Data: 81944
+    - m_Data: 81946
+    - m_Data: 81948
+    - m_Data: 81950
+    - m_Data: 81952
+    - m_Data: 81954
+    - m_Data: 81956
+    - m_Data: 81958
+    - m_Data: 81960
+    - m_Data: 81962
+    - m_Data: 81964
+    - m_Data: 81966
+    - m_Data: 81968
+    - m_Data: 81970
+    - m_Data: 81972
+    - m_Data: 81974
+    - m_Data: 81976
+    - m_Data: 81978
+    - m_Data: 81980
+    - m_Data: 81982
+    - m_Data: 81984
+    - m_Data: 81986
+    - m_Data: 81988
+    - m_Data: 81990
+    - m_Data: 81992
+    - m_Data: 81994
+    - m_Data: 81996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
