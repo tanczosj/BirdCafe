@@ -1010,6 +1010,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PetPopupUI
   birdSaleItemContainer: {fileID: 1243575253121226074}
   birdSaleItemPrefab: {fileID: 2102113596668866579, guid: 2096896a73e78564097402b23fc8447f, type: 3}
+  soldOutMessagePrefab: {fileID: 8307633799061568706, guid: a8aa35af13518534984daa94db0fdbab, type: 3}
+  soldOutTitleMessage: Sold Out
+  soldOutDescriptionMessage: Every bird for sale at Pete's Pet Shop already been
+    purchased.
   moneyText: {fileID: 5471643015487204138}
 --- !u!1 &4570415333356627168
 GameObject:
@@ -2835,36 +2839,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8283956027876136308, guid: 2096896a73e78564097402b23fc8447f, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3345159847195951747, guid: 2096896a73e78564097402b23fc8447f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8584457840049612772}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2096896a73e78564097402b23fc8447f, type: 3}
 --- !u!224 &1243575253121226074 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5722008259225136864, guid: 2096896a73e78564097402b23fc8447f, type: 3}
   m_PrefabInstance: {fileID: 6785439384552799162}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8090395687003699513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3345159847195951747, guid: 2096896a73e78564097402b23fc8447f, type: 3}
-  m_PrefabInstance: {fileID: 6785439384552799162}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8584457840049612772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8090395687003699513}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff49021e291043243bf3b3ab4b591984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BirdCafe.Unity.UI.SoldOutWhenContentEmpty
-  content: {fileID: 1243575253121226074}
-  soldOutPrefab: {fileID: 3345159847195951747, guid: a8aa35af13518534984daa94db0fdbab, type: 3}
-  soldOutTitleMessage: SOLD OUT
-  soldOutDescriptionMessage: We're sorry but every bird has already been purchased.
-  countOnlyActiveChildren: 1
-  checkEveryFrame: 0

@@ -804,6 +804,19 @@ MonoBehaviour:
   costumesContent: {fileID: 7832346090141960958}
   surpriseContent: {fileID: 8761537549287691445}
   supplyItemPrefab: {fileID: 7361983867003581851, guid: 590f8dac343e3a144bf6aa530bbc459c, type: 3}
+  soldOutMessagePrefab: {fileID: 8307633799061568706, guid: a8aa35af13518534984daa94db0fdbab, type: 3}
+  foodSoldOutMessage:
+    title: Sold Out
+    description: You already own all the food items Pete has for sale.
+  toysSoldOutMessage:
+    title: Sold Out
+    description: You already own all the toys Pete has for sale.
+  costumesSoldOutMessage:
+    title: Sold Out
+    description: You already own all the costumes Pete has for sale.
+  surpriseSoldOutMessage:
+    title: Sold Out
+    description: You already own all the suprise eggs Pete has for sale.
   catalogSupplies:
   - itemId: 
     sprite: {fileID: 0}

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using BirdCafe.Shared;
@@ -7,7 +8,6 @@ using BirdCafe.Shared.ViewModels;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class SuppliesPopupUI : MonoBehaviour
 {
@@ -21,6 +21,18 @@ public class SuppliesPopupUI : MonoBehaviour
         public Sprite Sprite => sprite;
     }
 
+    [Serializable]
+    private class SoldOutMessageConfig
+    {
+        [SerializeField] private string title = "[SOLD OUT]";
+
+        [TextArea]
+        [SerializeField] private string description = "Everything in this tab has already been purchased.";
+
+        public string Title => title;
+        public string Description => description;
+    }
+
     [Header("Content Roots")]
     [SerializeField] private Transform foodContent;
     [SerializeField] private Transform toysContent;
@@ -29,6 +41,15 @@ public class SuppliesPopupUI : MonoBehaviour
 
     [Header("Item Prefab")]
     [SerializeField] private SupplySaleItemUI supplyItemPrefab;
+
+    [Header("Sold Out Message Prefab")]
+    [SerializeField] private SoldOutMessageUI soldOutMessagePrefab;
+
+    [Header("Sold Out Messages")]
+    [SerializeField] private SoldOutMessageConfig foodSoldOutMessage = new SoldOutMessageConfig();
+    [SerializeField] private SoldOutMessageConfig toysSoldOutMessage = new SoldOutMessageConfig();
+    [SerializeField] private SoldOutMessageConfig costumesSoldOutMessage = new SoldOutMessageConfig();
+    [SerializeField] private SoldOutMessageConfig surpriseSoldOutMessage = new SoldOutMessageConfig();
 
     [Header("Catalog Supplies")]
     [SerializeField] private List<CatalogSupplySpriteEntry> catalogSupplies = new();
@@ -75,10 +96,19 @@ public class SuppliesPopupUI : MonoBehaviour
             moneyText.text = $"${dashboard.CurrentMoney:F2}";
         }
 
+        int foodItemCount = 0;
+        int toysItemCount = 0;
+        int costumesItemCount = 0;
+        int surpriseItemCount = 0;
+
         foreach (var offer in offers)
         {
+            if (!offer.Buyable)
+                continue;
+
             Transform parent = GetTabContent(offer.SupplyType);
-            if (parent == null || !offer.Buyable)
+
+            if (parent == null)
                 continue;
 
             var item = Instantiate(supplyItemPrefab, parent, false);
@@ -90,12 +120,82 @@ public class SuppliesPopupUI : MonoBehaviour
                 ResolveSupplySprite(offer.ItemId)
             );
 
+            IncrementSpawnCount(
+                offer.SupplyType,
+                ref foodItemCount,
+                ref toysItemCount,
+                ref costumesItemCount,
+                ref surpriseItemCount
+            );
+
             ForceImmediateLayout(item.transform as RectTransform);
         }
+
+        AddSoldOutMessageIfEmpty(foodContent, foodItemCount, foodSoldOutMessage);
+        AddSoldOutMessageIfEmpty(toysContent, toysItemCount, toysSoldOutMessage);
+        AddSoldOutMessageIfEmpty(costumesContent, costumesItemCount, costumesSoldOutMessage);
+        AddSoldOutMessageIfEmpty(surpriseContent, surpriseItemCount, surpriseSoldOutMessage);
 
         SetupSpecialEggButton(offers);
 
         ForceAllContentLayouts();
+    }
+
+    private void IncrementSpawnCount(
+        PetStoreSupplyType supplyType,
+        ref int foodItemCount,
+        ref int toysItemCount,
+        ref int costumesItemCount,
+        ref int surpriseItemCount)
+    {
+        switch (supplyType)
+        {
+            case PetStoreSupplyType.BirdFood:
+                foodItemCount++;
+                break;
+
+            case PetStoreSupplyType.Toy:
+                toysItemCount++;
+                break;
+
+            case PetStoreSupplyType.Costume:
+                costumesItemCount++;
+                break;
+
+            case PetStoreSupplyType.SpecialEggToy:
+                surpriseItemCount++;
+                break;
+        }
+    }
+
+    private void AddSoldOutMessageIfEmpty(
+        Transform parent,
+        int spawnedItemCount,
+        SoldOutMessageConfig messageConfig)
+    {
+        if (parent == null)
+            return;
+
+        if (soldOutMessagePrefab == null)
+            return;
+
+        if (spawnedItemCount > 0)
+            return;
+
+        var soldOutMessage = Instantiate(soldOutMessagePrefab, parent, false);
+        soldOutMessage.name = "Sold Out Message";
+
+        string title = messageConfig != null
+            ? messageConfig.Title
+            : "[SOLD OUT]";
+
+        string description = messageConfig != null
+            ? messageConfig.Description
+            : "Everything in this tab has already been purchased.";
+
+        soldOutMessage.SetMessages(title, description);
+
+        ForceImmediateLayout(soldOutMessage.transform as RectTransform);
     }
 
     private void ForceAllContentLayouts()
@@ -145,12 +245,16 @@ public class SuppliesPopupUI : MonoBehaviour
         {
             case PetStoreSupplyType.BirdFood:
                 return foodContent;
+
             case PetStoreSupplyType.Toy:
                 return toysContent;
+
             case PetStoreSupplyType.Costume:
                 return costumesContent;
+
             case PetStoreSupplyType.SpecialEggToy:
                 return surpriseContent;
+
             default:
                 return null;
         }
@@ -159,10 +263,9 @@ public class SuppliesPopupUI : MonoBehaviour
     private void OnBuyClicked(PetStoreSupplyOfferViewModel offer)
     {
         bool bought = BirdCafeGame.Instance.BuyPetStoreSupply(offer.ItemId, offer.SupplyType);
+
         if (bought)
-        {
             Refresh();
-        }
     }
 
     private void SetupSpecialEggButton(List<PetStoreSupplyOfferViewModel> offers)
@@ -206,6 +309,7 @@ public class SuppliesPopupUI : MonoBehaviour
         ClearContent(toysContent);
         ClearContent(costumesContent);
         ClearContent(surpriseContent);
+
         spawnedItems.Clear();
     }
 
@@ -239,7 +343,6 @@ public class SuppliesPopupUI : MonoBehaviour
     /// </summary>
     public void ResetScrollToTop(bool isSelected)
     {
-        // Toggle.onValueChanged also fires when a tab is turned off.
         if (!isSelected || suppliesScrollRect == null)
             return;
 
@@ -248,7 +351,6 @@ public class SuppliesPopupUI : MonoBehaviour
 
     private IEnumerator ResetScrollToTopNextFrame()
     {
-        // Wait until the selected category has been activated and laid out.
         yield return null;
 
         Canvas.ForceUpdateCanvases();
@@ -262,9 +364,6 @@ public class SuppliesPopupUI : MonoBehaviour
 
         suppliesScrollRect.StopMovement();
 
-        // For a vertical ScrollRect:
-        // 1 = top
-        // 0 = bottom
         suppliesScrollRect.verticalNormalizedPosition = 1f;
     }
 }
