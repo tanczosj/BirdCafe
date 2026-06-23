@@ -61,6 +61,10 @@ namespace BirdCafe.UI.Gameplay.Evening
         [SerializeField] private AnimationCurve moveEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         [SerializeField] private AnimationCurve flipEase = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
+        [Header("Particles")]
+        [SerializeField] private ParticleSystem feedParticles;
+        [SerializeField] private ParticleSystem vetParticles;
+
         public string SelectedBirdId => _currentBirdId;
 
         private static readonly Vector2 BirdCardDrawerClosedPosition = new Vector2(-592f, -587f);
@@ -870,6 +874,12 @@ namespace BirdCafe.UI.Gameplay.Evening
 
             if (success)
             {
+                if (feedParticles != null && actionId == "Feed")
+                    feedParticles.Play();
+
+                if (vetParticles != null && actionId == "Vet")
+                    vetParticles.Play();
+
                 var bird = BirdCafeGame.Instance.Controller.CurrentState.Birds.FirstOrDefault(b => b.Id == SelectedBirdId);
 
                 BirdCafeGame.Instance.AdvanceBirdAnimationState(SelectedBirdId);
