@@ -827,6 +827,7 @@ MonoBehaviour:
   openEggButtonText: {fileID: 0}
   eggRewardText: {fileID: 0}
   moneyText: {fileID: 3448829947353026642}
+  suppliesScrollRect: {fileID: 738367361565106199}
 --- !u!1 &1493684958559237866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1404,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 5362538076506231806}
+        m_TargetAssemblyTypeName: SuppliesPopupUI, Assembly-CSharp
+        m_MethodName: ResetScrollToTop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &2389069743116762656
 GameObject:
@@ -2375,6 +2388,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 5362538076506231806}
+        m_TargetAssemblyTypeName: SuppliesPopupUI, Assembly-CSharp
+        m_MethodName: ResetScrollToTop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &4068099903037335154
 GameObject:
@@ -2585,6 +2610,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 5362538076506231806}
+        m_TargetAssemblyTypeName: SuppliesPopupUI, Assembly-CSharp
+        m_MethodName: ResetScrollToTop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &4437773800997058590
 GameObject:
@@ -2684,6 +2721,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 5362538076506231806}
+        m_TargetAssemblyTypeName: SuppliesPopupUI, Assembly-CSharp
+        m_MethodName: ResetScrollToTop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &4475880312765249757
 GameObject:

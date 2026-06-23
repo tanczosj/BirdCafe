@@ -7,6 +7,7 @@ using BirdCafe.Shared.ViewModels;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class SuppliesPopupUI : MonoBehaviour
 {
@@ -39,6 +40,9 @@ public class SuppliesPopupUI : MonoBehaviour
 
     [Header("Optional Money Label")]
     [SerializeField] private TMP_Text moneyText;
+
+    [Header("Scrolling")]
+    [SerializeField] private ScrollRect suppliesScrollRect;
 
     private readonly List<SupplySaleItemUI> spawnedItems = new();
     private Dictionary<string, Sprite> supplySpriteLookup;
@@ -227,5 +231,40 @@ public class SuppliesPopupUI : MonoBehaviour
         return supplySpriteLookup.TryGetValue(itemId, out var sprite)
             ? sprite
             : null;
+    }
+
+    /// <summary>
+    /// Resets the supplies list to the top when a tab becomes selected.
+    /// Wire this to each tab Toggle's On Value Changed event.
+    /// </summary>
+    public void ResetScrollToTop(bool isSelected)
+    {
+        // Toggle.onValueChanged also fires when a tab is turned off.
+        if (!isSelected || suppliesScrollRect == null)
+            return;
+
+        StartCoroutine(ResetScrollToTopNextFrame());
+    }
+
+    private IEnumerator ResetScrollToTopNextFrame()
+    {
+        // Wait until the selected category has been activated and laid out.
+        yield return null;
+
+        Canvas.ForceUpdateCanvases();
+
+        if (suppliesScrollRect.content != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(
+                suppliesScrollRect.content
+            );
+        }
+
+        suppliesScrollRect.StopMovement();
+
+        // For a vertical ScrollRect:
+        // 1 = top
+        // 0 = bottom
+        suppliesScrollRect.verticalNormalizedPosition = 1f;
     }
 }
