@@ -246,7 +246,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -274,221 +274,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: act_sick_cough_0
+      name: act_sick_cough_00
       rect:
         serializedVersion: 2
-        x: 132
-        y: 2686
-        width: 248
-        height: 260
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c0146a6cb087a240800000000000000
-      internalID: 4802949074341073095
+      spriteID: 91c62ac3f16e7b147898e2c4ecd0cf0f
+      internalID: 1221945311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_1
+      name: act_sick_cough_01
       rect:
         serializedVersion: 2
-        x: 643
-        y: 2687
-        width: 250
-        height: 258
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90920b72e4a0543f0800000000000000
-      internalID: -917315618310444791
+      spriteID: e1a6d0e1d8574814c9a6648022db56d8
+      internalID: -1867847979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_2
+      name: act_sick_cough_02
       rect:
         serializedVersion: 2
-        x: 1153
-        y: 2687
-        width: 254
-        height: 254
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a71b14ee10783b570800000000000000
-      internalID: 8481270965630775674
+      spriteID: fb28f9ec81b8c3c4580b23e481139695
+      internalID: 1096412474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_3
+      name: act_sick_cough_03
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 2687
-        width: 252
-        height: 254
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bddc0e8794ac3e820800000000000000
-      internalID: 2946420998139858395
+      spriteID: 0f43f3ead8efb5740b3fa1e191c83634
+      internalID: 1196173836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_4
+      name: act_sick_cough_04
       rect:
         serializedVersion: 2
-        x: 2178
-        y: 2687
-        width: 252
-        height: 254
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 24fd2c3fdf8bd27c0800000000000000
-      internalID: -4094413085354041534
+      spriteID: c582a61f5b3b5bb46ac3f4e08e4e773b
+      internalID: 403995759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_5
+      name: act_sick_cough_05
       rect:
         serializedVersion: 2
-        x: 2697
-        y: 2687
-        width: 238
-        height: 264
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 41d1caad5513c1c70800000000000000
-      internalID: 8943077204861656340
+      spriteID: 7676d65656986f24ab5be7fea6202ff5
+      internalID: -2054260058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_6
+      name: act_sick_cough_06
       rect:
         serializedVersion: 2
-        x: 137
-        y: 2175
-        width: 239
-        height: 265
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6b471d25ed556d40800000000000000
-      internalID: 5576966952453622639
+      spriteID: a7e70b3ba91541a4f959a58db14e6e12
+      internalID: 1543153328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_7
+      name: act_sick_cough_07
       rect:
         serializedVersion: 2
-        x: 649
-        y: 2174
-        width: 240
-        height: 267
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 453d8f4e3310f2340800000000000000
-      internalID: 4841089446843044692
+      spriteID: bd4c80e9b49b78c4b9204f9cbbea45fb
+      internalID: -1708039704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_8
+      name: act_sick_cough_08
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 2174
-        width: 240
-        height: 268
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c6e08cbf75dfeef0800000000000000
-      internalID: -76607924041881917
+      spriteID: a30f055e7c35bbb4c9e37ba98676a6d8
+      internalID: -402851551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: act_sick_cough_9
+      name: act_sick_cough_09
       rect:
         serializedVersion: 2
-        x: 1673
-        y: 2174
-        width: 241
-        height: 269
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06892e5abd10e74f0800000000000000
-      internalID: -829223238497036192
+      spriteID: b6385a663664bf1428959e7f35b5f765
+      internalID: 565040213
       vertices: []
       indices: 
       edges: []
@@ -497,19 +497,19 @@ TextureImporter:
       name: act_sick_cough_10
       rect:
         serializedVersion: 2
-        x: 2185
-        y: 2174
-        width: 242
-        height: 270
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 372b3df2e3f14ed30800000000000000
+      spriteID: 8df8a5775c175b7409926082bdcc305e
       internalID: 4459723882954470003
       vertices: []
       indices: 
@@ -519,19 +519,19 @@ TextureImporter:
       name: act_sick_cough_11
       rect:
         serializedVersion: 2
-        x: 2697
-        y: 2174
-        width: 242
-        height: 270
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce580e82bb4eaba00800000000000000
+      spriteID: 47e443fd7cff455429ca0c9e7db77c1c
       internalID: 773181778543281644
       vertices: []
       indices: 
@@ -541,19 +541,19 @@ TextureImporter:
       name: act_sick_cough_12
       rect:
         serializedVersion: 2
-        x: 137
-        y: 1662
-        width: 242
-        height: 271
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84c60e0e10754a0f0800000000000000
+      spriteID: 0ec0a3a3814951c419b5020932ba50c1
       internalID: -1106663942846911416
       vertices: []
       indices: 
@@ -563,19 +563,19 @@ TextureImporter:
       name: act_sick_cough_13
       rect:
         serializedVersion: 2
-        x: 649
-        y: 1662
-        width: 242
-        height: 271
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d66aca09036432ee0800000000000000
+      spriteID: 95a9dedbfe4024340a1c58ed90a348b1
       internalID: -1287107894098221459
       vertices: []
       indices: 
@@ -585,19 +585,19 @@ TextureImporter:
       name: act_sick_cough_14
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 1662
-        width: 247
-        height: 271
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c24bd5b02f921de0800000000000000
+      spriteID: c1223f3548f77204f88bb7cc09a3d5d6
       internalID: -1363852774301023548
       vertices: []
       indices: 
@@ -607,19 +607,19 @@ TextureImporter:
       name: act_sick_cough_15
       rect:
         serializedVersion: 2
-        x: 1629
-        y: 1663
-        width: 291
-        height: 254
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b29bbd72f1f1cd510800000000000000
+      spriteID: 7dbddf56f073a414a9eedbf32934079b
       internalID: 1575168188345989419
       vertices: []
       indices: 
@@ -629,19 +629,19 @@ TextureImporter:
       name: act_sick_cough_16
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 1663
-        width: 318
-        height: 252
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f10f37053f7ba8f40800000000000000
+      spriteID: bfb9d9fb81a9d264db496c0ed71305ac
       internalID: 5731595731437088799
       vertices: []
       indices: 
@@ -651,19 +651,19 @@ TextureImporter:
       name: act_sick_cough_17
       rect:
         serializedVersion: 2
-        x: 2607
-        y: 1869
-        width: 33
-        height: 31
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63eb195b042c13770800000000000000
+      spriteID: 95dd5dd04bf8a884fb4c20cc54721785
       internalID: 8588859547552169526
       vertices: []
       indices: 
@@ -673,19 +673,19 @@ TextureImporter:
       name: act_sick_cough_18
       rect:
         serializedVersion: 2
-        x: 2690
-        y: 1663
-        width: 252
-        height: 253
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d3b83d14e3578e9b0800000000000000
+      spriteID: ac058ab081759174b880cf9095e4b155
       internalID: -5050658071843206339
       vertices: []
       indices: 
@@ -695,19 +695,19 @@ TextureImporter:
       name: act_sick_cough_19
       rect:
         serializedVersion: 2
-        x: 2598
-        y: 1817
-        width: 22
-        height: 15
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c973e22acd1403120800000000000000
+      spriteID: 466ade4b8f6af904d8414b11acbaa67d
       internalID: 2391483818003281820
       vertices: []
       indices: 
@@ -717,19 +717,19 @@ TextureImporter:
       name: act_sick_cough_20
       rect:
         serializedVersion: 2
-        x: 2599
-        y: 1827
-        width: 81
-        height: 29
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0a02bf8fe79a00f20800000000000000
+      spriteID: 95cb065c5e977ea4692950b2a40cb6d3
       internalID: 3386893282590793888
       vertices: []
       indices: 
@@ -739,19 +739,19 @@ TextureImporter:
       name: act_sick_cough_21
       rect:
         serializedVersion: 2
-        x: 2096
-        y: 1780
-        width: 31
-        height: 15
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 92f46d6d5650c2250800000000000000
+      spriteID: 71c5ae56116493d4e8101a56501f1c61
       internalID: 5921113545039564585
       vertices: []
       indices: 
@@ -761,19 +761,19 @@ TextureImporter:
       name: act_sick_cough_22
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 1795
-        width: 40
-        height: 19
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c91c23f2043eb6d80800000000000000
+      spriteID: 95322db1226f7d04da101d9447506829
       internalID: -8256255627044404836
       vertices: []
       indices: 
@@ -783,19 +783,19 @@ TextureImporter:
       name: act_sick_cough_23
       rect:
         serializedVersion: 2
-        x: 2657
-        y: 1795
-        width: 35
-        height: 10
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4866b753072f3d580800000000000000
+      spriteID: a599d2857cfd49b4698269000f171571
       internalID: -8803426282831649148
       vertices: []
       indices: 
@@ -805,19 +805,19 @@ TextureImporter:
       name: act_sick_cough_24
       rect:
         serializedVersion: 2
-        x: 2674
-        y: 1770
-        width: 15
-        height: 11
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 40bde5f09d3ae2210800000000000000
+      spriteID: b32166a4ea686894b8c41ca210631e0c
       internalID: 1310164694272498436
       vertices: []
       indices: 
@@ -827,19 +827,19 @@ TextureImporter:
       name: act_sick_cough_25
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 1751
-        width: 38
-        height: 18
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29306914b0a42b5e0800000000000000
+      spriteID: 6350dcb702119f04eaa62e5830060c16
       internalID: -1895371080964111470
       vertices: []
       indices: 
@@ -849,19 +849,19 @@ TextureImporter:
       name: act_sick_cough_26
       rect:
         serializedVersion: 2
-        x: 2601
-        y: 1735
-        width: 46
-        height: 20
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a303739bd1d811430800000000000000
+      spriteID: 995f018c7e074094faf8424990658774
       internalID: 3751935123377303610
       vertices: []
       indices: 
@@ -871,19 +871,19 @@ TextureImporter:
       name: act_sick_cough_27
       rect:
         serializedVersion: 2
-        x: 2609
-        y: 1699
-        width: 43
-        height: 29
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04ba7cf4eee5e91b0800000000000000
+      spriteID: ce814cf3736b028418624bee849a4f3a
       internalID: -5647972505042310336
       vertices: []
       indices: 
@@ -893,19 +893,19 @@ TextureImporter:
       name: act_sick_cough_28
       rect:
         serializedVersion: 2
-        x: 2661
-        y: 1703
-        width: 18
-        height: 23
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b58c69a9924575460800000000000000
+      spriteID: 30058fa58c6bdd649b754bc6cc7ba605
       internalID: 7230340264430585947
       vertices: []
       indices: 
@@ -915,19 +915,19 @@ TextureImporter:
       name: act_sick_cough_29
       rect:
         serializedVersion: 2
-        x: 47
-        y: 1357
-        width: 33
-        height: 31
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3466f04db794c6b30800000000000000
+      spriteID: 855cd5fb3960f5f4981aa6bab561a699
       internalID: 4281878141910083139
       vertices: []
       indices: 
@@ -937,19 +937,19 @@ TextureImporter:
       name: act_sick_cough_30
       rect:
         serializedVersion: 2
-        x: 130
-        y: 1151
-        width: 251
-        height: 253
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8dfd0c95e5e87b500800000000000000
+      spriteID: 785fe2a69cb18d94387245232524a6d5
       internalID: 411954426811572184
       vertices: []
       indices: 
@@ -959,19 +959,19 @@ TextureImporter:
       name: act_sick_cough_31
       rect:
         serializedVersion: 2
-        x: 550
-        y: 1336
-        width: 26
-        height: 26
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42a68d157d9911870800000000000000
+      spriteID: 5b514ad395b8bfc4cbf9104b3e40a26f
       internalID: 8651865509225589284
       vertices: []
       indices: 
@@ -981,19 +981,19 @@ TextureImporter:
       name: act_sick_cough_32
       rect:
         serializedVersion: 2
-        x: 644
-        y: 1151
-        width: 247
-        height: 256
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1c7a94ed18efbfd0800000000000000
+      spriteID: 5bfcb367903310643841d01ca7bfdc37
       internalID: -2323883667612861411
       vertices: []
       indices: 
@@ -1003,19 +1003,19 @@ TextureImporter:
       name: act_sick_cough_33
       rect:
         serializedVersion: 2
-        x: 1157
-        y: 1151
-        width: 246
-        height: 257
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4ee7d2450b9ae16f0800000000000000
+      spriteID: ee928496754c1e34f8961aa000e57e31
       internalID: -711945116286353692
       vertices: []
       indices: 
@@ -1025,19 +1025,19 @@ TextureImporter:
       name: act_sick_cough_34
       rect:
         serializedVersion: 2
-        x: 1669
-        y: 1151
-        width: 245
-        height: 259
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 57264b8a5602e8eb0800000000000000
+      spriteID: a4236c5d0a2b22043a11fb0f02dc940d
       internalID: -4715796138816150923
       vertices: []
       indices: 
@@ -1047,526 +1047,20 @@ TextureImporter:
       name: act_sick_cough_35
       rect:
         serializedVersion: 2
-        x: 2181
-        y: 1151
-        width: 245
-        height: 260
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d8259fdf954d41c0800000000000000
+      spriteID: a654351fb89d0464a9d22bb5dfa36bad
       internalID: -4517878298229528364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_36
-      rect:
-        serializedVersion: 2
-        x: 2693
-        y: 1151
-        width: 245
-        height: 260
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8736258b94ca65890800000000000000
-      internalID: -7469593499322391688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_37
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 1315
-        width: 94
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc30ebc23c19ec2d0800000000000000
-      internalID: -3256505213086989365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_38
-      rect:
-        serializedVersion: 2
-        x: 575
-        y: 1342
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30e7504a185759050800000000000000
-      internalID: 5806676494227176963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_39
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 1306
-        width: 22
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0b5335c2595d4610800000000000000
-      internalID: 1607038854071802637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_40
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 1283
-        width: 40
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05d8698f1e2507740800000000000000
-      internalID: 5147705504576212304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_41
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 1283
-        width: 35
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed2bc2e55028fa220800000000000000
-      internalID: 2499359277780349662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_42
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 1258
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 445b81c24eaf3b900800000000000000
-      internalID: 699178225071863108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_43
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 1239
-        width: 38
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c8d6d5469d1861e0800000000000000
-      internalID: -2204479486343849785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_44
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 1222
-        width: 46
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 297e53b4070b6d700800000000000000
-      internalID: 564832799626225554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_45
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 1186
-        width: 44
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6ea196ef83f3e720800000000000000
-      internalID: 2874408786566688365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_46
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 1191
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82ed3645372ee05e0800000000000000
-      internalID: -1941365404385157592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_47
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 638
-        width: 245
-        height: 261
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1047ef1c74f55ac0800000000000000
-      internalID: -3866915891079331810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_48
-      rect:
-        serializedVersion: 2
-        x: 646
-        y: 639
-        width: 244
-        height: 262
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfc26b5d7873c5410800000000000000
-      internalID: 1467108635161537787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_49
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 638
-        width: 244
-        height: 263
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 464911c40ceea26e0800000000000000
-      internalID: -1861412986286926748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_50
-      rect:
-        serializedVersion: 2
-        x: 1671
-        y: 638
-        width: 243
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 457a0f15fee48a6f0800000000000000
-      internalID: -673201354513012908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_51
-      rect:
-        serializedVersion: 2
-        x: 2183
-        y: 638
-        width: 243
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f31a967b4306aa170800000000000000
-      internalID: 8190464651858387263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_52
-      rect:
-        serializedVersion: 2
-        x: 2695
-        y: 638
-        width: 243
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76e546607a1930c90800000000000000
-      internalID: -7204754832309854617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_53
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 126
-        width: 243
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75a11d1cd9fbde5e0800000000000000
-      internalID: -1878634785261151657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_54
-      rect:
-        serializedVersion: 2
-        x: 646
-        y: 126
-        width: 245
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 575cc6960701ba290800000000000000
-      internalID: -7878185048163433099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_55
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 127
-        width: 245
-        height: 263
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1632e2788f5e618f0800000000000000
-      internalID: -570015447233191071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_56
-      rect:
-        serializedVersion: 2
-        x: 1669
-        y: 127
-        width: 246
-        height: 261
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99a73cd3b2b6f53c0800000000000000
-      internalID: -4368655280062104935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_57
-      rect:
-        serializedVersion: 2
-        x: 2181
-        y: 127
-        width: 246
-        height: 260
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b80d3a32035dedd0800000000000000
-      internalID: -2455214952814933840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: act_sick_cough_58
-      rect:
-        serializedVersion: 2
-        x: 2692
-        y: 127
-        width: 247
-        height: 260
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3017afa2e0fc6c0c0800000000000000
-      internalID: -4555726313281130237
       vertices: []
       indices: 
       edges: []
@@ -1575,7 +1069,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b4b3ba249035eb64dac9c68fd49ecff5
     internalID: 0
     vertices: []
     indices: 
@@ -1585,8 +1079,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      act_sick_cough_0: 4802949074341073095
-      act_sick_cough_1: -917315618310444791
+      act_sick_cough_00: 1221945311
+      act_sick_cough_01: -1867847979
+      act_sick_cough_02: 1096412474
+      act_sick_cough_03: 1196173836
+      act_sick_cough_04: 403995759
+      act_sick_cough_05: -2054260058
+      act_sick_cough_06: 1543153328
+      act_sick_cough_07: -1708039704
+      act_sick_cough_08: -402851551
+      act_sick_cough_09: 565040213
       act_sick_cough_10: 4459723882954470003
       act_sick_cough_11: 773181778543281644
       act_sick_cough_12: -1106663942846911416
@@ -1597,7 +1099,6 @@ TextureImporter:
       act_sick_cough_17: 8588859547552169526
       act_sick_cough_18: -5050658071843206339
       act_sick_cough_19: 2391483818003281820
-      act_sick_cough_2: 8481270965630775674
       act_sick_cough_20: 3386893282590793888
       act_sick_cough_21: 5921113545039564585
       act_sick_cough_22: -8256255627044404836
@@ -1608,42 +1109,12 @@ TextureImporter:
       act_sick_cough_27: -5647972505042310336
       act_sick_cough_28: 7230340264430585947
       act_sick_cough_29: 4281878141910083139
-      act_sick_cough_3: 2946420998139858395
       act_sick_cough_30: 411954426811572184
       act_sick_cough_31: 8651865509225589284
       act_sick_cough_32: -2323883667612861411
       act_sick_cough_33: -711945116286353692
       act_sick_cough_34: -4715796138816150923
       act_sick_cough_35: -4517878298229528364
-      act_sick_cough_36: -7469593499322391688
-      act_sick_cough_37: -3256505213086989365
-      act_sick_cough_38: 5806676494227176963
-      act_sick_cough_39: 1607038854071802637
-      act_sick_cough_4: -4094413085354041534
-      act_sick_cough_40: 5147705504576212304
-      act_sick_cough_41: 2499359277780349662
-      act_sick_cough_42: 699178225071863108
-      act_sick_cough_43: -2204479486343849785
-      act_sick_cough_44: 564832799626225554
-      act_sick_cough_45: 2874408786566688365
-      act_sick_cough_46: -1941365404385157592
-      act_sick_cough_47: -3866915891079331810
-      act_sick_cough_48: 1467108635161537787
-      act_sick_cough_49: -1861412986286926748
-      act_sick_cough_5: 8943077204861656340
-      act_sick_cough_50: -673201354513012908
-      act_sick_cough_51: 8190464651858387263
-      act_sick_cough_52: -7204754832309854617
-      act_sick_cough_53: -1878634785261151657
-      act_sick_cough_54: -7878185048163433099
-      act_sick_cough_55: -570015447233191071
-      act_sick_cough_56: -4368655280062104935
-      act_sick_cough_57: -2455214952814933840
-      act_sick_cough_58: -4555726313281130237
-      act_sick_cough_6: 5576966952453622639
-      act_sick_cough_7: 4841089446843044692
-      act_sick_cough_8: -76607924041881917
-      act_sick_cough_9: -829223238497036192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
