@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 31aa28c7bd88ffd4ebe721a34dd7c28f
+guid: 6d711c58cb500b942ad2fd55b9f73e0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7973004975159012884
-    second: icon_pellets_0
+      213: 1910171672978635658
+    second: icon_nutripellets 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_pellets_0
+      name: icon_nutripellets 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 615
-        height: 615
+        x: 51
+        y: 108
+        width: 928
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce19937c7323a5190800000000000000
-      internalID: -7973004975159012884
+      spriteID: a8bb7eb140b428a10800000000000000
+      internalID: 1910171672978635658
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_pellets_0: -7973004975159012884
+      icon_nutripellets 1_0: 1910171672978635658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

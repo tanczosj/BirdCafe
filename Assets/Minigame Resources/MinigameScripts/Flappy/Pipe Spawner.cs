@@ -5,7 +5,7 @@ public class PipeSpawner : MonoBehaviour
     public GameObject pipePrefab;
     public float spawnRate = 2f;
     public float heightOffset = 2f;
-    public float initialSpawnDelay = 0.25f;
+    public float initialSpawnDelay = 0.0f;
     public float spawnPadding = 0.5f;
 
     private Camera mainCamera;

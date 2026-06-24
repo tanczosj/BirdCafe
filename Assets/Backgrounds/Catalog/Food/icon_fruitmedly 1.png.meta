@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cce669de24d7020438a04b5eb8d53856
+guid: 7358b1e6453884149b05996bef9e4678
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7185749464142231136
-    second: icon_fruitmedley_0
+      213: -1724440354587287765
+    second: icon_fruitmedly 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_fruitmedley_0
+      name: icon_fruitmedly 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 51
+        y: 108
+        width: 928
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 066b62fd019e8b360800000000000000
-      internalID: 7185749464142231136
+      spriteID: b2fd97c42ae8118e0800000000000000
+      internalID: -1724440354587287765
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_fruitmedley_0: 7185749464142231136
+      icon_fruitmedly 1_0: -1724440354587287765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
